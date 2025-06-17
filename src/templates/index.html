@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pažymos.lt</title>
+    <link rel="stylesheet" href="../dist/css/main.css">
+
+    <!-- Tailwind CSS is included via Webpack build -->
+</head>
+
+<body class="page">
+    <!-- <header class="w-full h-20 flex items-center justify-between px-8 bg-white">
+        <div class="text-2xl font-bold text-[#0E0026]">Pažymos.lt</div>
+        <nav class="flex-1 flex justify-center">
+            <ul class="flex gap-8 list-none m-0 p-0">
+                <li class="flex items-center relative group">
+                    <span
+                        class="text-lg text-[#0E0026] cursor-pointer transition-colors duration-200 group-hover:text-[#204D51]">Pradžia</span>
+                    <svg class="ml-1" width="10" height="6" viewBox="0 0 10 6" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L5 5L9 1" stroke="#111111" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </li>
+                <li><span
+                        class="text-lg text-[#0E0026] cursor-pointer transition-colors duration-200 hover:text-[#204D51]">Apie
+                        mus</span></li>
+                <li><span
+                        class="text-lg text-[#0E0026] cursor-pointer transition-colors duration-200 hover:text-[#204D51]">Paslaugos</span>
+                </li>
+                <li><span
+                        class="text-lg text-[#0E0026] cursor-pointer transition-colors duration-200 hover:text-[#204D51]">Kontaktai</span>
+                </li>
+                <li><span
+                        class="text-lg text-[#0E0026] cursor-pointer transition-colors duration-200 hover:text-[#204D51]">Blogas</span>
+                </li>
+            </ul>
+        </nav>
+        <div class="flex items-center bg-[#B4F6D0] rounded-full h-10 px-4 min-w-[123px]">
+            <div class="flex items-center justify-center w-6 h-6 mr-2">
+                <div class="w-6 h-6 bg-green rounded-full flex items-center justify-center">
+                    <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6.5 0C2.91 0 0 2.91 0 6.5C0 10.09 2.91 13 6.5 13C10.09 13 13 10.09 13 6.5C13 2.91 10.09 0 6.5 0ZM6.5 11.5C3.74 11.5 1.5 9.26 1.5 6.5C1.5 3.74 3.74 1.5 6.5 1.5C9.26 1.5 11.5 3.74 11.5 6.5C11.5 9.26 9.26 11.5 6.5 11.5Z"
+                            fill="#204D51" />
+                    </svg>
+                </div>
+            </div>
+            <span class="text-[#204D51] text-base font-medium">Profilis</span>
+        </div>
+    </header> -->
+
+    <!-- <section class="lg:px-14 px-4">
+        <div class="flex flex-col md:flex-row items-center md:items-start mb-10 gap-12">
+            <div class="flex-1">
+                <h1 class="text-5xl font-bold text-[#18102B] leading-tight mb-0">
+                    Pagrindinis pavadinimas apie mokymus
+                </h1>
+            </div>
+            <div class="flex-1 flex flex-col items-start justify-center max-w-md">
+                <div class="text-base text-[#18102B] mb-8">
+                    <p class="mb-4">Cras a morbi id duis volutpat porta hendrerit ultrices. In sit blandit nunc lacus
+                        ipsum est eget proin in. Nunc fringilla cras quis imperdiet in urna enim erat. Diam nullam amet
+                        suspendisse elit ultrices tincidunt.</p>
+                    <p>Diam sapien ut arcu tortor erat sed eu cras. Quam eu diam fermentum at. Magna a eget pellentesque
+                        tristique est volutpat. Augue turpis pellentesque in tortor porttitor risus scelerisque.</p>
+                </div>
+                <button
+                    class="bg-[#204D51] text-white rounded-full px-10 py-4 text-lg font-medium flex items-center gap-2 hover:bg-[#163a3d] transition">
+                    Rinktis mokymus
+                    <span class="text-xl">→</span>
+                </button>
+            </div>
+        </div>
+        <div class="w-full">
+            <img class="w-full rounded-3xl object-cover max-h-[380px] block"
+                src="https://images.pexels.com/photos/4065624/pexels-photo-4065624.jpeg"
+                alt="Moteris prie kompiuterio" />
+        </div>
+    </section> -->
+
+
+
+    <section class="py-[60px] md:pt-[110px] md:pb-[100px] px-4 md:px-14">
+        <h2
+            class="text-black-100 text-[32px] font-medium leading-[42px] md:text-[48px] md:leading-[58px] md:mb-[100px] mb-[60px] text-center ">
+            Kaip tai veikia
+        </h2>
+        <div class="max-w-[1200px] w-full mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="p-6 pb-8 bg-gray-300 rounded-3xl">
+                    <div
+                        class="text-black-100 text-[20px] md:text-2xl font-medium leading-[30px] md:leading-[34px] mb-5 md:mb-10 flex justify-between items-start ">
+                        Išsirink dominančius mokymus
+                        <img src="/svg/swipe.svg" alt="Swipe icon" width="24" height="24" class="ml-7">
+                    </div>
+                    <div class="text-gray-200 text-sm font-normal leading-[22px]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                        elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.
+                    </div>
+                </div>
+                <div class="p-6 pb-8 bg-green-100 rounded-3xl -rotate-[3deg]">
+                    <div
+                        class="text-black-100 text-[20px] md:text-2xl font-medium leading-[30px] md:leading-[34px] mb-5 md:mb-10 flex justify-between items-start">
+                        Pereik mokymosi programą
+                        <img src="/svg/notebook.svg" alt="Notebook icon" width="24" height="24" class="ml-7">
+                    </div>
+                    <div class="text-gray-200 text-sm font-normal leading-[22px]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                        elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.
+                    </div>
+                </div>
+                <div class="p-6 pb-8 bg-gray-300 rounded-3xl">
+                    <div
+                        class="text-black-100 text-[20px] md:text-2xl font-medium leading-[30px] md:leading-[34px] mb-5 md:mb-10 flex justify-between items-start ">
+                        Gauk sertifikatą ir vykdyk veiklą
+                        <img src="/svg/graduation.svg" alt="Graduation icon" width="24" height="24" class="ml-7">
+                    </div>
+                    <div class="text-gray-200 text-sm font-normal leading-[22px]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                        elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class=" py-[60px] md:pt-[110px] md:pb-[100px] px-4 md:px-14 rounded-[30px] relative overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="/images/blue-background.png" alt="Background" class="w-full h-full object-cover">
+        </div>
+        <div class="max-w-[1440px] w-full mx-auto relative z-10 md:mb-[100px] mb-[50px]">
+            <div
+                class="bg-white flex items-center justify-center rounded-[10px] px-3 py-[5px] text-sm font-medium leading-[22px] text-green w-max mx-auto mb-4 md:mb-[30px]">
+                Statistika
+            </div>
+            <h2
+                class="text-[32px] md:text-[48px] font-medium leading-[42px] md:leading-[58px] text-center mb-4 md:mb-6 text-black-100 text-black-100">
+                Naujausi straipsniai
+            </h2>
+            <p class="text-black-100 text-center text-base font-normal leading-6">
+                Cras a morbi id duis volutpat porta hendrerit ultrices.
+            </p>
+        </div>
+        <div class="bg-white/20 rounded-[16px] p-6 gap-y-4 gap-x-8 grid grid-cols-1 md:grid-cols-3 relative z-10">
+            <div class="bg-white p-6 rounded-[16px] md:pt-[38px] md:pb-[50px]">
+                <div
+                    class="text-black-100 text-center font-['Reddit_Mono'] text-[64px] font-medium leading-[74px] mb-2 md:mb-0 text-center">
+                    150+</div>
+                <div class="text-black-100 text-center text-lg font-normal leading-6 text-center">
+                    Moksleivių
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-[16px] md:pt-[38px] md:pb-[50px]">
+                <div
+                    class="text-black-100 text-center font-['Reddit_Mono'] text-[64px] font-medium leading-[74px] mb-2 md:mb-0 text-center">
+                    61</div>
+                <div class="text-black-100 text-center text-lg font-normal leading-6 text-center">
+                    Skirtingų specialybių
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-[16px] md:pt-[38px] md:pb-[50px]">
+                <div
+                    class="text-black-100 text-center font-['Reddit_Mono'] text-[64px] font-medium leading-[74px] mb-2 md:mb-0 text-center">
+                    1968</div>
+                <div class="text-black-100 text-center text-lg font-normal leading-6 text-center">
+                    Asmenys gavę sertifikatus
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="pb-14 pt-[60px] md:pb-[116px] md:pt-[110px]">
+        <div class="w-full mx-auto">
+            <div class="md:px-14 px-4">
+                <h2
+                    class="text-black-100 text-center text-[32px] md:text-[48px] font-medium leading-[42px] md:leading-[58px] md:mb-6 mb-4">
+                    Klientų atsiliepimai
+                </h2>
+                <p class="text-black-100 text-center text-base font-normal leading-6">Cras a morbi id duis
+                    volutpat porta hendrerit ultrices.</p>
+            </div>
+
+            <div class="animation-block">
+                <div class="animation-container animation-container-logos md:pt-[87px] pt-[60px] pb-[15px]">
+                    <div class="animation-wrapper">
+                        <div class="shadow-large-card w-[420px] rounded-3xl pt-5 pr-4 pb-8 pl-5">
+                            <div class="flex justify-between mb-5">
+                                <div class="w-14 h-14 rounded-full flex-shrink-0 flex overflow-hidden">
+                                    <img src="https://i.pravatar.cc/150?img=32" alt="Random person avatar">
+                                </div>
+                                <img src="svg/google.svg" alt="Google logo" />
+
+                            </div>
+                            <p class="text-black-100 text-base font-normal leading-6 mb-3">Vardas Pavardė</p>
+                            <p class="text-black-100 text-xl font-medium leading-[30px]">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
+                            </p>
+                        </div>
+                        <div class="shadow-large-card w-[420px] rounded-3xl pt-5 pr-4 pb-8 pl-5">
+                            <div class="flex justify-between mb-5">
+                                <div class="w-14 h-14 rounded-full flex-shrink-0 flex overflow-hidden">
+                                    <img src="https://i.pravatar.cc/150?img=32" alt="Random person avatar">
+                                </div>
+                                <img src="svg/google.svg" alt="Google logo" />
+
+                            </div>
+                            <p class="text-black-100 text-base font-normal leading-6 mb-3">Vardas Pavardė</p>
+                            <p class="text-black-100 text-xl font-medium leading-[30px]">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
+                            </p>
+                        </div>
+
+                        <div class="shadow-large-card w-[420px] rounded-3xl pt-5 pr-4 pb-8 pl-5">
+                            <div class="flex justify-between mb-5">
+                                <div class="w-14 h-14 rounded-full flex-shrink-0 flex overflow-hidden">
+                                    <img src="https://i.pravatar.cc/150?img=32" alt="Random person avatar">
+                                </div>
+                                <img src="svg/google.svg" alt="Google logo" />
+
+                            </div>
+                            <p class="text-black-100 text-base font-normal leading-6 mb-3">Vardas Pavardė</p>
+                            <p class="text-black-100 text-xl font-medium leading-[30px]">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
+                            </p>
+                        </div>
+                        <div class="shadow-large-card w-[420px] rounded-3xl pt-5 pr-4 pb-8 pl-5">
+                            <div class="flex justify-between mb-5">
+                                <div class="w-14 h-14 rounded-full flex-shrink-0 flex overflow-hidden">
+                                    <img src="https://i.pravatar.cc/150?img=32" alt="Random person avatar">
+                                </div>
+                                <img src="svg/google.svg" alt="Google logo" />
+
+                            </div>
+                            <p class="text-black-100 text-base font-normal leading-6 mb-3">Vardas Pavardė</p>
+                            <p class="text-black-100 text-xl font-medium leading-[30px]">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
+                            </p>
+                        </div>
+
+                        <div class="shadow-large-card w-[420px] rounded-3xl pt-5 pr-4 pb-8 pl-5">
+                            <div class="flex justify-between mb-5">
+                                <div class="w-14 h-14 rounded-full flex-shrink-0 flex overflow-hidden">
+                                    <img src="https://i.pravatar.cc/150?img=32" alt="Random person avatar">
+                                </div>
+                                <img src="svg/google.svg" alt="Google logo" />
+
+                            </div>
+                            <p class="text-black-100 text-base font-normal leading-6 mb-3">Vardas Pavardė</p>
+                            <p class="text-black-100 text-xl font-medium leading-[30px]">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
+                            </p>
+                        </div>
+
+                        <div class="shadow-large-card w-[420px] rounded-3xl pt-5 pr-4 pb-8 pl-5">
+                            <div class="flex justify-between mb-5">
+                                <div class="w-14 h-14 rounded-full flex-shrink-0 flex overflow-hidden">
+                                    <img src="https://i.pravatar.cc/150?img=32" alt="Random person avatar">
+                                </div>
+                                <img src="svg/google.svg" alt="Google logo" />
+
+                            </div>
+                            <p class="text-black-100 text-base font-normal leading-6 mb-3">Vardas Pavardė</p>
+                            <p class="text-black-100 text-xl font-medium leading-[30px]">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
+                            </p>
+                        </div>
+                        <div class="shadow-large-card w-[420px] rounded-3xl pt-5 pr-4 pb-8 pl-5">
+                            <div class="flex justify-between mb-5">
+                                <div class="w-14 h-14 rounded-full flex-shrink-0 flex overflow-hidden">
+                                    <img src="https://i.pravatar.cc/150?img=32" alt="Random person avatar">
+                                </div>
+                                <img src="svg/google.svg" alt="Google logo" />
+
+                            </div>
+                            <p class="text-black-100 text-base font-normal leading-6 mb-3">Vardas Pavardė</p>
+                            <p class="text-black-100 text-xl font-medium leading-[30px]">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
+                            </p>
+                        </div>
+
+                        <div class="shadow-large-card w-[420px] rounded-3xl pt-5 pr-4 pb-8 pl-5">
+                            <div class="flex justify-between mb-5">
+                                <div class="w-14 h-14 rounded-full flex-shrink-0 flex overflow-hidden">
+                                    <img src="https://i.pravatar.cc/150?img=32" alt="Random person avatar">
+                                </div>
+                                <img src="svg/google.svg" alt="Google logo" />
+
+                            </div>
+                            <p class="text-black-100 text-base font-normal leading-6 mb-3">Vardas Pavardė</p>
+                            <p class="text-black-100 text-xl font-medium leading-[30px]">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
+                            </p>
+                        </div>
+                        <div class="shadow-large-card w-[420px] rounded-3xl pt-5 pr-4 pb-8 pl-5">
+                            <div class="flex justify-between mb-5">
+                                <div class="w-14 h-14 rounded-full flex-shrink-0 flex overflow-hidden">
+                                    <img src="https://i.pravatar.cc/150?img=32" alt="Random person avatar">
+                                </div>
+                                <img src="svg/google.svg" alt="Google logo" />
+
+                            </div>
+                            <p class="text-black-100 text-base font-normal leading-6 mb-3">Vardas Pavardė</p>
+                            <p class="text-black-100 text-xl font-medium leading-[30px]">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
+                            </p>
+                        </div>
+
+
+
+                    </div>
+                    <div class="animation-wrapper">
+                        <div class="shadow-large-card w-[420px] rounded-3xl pt-5 pr-4 pb-8 pl-5">
+                            <div class="flex justify-between mb-5">
+                                <div class="w-14 h-14 rounded-full flex-shrink-0 flex overflow-hidden">
+                                    <img src="https://i.pravatar.cc/150?img=32" alt="Random person avatar">
+                                </div>
+                                <img src="svg/google.svg" alt="Google logo" />
+
+                            </div>
+                            <p class="text-black-100 text-base font-normal leading-6 mb-3">Vardas Pavardė</p>
+                            <p class="text-black-100 text-xl font-medium leading-[30px]">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
+                            </p>
+                        </div>
+                        <div class="shadow-large-card w-[420px] rounded-3xl pt-5 pr-4 pb-8 pl-5">
+                            <div class="flex justify-between mb-5">
+                                <div class="w-14 h-14 rounded-full flex-shrink-0 flex overflow-hidden">
+                                    <img src="https://i.pravatar.cc/150?img=32" alt="Random person avatar">
+                                </div>
+                                <img src="svg/google.svg" alt="Google logo" />
+
+                            </div>
+                            <p class="text-black-100 text-base font-normal leading-6 mb-3">Vardas Pavardė</p>
+                            <p class="text-black-100 text-xl font-medium leading-[30px]">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
+                            </p>
+                        </div>
+
+                        <div class="shadow-large-card w-[420px] rounded-3xl pt-5 pr-4 pb-8 pl-5">
+                            <div class="flex justify-between mb-5">
+                                <div class="w-14 h-14 rounded-full flex-shrink-0 flex overflow-hidden">
+                                    <img src="https://i.pravatar.cc/150?img=32" alt="Random person avatar">
+                                </div>
+                                <img src="svg/google.svg" alt="Google logo" />
+
+                            </div>
+                            <p class="text-black-100 text-base font-normal leading-6 mb-3">Vardas Pavardė</p>
+                            <p class="text-black-100 text-xl font-medium leading-[30px]">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
+                            </p>
+                        </div>
+                        <div class="shadow-large-card w-[420px] rounded-3xl pt-5 pr-4 pb-8 pl-5">
+                            <div class="flex justify-between mb-5">
+                                <div class="w-14 h-14 rounded-full flex-shrink-0 flex overflow-hidden">
+                                    <img src="https://i.pravatar.cc/150?img=32" alt="Random person avatar">
+                                </div>
+                                <img src="svg/google.svg" alt="Google logo" />
+
+                            </div>
+                            <p class="text-black-100 text-base font-normal leading-6 mb-3">Vardas Pavardė</p>
+                            <p class="text-black-100 text-xl font-medium leading-[30px]">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
+                            </p>
+                        </div>
+
+                        <div class="shadow-large-card w-[420px] rounded-3xl pt-5 pr-4 pb-8 pl-5">
+                            <div class="flex justify-between mb-5">
+                                <div class="w-14 h-14 rounded-full flex-shrink-0 flex overflow-hidden">
+                                    <img src="https://i.pravatar.cc/150?img=32" alt="Random person avatar">
+                                </div>
+                                <img src="svg/google.svg" alt="Google logo" />
+
+                            </div>
+                            <p class="text-black-100 text-base font-normal leading-6 mb-3">Vardas Pavardė</p>
+                            <p class="text-black-100 text-xl font-medium leading-[30px]">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
+                            </p>
+                        </div>
+                        <div class="shadow-large-card w-[420px] rounded-3xl pt-5 pr-4 pb-8 pl-5">
+                            <div class="flex justify-between mb-5">
+                                <div class="w-14 h-14 rounded-full flex-shrink-0 flex overflow-hidden">
+                                    <img src="https://i.pravatar.cc/150?img=32" alt="Random person avatar">
+                                </div>
+                                <img src="svg/google.svg" alt="Google logo" />
+
+                            </div>
+                            <p class="text-black-100 text-base font-normal leading-6 mb-3">Vardas Pavardė</p>
+                            <p class="text-black-100 text-xl font-medium leading-[30px]">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
+                            </p>
+                        </div>
+
+                        <div class="shadow-large-card w-[420px] rounded-3xl pt-5 pr-4 pb-8 pl-5">
+                            <div class="flex justify-between mb-5">
+                                <div class="w-14 h-14 rounded-full flex-shrink-0 flex overflow-hidden">
+                                    <img src="https://i.pravatar.cc/150?img=32" alt="Random person avatar">
+                                </div>
+                                <img src="svg/google.svg" alt="Google logo" />
+
+                            </div>
+                            <p class="text-black-100 text-base font-normal leading-6 mb-3">Vardas Pavardė</p>
+                            <p class="text-black-100 text-xl font-medium leading-[30px]">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
+                            </p>
+                        </div>
+                        <div class="shadow-large-card w-[420px] rounded-3xl pt-5 pr-4 pb-8 pl-5">
+                            <div class="flex justify-between mb-5">
+                                <div class="w-14 h-14 rounded-full flex-shrink-0 flex overflow-hidden">
+                                    <img src="https://i.pravatar.cc/150?img=32" alt="Random person avatar">
+                                </div>
+                                <img src="svg/google.svg" alt="Google logo" />
+
+                            </div>
+                            <p class="text-black-100 text-base font-normal leading-6 mb-3">Vardas Pavardė</p>
+                            <p class="text-black-100 text-xl font-medium leading-[30px]">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
+                            </p>
+                        </div>
+
+                        <div class="shadow-large-card w-[420px] rounded-3xl pt-5 pr-4 pb-8 pl-5">
+                            <div class="flex justify-between mb-5">
+                                <div class="w-14 h-14 rounded-full flex-shrink-0 flex overflow-hidden">
+                                    <img src="https://i.pravatar.cc/150?img=32" alt="Random person avatar">
+                                </div>
+                                <img src="svg/google.svg" alt="Google logo" />
+
+                            </div>
+                            <p class="text-black-100 text-base font-normal leading-6 mb-3">Vardas Pavardė</p>
+                            <p class="text-black-100 text-xl font-medium leading-[30px]">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
+                            </p>
+                        </div>
+                        <div class="shadow-large-card w-[420px] rounded-3xl pt-5 pr-4 pb-8 pl-5">
+                            <div class="flex justify-between mb-5">
+                                <div class="w-14 h-14 rounded-full flex-shrink-0 flex overflow-hidden">
+                                    <img src="https://i.pravatar.cc/150?img=32" alt="Random person avatar">
+                                </div>
+                                <img src="svg/google.svg" alt="Google logo" />
+
+                            </div>
+                            <p class="text-black-100 text-base font-normal leading-6 mb-3">Vardas Pavardė</p>
+                            <p class="text-black-100 text-xl font-medium leading-[30px]">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
+                            </p>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="animation-container animation-container-logos pb-[60px] md:pb-[100px] pt-[15px]">
+                    <div class="animation-wrapper animation-reverse">
+                        <div class="shadow-large-card w-[420px] rounded-3xl pt-5 pr-4 pb-8 pl-5">
+                            <div class="flex justify-between mb-5">
+                                <div class="w-14 h-14 rounded-full flex-shrink-0 flex overflow-hidden">
+                                    <img src="https://i.pravatar.cc/150?img=32" alt="Random person avatar">
+                                </div>
+                                <img src="svg/google.svg" alt="Google logo" />
+
+                            </div>
+                            <p class="text-black-100 text-base font-normal leading-6 mb-3">Vardas Pavardė</p>
+                            <p class="text-black-100 text-xl font-medium leading-[30px]">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
+                            </p>
+                        </div>
+                        <div class="shadow-large-card w-[420px] rounded-3xl pt-5 pr-4 pb-8 pl-5">
+                            <div class="flex justify-between mb-5">
+                                <div class="w-14 h-14 rounded-full flex-shrink-0 flex overflow-hidden">
+                                    <img src="https://i.pravatar.cc/150?img=32" alt="Random person avatar">
+                                </div>
+                                <img src="svg/google.svg" alt="Google logo" />
+
+                            </div>
+                            <p class="text-black-100 text-base font-normal leading-6 mb-3">Vardas Pavardė</p>
+                            <p class="text-black-100 text-xl font-medium leading-[30px]">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
+                            </p>
+                        </div>
+
+                        <div class="shadow-large-card w-[420px] rounded-3xl pt-5 pr-4 pb-8 pl-5">
+                            <div class="flex justify-between mb-5">
+                                <div class="w-14 h-14 rounded-full flex-shrink-0 flex overflow-hidden">
+                                    <img src="https://i.pravatar.cc/150?img=32" alt="Random person avatar">
+                                </div>
+                                <img src="svg/google.svg" alt="Google logo" />
+
+                            </div>
+                            <p class="text-black-100 text-base font-normal leading-6 mb-3">Vardas Pavardė</p>
+                            <p class="text-black-100 text-xl font-medium leading-[30px]">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
+                            </p>
+                        </div>
+                        <div class="shadow-large-card w-[420px] rounded-3xl pt-5 pr-4 pb-8 pl-5">
+                            <div class="flex justify-between mb-5">
+                                <div class="w-14 h-14 rounded-full flex-shrink-0 flex overflow-hidden">
+                                    <img src="https://i.pravatar.cc/150?img=32" alt="Random person avatar">
+                                </div>
+                                <img src="svg/google.svg" alt="Google logo" />
+
+                            </div>
+                            <p class="text-black-100 text-base font-normal leading-6 mb-3">Vardas Pavardė</p>
+                            <p class="text-black-100 text-xl font-medium leading-[30px]">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
+                            </p>
+                        </div>
+
+                        <div class="shadow-large-card w-[420px] rounded-3xl pt-5 pr-4 pb-8 pl-5">
+                            <div class="flex justify-between mb-5">
+                                <div class="w-14 h-14 rounded-full flex-shrink-0 flex overflow-hidden">
+                                    <img src="https://i.pravatar.cc/150?img=32" alt="Random person avatar">
+                                </div>
+                                <img src="svg/google.svg" alt="Google logo" />
+
+                            </div>
+                            <p class="text-black-100 text-base font-normal leading-6 mb-3">Vardas Pavardė</p>
+                            <p class="text-black-100 text-xl font-medium leading-[30px]">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
+                            </p>
+                        </div>
+                        <div class="shadow-large-card w-[420px] rounded-3xl pt-5 pr-4 pb-8 pl-5">
+                            <div class="flex justify-between mb-5">
+                                <div class="w-14 h-14 rounded-full flex-shrink-0 flex overflow-hidden">
+                                    <img src="https://i.pravatar.cc/150?img=32" alt="Random person avatar">
+                                </div>
+                                <img src="svg/google.svg" alt="Google logo" />
+
+                            </div>
+                            <p class="text-black-100 text-base font-normal leading-6 mb-3">Vardas Pavardė</p>
+                            <p class="text-black-100 text-xl font-medium leading-[30px]">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
+                            </p>
+                        </div>
+
+                        <div class="shadow-large-card w-[420px] rounded-3xl pt-5 pr-4 pb-8 pl-5">
+                            <div class="flex justify-between mb-5">
+                                <div class="w-14 h-14 rounded-full flex-shrink-0 flex overflow-hidden">
+                                    <img src="https://i.pravatar.cc/150?img=32" alt="Random person avatar">
+                                </div>
+                                <img src="svg/google.svg" alt="Google logo" />
+
+                            </div>
+                            <p class="text-black-100 text-base font-normal leading-6 mb-3">Vardas Pavardė</p>
+                            <p class="text-black-100 text-xl font-medium leading-[30px]">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
+                            </p>
+                        </div>
+                        <div class="shadow-large-card w-[420px] rounded-3xl pt-5 pr-4 pb-8 pl-5">
+                            <div class="flex justify-between mb-5">
+                                <div class="w-14 h-14 rounded-full flex-shrink-0 flex overflow-hidden">
+                                    <img src="https://i.pravatar.cc/150?img=32" alt="Random person avatar">
+                                </div>
+                                <img src="svg/google.svg" alt="Google logo" />
+
+                            </div>
+                            <p class="text-black-100 text-base font-normal leading-6 mb-3">Vardas Pavardė</p>
+                            <p class="text-black-100 text-xl font-medium leading-[30px]">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
+                            </p>
+                        </div>
+
+                        <div class="shadow-large-card w-[420px] rounded-3xl pt-5 pr-4 pb-8 pl-5">
+                            <div class="flex justify-between mb-5">
+                                <div class="w-14 h-14 rounded-full flex-shrink-0 flex overflow-hidden">
+                                    <img src="https://i.pravatar.cc/150?img=32" alt="Random person avatar">
+                                </div>
+                                <img src="svg/google.svg" alt="Google logo" />
+
+                            </div>
+                            <p class="text-black-100 text-base font-normal leading-6 mb-3">Vardas Pavardė</p>
+                            <p class="text-black-100 text-xl font-medium leading-[30px]">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
+                            </p>
+                        </div>
+                        <div class="shadow-large-card w-[420px] rounded-3xl pt-5 pr-4 pb-8 pl-5">
+                            <div class="flex justify-between mb-5">
+                                <div class="w-14 h-14 rounded-full flex-shrink-0 flex overflow-hidden">
+                                    <img src="https://i.pravatar.cc/150?img=32" alt="Random person avatar">
+                                </div>
+                                <img src="svg/google.svg" alt="Google logo" />
+
+                            </div>
+                            <p class="text-black-100 text-base font-normal leading-6 mb-3">Vardas Pavardė</p>
+                            <p class="text-black-100 text-xl font-medium leading-[30px]">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
+                            </p>
+                        </div>
+
+
+
+                    </div>
+                    <div class="animation-wrapper animation-reverse">
+                        <div class="shadow-large-card w-[420px] rounded-3xl pt-5 pr-4 pb-8 pl-5">
+                            <div class="flex justify-between mb-5">
+                                <div class="w-14 h-14 rounded-full flex-shrink-0 flex overflow-hidden">
+                                    <img src="https://i.pravatar.cc/150?img=32" alt="Random person avatar">
+                                </div>
+                                <img src="svg/google.svg" alt="Google logo" />
+
+                            </div>
+                            <p class="text-black-100 text-base font-normal leading-6 mb-3">Vardas Pavardė</p>
+                            <p class="text-black-100 text-xl font-medium leading-[30px]">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
+                            </p>
+                        </div>
+                        <div class="shadow-large-card w-[420px] rounded-3xl pt-5 pr-4 pb-8 pl-5">
+                            <div class="flex justify-between mb-5">
+                                <div class="w-14 h-14 rounded-full flex-shrink-0 flex overflow-hidden">
+                                    <img src="https://i.pravatar.cc/150?img=32" alt="Random person avatar">
+                                </div>
+                                <img src="svg/google.svg" alt="Google logo" />
+
+                            </div>
+                            <p class="text-black-100 text-base font-normal leading-6 mb-3">Vardas Pavardė</p>
+                            <p class="text-black-100 text-xl font-medium leading-[30px]">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
+                            </p>
+                        </div>
+
+                        <div class="shadow-large-card w-[420px] rounded-3xl pt-5 pr-4 pb-8 pl-5">
+                            <div class="flex justify-between mb-5">
+                                <div class="w-14 h-14 rounded-full flex-shrink-0 flex overflow-hidden">
+                                    <img src="https://i.pravatar.cc/150?img=32" alt="Random person avatar">
+                                </div>
+                                <img src="svg/google.svg" alt="Google logo" />
+
+                            </div>
+                            <p class="text-black-100 text-base font-normal leading-6 mb-3">Vardas Pavardė</p>
+                            <p class="text-black-100 text-xl font-medium leading-[30px]">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
+                            </p>
+                        </div>
+                        <div class="shadow-large-card w-[420px] rounded-3xl pt-5 pr-4 pb-8 pl-5">
+                            <div class="flex justify-between mb-5">
+                                <div class="w-14 h-14 rounded-full flex-shrink-0 flex overflow-hidden">
+                                    <img src="https://i.pravatar.cc/150?img=32" alt="Random person avatar">
+                                </div>
+                                <img src="svg/google.svg" alt="Google logo" />
+
+                            </div>
+                            <p class="text-black-100 text-base font-normal leading-6 mb-3">Vardas Pavardė</p>
+                            <p class="text-black-100 text-xl font-medium leading-[30px]">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
+                            </p>
+                        </div>
+
+                        <div class="shadow-large-card w-[420px] rounded-3xl pt-5 pr-4 pb-8 pl-5">
+                            <div class="flex justify-between mb-5">
+                                <div class="w-14 h-14 rounded-full flex-shrink-0 flex overflow-hidden">
+                                    <img src="https://i.pravatar.cc/150?img=32" alt="Random person avatar">
+                                </div>
+                                <img src="svg/google.svg" alt="Google logo" />
+
+                            </div>
+                            <p class="text-black-100 text-base font-normal leading-6 mb-3">Vardas Pavardė</p>
+                            <p class="text-black-100 text-xl font-medium leading-[30px]">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
+                            </p>
+                        </div>
+                        <div class="shadow-large-card w-[420px] rounded-3xl pt-5 pr-4 pb-8 pl-5">
+                            <div class="flex justify-between mb-5">
+                                <div class="w-14 h-14 rounded-full flex-shrink-0 flex overflow-hidden">
+                                    <img src="https://i.pravatar.cc/150?img=32" alt="Random person avatar">
+                                </div>
+                                <img src="svg/google.svg" alt="Google logo" />
+
+                            </div>
+                            <p class="text-black-100 text-base font-normal leading-6 mb-3">Vardas Pavardė</p>
+                            <p class="text-black-100 text-xl font-medium leading-[30px]">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
+                            </p>
+                        </div>
+
+                        <div class="shadow-large-card w-[420px] rounded-3xl pt-5 pr-4 pb-8 pl-5">
+                            <div class="flex justify-between mb-5">
+                                <div class="w-14 h-14 rounded-full flex-shrink-0 flex overflow-hidden">
+                                    <img src="https://i.pravatar.cc/150?img=32" alt="Random person avatar">
+                                </div>
+                                <img src="svg/google.svg" alt="Google logo" />
+
+                            </div>
+                            <p class="text-black-100 text-base font-normal leading-6 mb-3">Vardas Pavardė</p>
+                            <p class="text-black-100 text-xl font-medium leading-[30px]">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
+                            </p>
+                        </div>
+                        <div class="shadow-large-card w-[420px] rounded-3xl pt-5 pr-4 pb-8 pl-5">
+                            <div class="flex justify-between mb-5">
+                                <div class="w-14 h-14 rounded-full flex-shrink-0 flex overflow-hidden">
+                                    <img src="https://i.pravatar.cc/150?img=32" alt="Random person avatar">
+                                </div>
+                                <img src="svg/google.svg" alt="Google logo" />
+
+                            </div>
+                            <p class="text-black-100 text-base font-normal leading-6 mb-3">Vardas Pavardė</p>
+                            <p class="text-black-100 text-xl font-medium leading-[30px]">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
+                            </p>
+                        </div>
+
+                        <div class="shadow-large-card w-[420px] rounded-3xl pt-5 pr-4 pb-8 pl-5">
+                            <div class="flex justify-between mb-5">
+                                <div class="w-14 h-14 rounded-full flex-shrink-0 flex overflow-hidden">
+                                    <img src="https://i.pravatar.cc/150?img=32" alt="Random person avatar">
+                                </div>
+                                <img src="svg/google.svg" alt="Google logo" />
+
+                            </div>
+                            <p class="text-black-100 text-base font-normal leading-6 mb-3">Vardas Pavardė</p>
+                            <p class="text-black-100 text-xl font-medium leading-[30px]">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
+                            </p>
+                        </div>
+                        <div class="shadow-large-card w-[420px] rounded-3xl pt-5 pr-4 pb-8 pl-5">
+                            <div class="flex justify-between mb-5">
+                                <div class="w-14 h-14 rounded-full flex-shrink-0 flex overflow-hidden">
+                                    <img src="https://i.pravatar.cc/150?img=32" alt="Random person avatar">
+                                </div>
+                                <img src="svg/google.svg" alt="Google logo" />
+
+                            </div>
+                            <p class="text-black-100 text-base font-normal leading-6 mb-3">Vardas Pavardė</p>
+                            <p class="text-black-100 text-xl font-medium leading-[30px]">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
+                            </p>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="px-4">
+            <div
+                class="h-[636px] lg:h-[316px] w-[343px] lg:w-auto bg-green-100 justify-between rounded-[30px] lg:pl-14 pr-2.5 max-w-[1095px] w-full mx-auto flex lg:flex-row flex-col overflow-hidden gap-x-10">
+                <div class="max-w-[474px] w-full lg:py-20 pb-10 pt-12 px-4 lg:px-0">
+                    <h3 class="text-black-100 text-[36px] font-medium leading-[46px] mb-7 text-center lg:text-left">
+                        Pavadinimas, skatinantis įsigyti mokymus
+                    </h3>
+                    <a href=""
+                        class="text-gray-100 bg-green text-base w-max font-medium leading-6 flex items-center gap-x-2.5 pl-3 pr-2 py-[7px] rounded-[100px] mx-auto lg:mx-0">
+                        <span>
+                            Rinktis mokymus
+                        </span>
+                        <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M10.15 0.850098C15.7557 0.850098 20.3 5.39441 20.3 11.0001C20.3 16.6058 15.7557 21.1501 10.15 21.1501C4.54431 21.1501 -2.45032e-07 16.6058 0 11.0001C2.45032e-07 5.39441 4.54431 0.850097 10.15 0.850098ZM9.61292 7.80852C10.5189 8.46807 11.3628 9.20153 12.1359 10.0001L6.1501 10.0001C5.59781 10.0001 5.1501 10.4478 5.1501 11.0001C5.1501 11.5524 5.59781 12.0001 6.1501 12.0001L12.1359 12.0001C11.3628 12.7986 10.5189 13.532 9.61292 14.1916C9.16642 14.5166 9.06796 15.1421 9.39301 15.5886C9.71806 16.0351 10.3435 16.1336 10.79 15.8085C12.2838 14.7211 13.6262 13.4501 14.7839 12.0274C15.0256 11.7303 15.1501 11.3667 15.1501 11.0001C15.1501 10.6334 15.0256 10.2698 14.7839 9.9727C13.6262 8.55002 12.2838 7.27906 10.79 6.1916C10.3435 5.86655 9.71806 5.96501 9.39301 6.41151C9.06796 6.85801 9.16642 7.48347 9.61292 7.80852Z"
+                                fill="white" />
+                        </svg>
+
+                    </a>
+                </div>
+                <div class="h-full relative w-[343px] lg:w-[507px]">
+                    <div
+                        class="absolute lg:relative w-[507px] h-full grid grid-cols-3 gap-4 -translate-x-1/2 left-1/2 lg:translate-x-0 lg:left-0">
+                        <div class="flex flex-col gap-4 lg:-translate-y-[50px]">
+                            <div class="w-[160px] h-[186px] rounded-[20px] overflow-hidden">
+                                <img src="https://images.pexels.com/photos/4065624/pexels-photo-4065624.jpeg"
+                                    alt="Straipsnio paveikslėlis" />
+                            </div>
+                            <div class="w-[160px] h-[186px] rounded-[20px] overflow-hidden">
+                                <img src="https://images.pexels.com/photos/4065624/pexels-photo-4065624.jpeg"
+                                    alt="Straipsnio paveikslėlis" />
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-4 translate-y-12 lg:-translate-y-2">
+                            <div class="w-[160px] h-[186px] rounded-[20px] overflow-hidden">
+                                <img src="https://images.pexels.com/photos/4065624/pexels-photo-4065624.jpeg"
+                                    alt="Straipsnio paveikslėlis" />
+                            </div>
+                            <div class="w-[160px] h-[186px] rounded-[20px] overflow-hidden">
+                                <img src="https://images.pexels.com/photos/4065624/pexels-photo-4065624.jpeg"
+                                    alt="Straipsnio paveikslėlis" />
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-4 lg:-translate-y-[50px]">
+                            <div class="w-[160px] h-[186px] rounded-[20px] overflow-hidden">
+                                <img src="https://images.pexels.com/photos/4065624/pexels-photo-4065624.jpeg"
+                                    alt="Straipsnio paveikslėlis" />
+                            </div>
+                            <div class="w-[160px] h-[186px] rounded-[20px] overflow-hidden">
+                                <img src="https://images.pexels.com/photos/4065624/pexels-photo-4065624.jpeg"
+                                    alt="Straipsnio paveikslėlis" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section
+        class="mx-auto bg-gradient-custom lg:px-14 px-4 pt-14 md:pt-[110px] pb-[86px] md:pb-[263px] -mt-5 md:-mt-10 translate-y-5 md:translate-y-10 rounded-t-[30px]">
+        <div class="max-w-[1440px] w-full mx-auto">
+            <div
+                class="bg-white flex items-center justify-center rounded-[10px] px-3 py-[5px] text-sm font-medium leading-[22px] text-green w-max mx-auto mb-[30px]">
+                Naujienos
+            </div>
+
+            <h2
+                class="text-[32px] md:text-[48px] font-medium leading-[42px] md:leading-[58px] text-center mb-[60px] md:mb-[70px] mt-4 md:mt-10 text-black-100 text-black-100">
+                Naujausi straipsniai
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-3xl shadow-card flex flex-col p-2 md:p-2.5 pb-6 md:pb-9">
+                    <div
+                        class="relative w-full h-[205px] md:h-[252px] flex items-center justify-center mb-6 md:mb-[30px]">
+                        <img src="https://images.pexels.com/photos/4065624/pexels-photo-4065624.jpeg"
+                            alt="Straipsnio paveikslėlis"
+                            class="rounded-[20px] w-full h-full object-cover object-center" />
+                    </div>
+                    <div class="px-2.5">
+                        <p class="leading-[22px] text-sm md:text-base md:leading-6 text-black-100 mb-4 md:mb-8">
+                            Auctor et magna feugiat pretium ante volutpat sagittis augue amet. Interdum dignissim
+                            aliquam nec augue leo mattis urna eros. Vivamus velit urna vitae integer sem in. Pretium
+                            ultricies ut aliquam nulla sed. Sagittis sed ac ut semper et sed a purus. Augue ut vel
+                            tristique malesuada mollis enim.
+                        </p>
+                        <a href="#"
+                            class="group font-medium text-sm leading-5 md:text-base md:leading-6 underline text-green flex items-center gap-x-2.5">
+                            Skaityti daugiau
+                            <span class="group-hover:opacity-100 opacity-0 transition-opacity duration-200">
+                                <svg width="16" height="13" viewBox="0 0 16 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.5634 6.57917L9.2134 1.12671C9.04762 0.957763 8.79143 0.957763 8.62565 1.12671C8.45988 1.29566 8.45988 1.57212 8.62565 1.74107L12.9961 6.21056L1.42197 6.21056C1.19592 6.21056 1 6.36415 1 6.59453C1 6.82492 1.19592 6.97851 1.42197 6.97851L12.9358 6.97851L8.61058 11.4173C8.4448 11.5862 8.4448 11.8627 8.61058 12.0316C8.68593 12.1084 8.8065 12.1699 8.91199 12.1699C9.01748 12.1699 9.12298 12.1391 9.2134 12.047L14.5634 6.57917Z"
+                                        stroke="#204D51" />
+                                </svg>
+
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-3xl shadow-card flex flex-col p-2 md:p-2.5 pb-6 md:pb-9">
+                    <div
+                        class="relative w-full h-[205px] md:h-[252px] flex items-center justify-center mb-6 md:mb-[30px]">
+                        <img src="https://images.pexels.com/photos/4065624/pexels-photo-4065624.jpeg"
+                            alt="Straipsnio paveikslėlis"
+                            class="rounded-[20px] w-full h-full object-cover object-center" />
+                    </div>
+                    <div class="px-2.5">
+                        <p class="leading-[22px] text-sm md:text-base md:leading-6 text-black-100 mb-4 md:mb-8">
+                            Auctor et magna feugiat pretium ante volutpat sagittis augue amet. Interdum dignissim
+                            aliquam nec augue leo mattis urna eros. Vivamus velit urna vitae integer sem in. Pretium
+                            ultricies ut aliquam nulla sed. Sagittis sed ac ut semper et sed a purus. Augue ut vel
+                            tristique malesuada mollis enim.
+                        </p>
+                        <a href="#"
+                            class="group font-medium text-sm leading-5 md:text-base md:leading-6 underline text-green flex items-center gap-x-2.5">
+                            Skaityti daugiau
+                            <span class="group-hover:opacity-100 opacity-0 transition-opacity duration-200">
+                                <svg width="16" height="13" viewBox="0 0 16 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.5634 6.57917L9.2134 1.12671C9.04762 0.957763 8.79143 0.957763 8.62565 1.12671C8.45988 1.29566 8.45988 1.57212 8.62565 1.74107L12.9961 6.21056L1.42197 6.21056C1.19592 6.21056 1 6.36415 1 6.59453C1 6.82492 1.19592 6.97851 1.42197 6.97851L12.9358 6.97851L8.61058 11.4173C8.4448 11.5862 8.4448 11.8627 8.61058 12.0316C8.68593 12.1084 8.8065 12.1699 8.91199 12.1699C9.01748 12.1699 9.12298 12.1391 9.2134 12.047L14.5634 6.57917Z"
+                                        stroke="#204D51" />
+                                </svg>
+
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-3xl shadow-card flex flex-col p-2 md:p-2.5 pb-6 md:pb-9">
+                    <div
+                        class="relative w-full h-[205px] md:h-[252px] flex items-center justify-center mb-6 md:mb-[30px]">
+                        <img src="https://images.pexels.com/photos/4065624/pexels-photo-4065624.jpeg"
+                            alt="Straipsnio paveikslėlis"
+                            class="rounded-[20px] w-full h-full object-cover object-center" />
+                    </div>
+                    <div class="px-2.5">
+                        <p class="leading-[22px] text-sm md:text-base md:leading-6 text-black-100 mb-4 md:mb-8">
+                            Auctor et magna feugiat pretium ante volutpat sagittis augue amet. Interdum dignissim
+                            aliquam nec augue leo mattis urna eros. Vivamus velit urna vitae integer sem in. Pretium
+                            ultricies ut aliquam nulla sed. Sagittis sed ac ut semper et sed a purus. Augue ut vel
+                            tristique malesuada mollis enim.
+                        </p>
+                        <a href="#"
+                            class="group font-medium text-sm leading-5 md:text-base md:leading-6 underline text-green flex items-center gap-x-2.5">
+                            Skaityti daugiau
+                            <span class="group-hover:opacity-100 opacity-0 transition-opacity duration-200">
+                                <svg width="16" height="13" viewBox="0 0 16 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.5634 6.57917L9.2134 1.12671C9.04762 0.957763 8.79143 0.957763 8.62565 1.12671C8.45988 1.29566 8.45988 1.57212 8.62565 1.74107L12.9961 6.21056L1.42197 6.21056C1.19592 6.21056 1 6.36415 1 6.59453C1 6.82492 1.19592 6.97851 1.42197 6.97851L12.9358 6.97851L8.61058 11.4173C8.4448 11.5862 8.4448 11.8627 8.61058 12.0316C8.68593 12.1084 8.8065 12.1699 8.91199 12.1699C9.01748 12.1699 9.12298 12.1391 9.2134 12.047L14.5634 6.57917Z"
+                                        stroke="#204D51" />
+                                </svg>
+
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-green pt-[60px] lg:pt-20 rounded-t-3xl lg:px-14 px-4 relative z-10">
+        <div class="max-w-[1440px] w-full mx-auto">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-20 pb-[60px] md:pb-[160px]">
+                <div class="mb-8 md:mb-0">
+                    <div class="text-2xl font-medium text-white mb-6 leading-[135%] tracking-[-0.622px]">Pažymos.lt
+                    </div>
+                    <div class="text-gray text-base leading-6 tracking-[-0.15px] max-w-[300px]">Lorem proin lacus nulla
+                        eget ut amet
+                        vel. Quis lectus
+                        nisl ut non. Velit egestas vel aliquet ipsum.</div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-[50px]">
+                    <div class="flex flex-col gap-[14px]">
+                        <div class="text-white/50 text-sm leading-[22px]">Mokymai</div>
+                        <a href="#" class="block text-white hover:underline text-base leading-6 w-[210px] ">Gaisrinė ir
+                            civilinė
+                            sauga</a>
+                        <a href="#" class="block text-white hover:underline text-base leading-6 w-[210px] ">Higienos
+                            privalomieji
+                            mokymai</a>
+                        <a href="#" class="block text-white hover:underline text-base leading-6 w-[210px] ">Sveikatos
+                            priežiūra</a>
+                        <a href="#" class="block text-white hover:underline text-base leading-6 w-[210px]">Pirmosios
+                            pagalbos
+                            privalomieji
+                            mokymai</a>
+                    </div>
+                    <div class="flex flex-col gap-[14px]">
+                        <div class="text-white/50 text-sm leading-[22px]">Apie mus</div>
+                        <a href="#" class="block text-white hover:underline text-base leading-6 w-[210px] ">Kaip tai
+                            veikia</a>
+                        <a href="#" class="block text-white hover:underline text-base leading-6 w-[210px] ">Apie mus</a>
+                        <a href="#"
+                            class="block text-white hover:underline text-base leading-6 w-[210px] ">Kontaktai</a>
+                        <a href="#" class="block text-white hover:underline text-base leading-6 w-[210px]">Naujienos</a>
+                    </div>
+                    <div class="flex flex-col gap-[14px]">
+                        <div class="text-white/50 text-sm leading-[22px]">Sekite mus</div>
+                        <a href="#" class="block text-white hover:underline text-base leading-6 w-[210px] ">Facebook</a>
+                        <a href="#"
+                            class="block text-white hover:underline text-base leading-6 w-[210px] ">Instagram</a>
+                        <a href="#" class="block text-white hover:underline text-base leading-6 w-[210px] ">LinkedIn</a>
+                        <a href="#" class="block text-white hover:underline text-base leading-6 w-[210px]">Youtube</a>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="flex flex-col md:flex-row md:justify-between md:items-center gap-6 border-t border-gray/15 py-10">
+                <div class="text-sm text-gray leading-[22px] tracking-[0.15px]">© 2025 Pažymos.lt. Visos teisės
+                    saugomos.</div>
+                <a href="#"
+                    class="block text-white/50 hover:underline text-sm leading-[22px] tracking-[0.15px]">Privatumo
+                    politika ir naudojimosi
+                    sąlygos</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

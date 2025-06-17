@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.animation-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.animation-container {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    gap: 32px;
+}
+
+.animation-container .animation-wrapper {
+    animation-delay: -3s;
+    display: flex;
+    align-items: center;
+    min-width: 100%;
+    flex-shrink: 0;
+    justify-content: space-around;
+    gap: 32px;
+}
+
+.animation-container.animation-container-images .animation-wrapper div {
+    width: 100%;
+    overflow: hidden;
+}
+
+.animation-container .animation-wrapper {
+    animation: 100s slides infinite linear;
+}
+
+.animation-container.animation-container-logos .animation-wrapper.animation-reverse {
+    animation-direction: reverse;
+}
+
+@keyframes slides {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
