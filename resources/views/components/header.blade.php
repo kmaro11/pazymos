@@ -1,4 +1,4 @@
-<header class="w-full h-20 flex items-center justify-between px-8 bg-white">
+<!-- <header class="w-full h-20 flex items-center justify-between px-8 bg-white">
     <div class="text-2xl font-bold text-[#0E0026]">Pažymos.lt</div>
     <nav class="flex-1 flex justify-center">
         <ul class="flex gap-8 list-none m-0 p-0">
@@ -24,4 +24,4 @@
         </div>
         <span class="text-[#204D51] text-base font-medium">Profilis</span>
     </div>
-</header>
+</header> -->
