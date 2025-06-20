@@ -23,5 +23,6 @@ class ViewServiceProvider extends ServiceProvider
         Blade::component('footer', \App\View\Components\Footer::class);
         Blade::component('popular-courses', \App\View\Components\PopularCourses::class);
         Blade::component('popular-trainings', \App\View\Components\PopularTrainings::class);
+        Blade::component('faq', \App\View\Components\Faq::class);
     }
 }

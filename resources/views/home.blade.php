@@ -9,5 +9,6 @@
 <x-statistics />
 <x-testimonials />
 <x-latest-articles />
+<x-faq />
 <x-footer />
 @endsection
