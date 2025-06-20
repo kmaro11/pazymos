@@ -1,7 +1,9 @@
-module.exports = {
+/** @type {import('tailwindcss').Config} */
+export default {
   content: [
-    './src/templates/**/*.html',
-    './src/js/**/*.{js,ts}',
+    "./resources/**/*.blade.php",
+    "./resources/**/*.js",
+    "./resources/**/*.vue",
   ],
   theme: {
     extend: {
@@ -13,6 +15,7 @@ module.exports = {
         green: {
           DEFAULT: '#204D51',
           '100': '#B4F6D0',
+          '200': '#F5FA9B',
         },
         gray: {
           DEFAULT: '#CBD3E2',
@@ -32,4 +35,4 @@ module.exports = {
     },
   },
   plugins: [],
-}; 
+} 

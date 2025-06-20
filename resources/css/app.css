@@ -1,0 +1,95 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@layer base {
+    :root {
+        --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+            'Segoe UI Symbol', 'Noto Color Emoji';
+    }
+}
+
+.animation-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.animation-container {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    gap: 32px;
+}
+
+.animation-container .animation-wrapper {
+    animation-delay: -3s;
+    display: flex;
+    align-items: center;
+    min-width: 100%;
+    flex-shrink: 0;
+    justify-content: space-around;
+    gap: 32px;
+}
+
+.animation-container.animation-container-images .animation-wrapper div {
+    width: 100%;
+    overflow: hidden;
+}
+
+.animation-container .animation-wrapper {
+    animation: 100s slides infinite linear;
+}
+
+.animation-container.animation-container-logos .animation-wrapper.animation-reverse {
+    animation-direction: reverse;
+}
+
+@keyframes slides {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+.swiper.popular-courses-swiper {
+    padding-bottom: 110px;
+}
+.swiper.popular-trainings-swiper {
+    padding-bottom: 110px;
+}
+.swiper-wrapper .swiper-slide {
+    height: auto;
+}
+.swiper-slide-peek,
+.swiper-slide-prev {
+    opacity: 0.3;
+    transition: opacity 0.3s;
+}
+.swiper-button-next.popular-courses-next,
+.swiper-button-prev.popular-courses-prev,
+.swiper-button-next.popular-trainings-next,
+.swiper-button-prev.popular-trainings-prev {
+    position: relative;
+    left: unset;
+    right: unset;
+    top: unset;
+    bottom: unset;
+    margin-top: unset;
+    width: 35px;
+    height: 35px;
+}
+.swiper-button-next.popular-courses-next:after,
+.swiper-button-next.popular-trainings-next:after {
+    display: none;
+}
+
+.swiper-button-prev.popular-courses-prev:after,
+.swiper-button-prev.popular-trainings-prev:after {
+    display: none;
+}

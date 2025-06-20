@@ -1,0 +1,33 @@
+<?php
+
+namespace App\View\Components;
+
+use Illuminate\View\Component;
+
+class HowItWorks extends Component
+{
+    public function __construct(
+        public array $items = [
+            [
+                'title' => 'Išsirink dominančius mokymus',
+                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.',
+                'icon' => 'swipe.svg'
+            ],
+            [
+                'title' => 'Pereik mokymosi programą',
+                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.',
+                'icon' => 'notebook.svg'
+            ],
+            [
+                'title' => 'Gauk sertifikatą ir vykdyk veiklą',
+                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.',
+                'icon' => 'graduation.svg'
+            ]
+        ]
+    ) {}
+
+    public function render()
+    {
+        return view('components.how-it-works');
+    }
+}
