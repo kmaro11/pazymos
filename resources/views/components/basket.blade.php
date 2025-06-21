@@ -2,8 +2,8 @@
     <h2 class="text-black-100 font-['Helvetica_Neue'] text-2xl font-medium leading-8 mb-5">Mokymų tipas</h2>
 
     <div class="flex items-center bg-white rounded-[100px] p-2 max-w-[200px] mb-6">
-        <button id="btn-individual" class="w-full rounded-full px-2 text-center font-['Helvetica_Neue'] text-xs font-medium leading-6 tracking-[0.6px] uppercase text-gray-100 transition-colors">INDIVIDUALIAI</button>
-        <button id="btn-company" class="w-full rounded-full text-center font-['Helvetica_Neue'] text-xs font-medium leading-6 tracking-[0.6px] uppercase text-black-100/50 transition-colors">ĮMONĖMS</button>
+        <button id="btn-individual" class="w-full rounded-full px-2 text-center font-['Helvetica_Neue'] text-xs font-medium leading-6 tracking-[0.6px] uppercase transition-colors">INDIVIDUALIAI</button>
+        <button id="btn-company" class="w-full rounded-full text-center font-['Helvetica_Neue'] text-xs font-medium leading-6 tracking-[0.6px] uppercase transition-colors">ĮMONĖMS</button>
     </div>
 
 
