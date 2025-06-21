@@ -53,6 +53,8 @@ $trainingItems = [
 
 <x-training-description :items="$trainingItems" />
 
+<x-course-complect />
+
 <div class="pt-[60px] md:pt-[100px] bg-gray-100">
     <x-testimonials-section />
 </div>

@@ -24,7 +24,10 @@ export default {
           '300': '#F6F6F6',
           '400': '#F3F2F0',
         },
-        blue: "#ADCFFF"
+        blue: {
+          DEFAULT: "#ADCFFF",
+          '100': "#E6F1FF",
+        }
       },
       backgroundImage: {
         'gradient-custom': 'linear-gradient(180deg, #F3F2F0 0%, #FDFCFA 100%)',
