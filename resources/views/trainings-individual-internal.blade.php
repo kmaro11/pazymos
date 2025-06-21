@@ -4,6 +4,24 @@
 <x-header />
 
 @php
+$breadcrumbsData = [
+'breadcrumbs' => [
+['url' => '/visi-mokymai', 'label' => 'Visi mokymai'],
+['url' => '/pirmosios-pagalbos', 'label' => 'Pirmosios Pagalbos privalomieji mokymai'],
+['url' => '#', 'label' => 'Higienos pažymėjimas su nuodingomis medžiagomis dirbandys darbuotojai'],
+],
+'title' => 'Higienos pažymėjimas su nuodingomis medžiagomis dirbandys darbuotojai',
+];
+
+$heroData = [
+'avatar' => 'https://i.pravatar.cc/150?img=52',
+'title' => 'Higienos pažymėjimas su nuodingomis medžiagomis dirbandys darbuotojai',
+'descriptions' => [
+'Tortor malesuada morbi nunc id nulla vel. Vitae phasellus ut urna justo orci semper mauris. Et tempor pulvinar eu amet tellus pellentesque. Purus ipsum facilisis odio nibh. Lorem aliquet ultrices viverra facilisi. Suspendisse sit est porttitor lectus. Commodo massa eget dignissim tincidunt pretium parturient habitant ipsum. Purus ipsum facilisis odio nibh. Lorem aliquet ultrices viverra facilisi. Suspendisse sit est porttitor lectus. Commodo massa eget dignissim tincidunt pretium parturient habitant ipsum.',
+'In id malesuada orci aliquam vitae. Odio eget sit tincidunt hendrerit purus. Ipsum augue duis molestie facilisi augue.'
+]
+];
+
 $trainingItems = [
 [
 'icon' => 'list-icon.svg',
@@ -22,6 +40,16 @@ $trainingItems = [
 ]
 ];
 @endphp
+
+<x-internal-hero
+    :avatar="$heroData['avatar']"
+    :title="$heroData['title']"
+    :descriptions="$heroData['descriptions']"
+    :breadcrumbs="[
+        ['url' => '/', 'label' => 'Visi mokymai'],
+        ['url' => '/trainings', 'label' => 'Pirmosios Pagalbos privalomieji mokymai'],
+        ['url' => '/trainings/category', 'label' => 'Higienos pažymėjimas su nuodingomis medžiagomis dirbandys darbuotojai']
+    ]" />
 
 <x-training-description :items="$trainingItems" />
 

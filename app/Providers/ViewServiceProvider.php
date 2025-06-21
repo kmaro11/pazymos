@@ -26,5 +26,6 @@ class ViewServiceProvider extends ServiceProvider
         Blade::component('faq', \App\View\Components\Faq::class);
         Blade::component('testimonials-section', \App\View\Components\TestimonialsSection::class);
         Blade::component('training-description', \App\View\Components\TrainingDescription::class);
+        Blade::component('internal-hero', \App\View\Components\InternalHero::class);
     }
 }

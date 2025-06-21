@@ -1,4 +1,4 @@
-<section class="pt-10 pb-[60px] md:py-[100px] px-4 sm:px-14 border-t border-gray-400">
+<section class="bg-gray-100 pt-10 pb-[60px] md:py-[100px] px-4 sm:px-14 border-t border-gray-400">
     <div class="max-w-[1320px] mx-auto">
         <h2 class="text-[32px] font-medium text-black-100 font-['Helvetica_Neue'] leading-[42px] mb-10 md:mb-[60px]">
             Mokymų aprašymas
