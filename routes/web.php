@@ -13,3 +13,7 @@ Route::get('/trainings', function () {
 Route::get('/training-category', function () {
     return view('training-category');
 });
+
+Route::get('/trainings-individual-internal', function () {
+    return view('trainings-individual-internal');
+});
