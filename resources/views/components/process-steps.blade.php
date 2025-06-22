@@ -2,9 +2,9 @@
     <div class="max-w-[1320px] mx-auto grid grid-cols-1 gap-y-[60px] md:gap-y-[100px]">
         @foreach ($steps as $step)
 
-        <div class="flex flex-col-reverse lg:flex-row gap-[50px] lg:gap-12 items-center">
+        <div class="flex flex-col-reverse lg:flex-row gap-[50px] lg:gap-12 items-center justify-between">
             <div class="max-w-[553px] w-full lg:pt-9">
-                <span class="text-green font-['Helvetica_Neue'] text-sm font-medium leading-[22px] py-[5px] px-3 rounded-[10px] bg-green/10 mb-3">{{ $step['step_label'] }}</span>
+                <span class="block w-max text-green font-['Helvetica_Neue'] text-sm font-medium leading-[22px] py-[5px] px-3 rounded-[10px] bg-green/10 mb-3">{{ $step['step_label'] }}</span>
 
                 <h2 class="text-black-100 md:text-black-100 font-['Helvetica_Neue'] text-[24px] md:text-[36px] font-medium leading-[46px] mb-5">{{ $step['title'] }}</h2>
 

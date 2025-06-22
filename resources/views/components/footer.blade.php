@@ -1,7 +1,12 @@
 <footer class="bg-green pt-[60px] lg:pt-20 rounded-t-3xl lg:px-14 px-4 relative z-10">
     <div class="max-w-[1440px] w-full mx-auto">
-        <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-20 pb-[60px] md:pb-[160px]">
-            <div class="mb-8 md:mb-0">
+        @if ($slot->isNotEmpty())
+        <div class="mb-10">
+            {{ $slot }}
+        </div>
+        @endif
+        <div class="flex flex-col md:flex-row md:justify-between md:items-start md:gap-20 pb-[60px] md:pb-[160px]">
+            <div class="mb-[60px] md:mb-0">
                 <div class="text-2xl font-medium text-white mb-6 leading-[135%] tracking-[-0.622px]">Pažymos.lt
                 </div>
                 <div class="text-gray text-base leading-6 tracking-[-0.15px] max-w-[300px]">Lorem proin lacus nulla

@@ -15,5 +15,20 @@
 <x-testimonials />
 <x-faq />
 
-<x-footer />
+<x-footer>
+    <div class="relative pt-12 pb-16 md:py-14 px-8 md:px-16 rounded-[30px] relative overflow-hidden mb-[60px] md:mb-[110px]">
+        <div class="absolute inset-0 z-0">
+            <img src="{{ asset('images/green-bg.jpg') }}" alt="Background" class="w-full h-full object-cover">
+        </div>
+        <div class="relative z-10 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="max-w-[605px] w-full">
+                <h2 class="text-black-100 font-['Helvetica_Neue'] text-[28px] md:text-[36px] font-medium leading-[38px] md:leading-[46px] mb-6 md:mb-4 text-center md:text-left">Pavadinimas, skatinantis įsigyti mokymus</h2>
+                <p class="text-[#002B3F] font-['Helvetica_Neue'] text-base font-normal leading-6 text-center md:text-left">Viverra in sit leo sed nibh. Vel molestie bibendum porta penatibus eu odio magnis.</p>
+            </div>
+            <x-button variant="dark">
+                Rinktis mokymus
+            </x-button>
+        </div>
+    </div>
+</x-footer>
 @endsection
