@@ -21,9 +21,7 @@ $showIcon = filter_var($showIcon, FILTER_VALIDATE_BOOLEAN);
 
 @if($url)
 <a href="{{ $url }}" {{ $attributes->merge(['class' => $classes]) }}>
-    <span>
-        {{ $slot }}
-    </span>
+    {{ $slot }}
     @if($showIcon)
     @if($variant === 'dark')
     <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -38,9 +36,7 @@ $showIcon = filter_var($showIcon, FILTER_VALIDATE_BOOLEAN);
 </a>
 @else
 <button {{ $attributes->merge(['type' => $type, 'class' => $classes]) }}>
-    <span>
-        {{ $slot }}
-    </span>
+    {{ $slot }}
     @if($showIcon)
     @if($variant === 'dark')
     <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">

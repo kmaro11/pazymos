@@ -9,3 +9,4 @@ Route::view('training-category', 'training-category');
 
 Route::view('about', 'about');
 Route::view('how-it-works', 'how-it-works');
+Route::view('news', 'news');
