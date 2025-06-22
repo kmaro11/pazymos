@@ -93,3 +93,29 @@
 .swiper-button-prev.popular-trainings-prev:after {
     display: none;
 }
+
+.news-article h1 {
+    @apply my-6 text-[#1F2632] font-['Helvetica_Neue'] text-[40px] font-normal font-bold leading-[48px] tracking-[-1.4px];
+}
+
+.news-article h2 {
+    @apply my-6 text-[#1F2632] font-['Helvetica_Neue'] text-[32px] font-bold leading-[37.36px] tracking-[-1.12px];
+}
+
+.news-article h3 {
+    @apply my-6 text-[#1F2632] font-['Helvetica_Neue'] text-2xl font-bold leading-7 tracking-[-0.84px];
+}
+
+.news-article p {
+    @apply my-6 text-[#1F2632] font-['Helvetica_Neue'] text-base font-normal leading-6;
+}
+
+.news-article ul {
+    @apply my-6 text-[#1F2632] font-['Helvetica_Neue'] text-base font-normal leading-6;
+}
+
+.news-article ul li {
+    @apply my-3 text-[#1F2632] font-['Helvetica_Neue'] text-base font-normal leading-6;
+}
+
+
