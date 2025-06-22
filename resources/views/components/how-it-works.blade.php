@@ -1,7 +1,14 @@
 <section class="py-[60px] md:pt-[110px] md:pb-[100px] px-4 md:px-14">
-    <h2 class="text-black-100 text-[32px] font-medium leading-[42px] md:text-[48px] md:leading-[58px] md:mb-[100px] mb-[60px] text-center">
-        Kaip tai veikia
-    </h2>
+    <div class="mb-[60px] md:mb-[100px]">
+        <h2 class="text-black-100 text-[32px] font-medium leading-[42px] md:text-[48px] md:leading-[58px] text-center">
+            {{ $title ?? 'Kaip tai veikia' }}
+        </h2>
+        @if($description)
+        <p class="mt-4 md:mt-6 text-black-100 text-center font-normal text-base leading-6 md:text-base md:leading-6">
+            {{ $description }}
+        </p>
+        @endif
+    </div>
     <div class="max-w-[1200px] w-full mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             @foreach($items as $index => $item)
