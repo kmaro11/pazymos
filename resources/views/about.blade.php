@@ -44,7 +44,7 @@ $members = [
 
 <x-header />
 
-<section class="pt-4 pb-[60px] md:pt-[90px] md:pb-20">
+<section class="bg-gray-100 pt-4 pb-[60px] md:pt-[90px] md:pb-20">
     <div class="px-4 md:px-14">
         <div class="max-w-[1200px] mx-auto">
             <div class="mb-[60px] md:mb-[100px]">

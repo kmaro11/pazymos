@@ -8,3 +8,4 @@ Route::view('trainings-individual-internal', 'trainings-individual-internal');
 Route::view('training-category', 'training-category');
 
 Route::view('about', 'about');
+Route::view('how-it-works', 'how-it-works');
