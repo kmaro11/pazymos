@@ -10,6 +10,8 @@
     </div>
 </section>
 
+<x-process-steps />
+
 <x-testimonials />
 <x-faq />
 

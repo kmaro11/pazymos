@@ -69,7 +69,6 @@ $members = [
     </div>
 </section>
 
-
 <x-statistics />
 
 <x-how-it-works
