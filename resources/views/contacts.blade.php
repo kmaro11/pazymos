@@ -2,7 +2,7 @@
 
 @section('content')
 <section class="pt-20 pb-[100px] px-4 md:px-14">
-    <div class="max-w-[1320px] mx-auto flex flex-col md:flex-row gap-x-10">
+    <div class="max-w-[1320px] mx-auto flex flex-col lg:flex-row gap-10">
         <div class="max-w-[500px]">
             <h1 class="mb-6 text-black-100  text-[48px] font-normal font-medium leading-[58px]">Susisiekite su mumis</h1>
             <p class="mb-9 text-black-100  text-base font-normal leading-6">Mūsų komanda mielai jums padės.</p>
@@ -27,20 +27,30 @@
                 </a>
             </div>
         </div>
-        <div class="max-w-[645px] w-full p-10 pt-8 rounded-[30px] bg-white shadow-large-card">
+        <div class="max-w-[645px] w-full px-4 py-8 md:p-10 pt-8 rounded-[30px] bg-white shadow-large-card">
             <h2 class="text-black-100 text-2xl font-medium leading-normal mb-4">Užpildykite šią formą.</h2>
             <p class="text-black-100 text-base font-normal leading-6 mb-9">Mūsų komanda su jumis susisieks per 24 val.</p>
-            <form action="" class="">
+            <form action="">
                 <div class="grid grid-cols-1 gap-y-4 mb-5">
-                    <div class="grid grid-cols-2 gap-x-[30px]">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-[30px]">
                         <x-input name="name" label="Vardas" placeholder="Vardas" required />
                         <x-input name="name" label="Pavardė" placeholder="Pavardė" required />
                     </div>
-                    <div class="grid grid-cols-2 gap-x-[30px]">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-[30px]">
                         <x-input name="email" type="email" label="El. paštas" placeholder="El. paštas" required />
                         <x-input name="phone" type="tel" label="Telefonas" placeholder="Telefonas" required />
                     </div>
-                    <x-input name="message" as="textarea" label="Jūsų žinutė" placeholder="Jūsų žinutė" required />
+                    <x-select
+                        name="topic"
+                        label="Pasirinkite temą"
+                        placeholder="Pasirinkite temą"
+                        :options="[
+                            ['value' => 'general', 'label' => 'Bendrinis klausimas'],
+                            ['value' => 'support', 'label' => 'Pagalba'],
+                            ['value' => 'sales', 'label' => 'Pardavimai'],
+                            ['value' => 'feedback', 'label' => 'Atsiliepimas'],
+                        ]" />
+                    <x-input as="textarea" name="message" label="Jūsų žinutė" placeholder="Parašykite savo pranešimą čia..." rows="5" />
                 </div>
                 <div class="mb-10">
                     Siųsdami užklausą sutinkate su mūsų <a href="/privacy-policy">Taisyklėmis</a>.

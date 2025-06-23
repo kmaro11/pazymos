@@ -1,5 +1,5 @@
 @php
-$baseClasses = 'py-[18px] px-5 border border-black/20 rounded-[10px] w-full placeholder:text-black-100/50 text-black-100 text-base font-normal leading-6';
+$baseClasses = 'py-[17px] px-5 border border-black/20 rounded-[10px] w-full placeholder:text-black-100/50 text-black-100 text-base font-normal leading-6';
 @endphp
 <div class="w-full space-y-2">
     @if ($label)
@@ -20,6 +20,6 @@ $baseClasses = 'py-[18px] px-5 border border-black/20 rounded-[10px] w-full plac
         id="{{ $name }}"
         value="{{ old($name, $value) }}"
         placeholder="{{ $placeholder }}"
-        {{ $attributes->merge(['class' => $baseClasses . ' h-12']) }}>
+        {{ $attributes->merge(['class' => $baseClasses]) }}>
     @endif
 </div>

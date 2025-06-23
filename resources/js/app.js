@@ -1,4 +1,5 @@
 import './bootstrap';
-import './popular-courses';
-import './faq';
-import './basket';
+import './basket.js';
+import './faq.js';
+import './popular-courses.js';
+import './select.js';
