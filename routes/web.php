@@ -55,3 +55,5 @@ Route::get('/news/{slug}', function ($slug) {
 
     return view('news-internal', ['article' => $article]);
 });
+
+Route::view('/contacts', 'contacts');
