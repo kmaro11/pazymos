@@ -1,8 +1,8 @@
 <section class="bg-gray-100">
     <div class="bg-green rounded-[30px] pt-[60px] md:pt-20 pb-[72px] md:pb-16 px-4 md:px-14">
         <div class="max-w-[1320px] mx-auto">
-            <h2 class="text-white font-['Helvetica_Neue'] text-[32px] md:text-[48px] font-medium leading-[42px] md:leading-[58px] text-center md:text-left mb-4 md:mb-6">{{ $complect['main_title'] }}</h2>
-            <p class="text-white font-['Helvetica_Neue'] text-base font-normal leading-6 text-center md:text-left mb-10 md:mb-20">{{ $complect['main_subtitle'] }}</p>
+            <h2 class="text-white  text-[32px] md:text-[48px] font-medium leading-[42px] md:leading-[58px] text-center md:text-left mb-4 md:mb-6">{{ $complect['main_title'] }}</h2>
+            <p class="text-white  text-base font-normal leading-6 text-center md:text-left mb-10 md:mb-20">{{ $complect['main_subtitle'] }}</p>
 
             <div class="bg-white rounded-2xl p-2.5 md:pt-11 md:px-10 md:pb-16">
                 {{-- Complect Item --}}
@@ -23,7 +23,7 @@
                             <h3 class="font-bold text-black-100 mb-3 hidden md:block">{{ $complect['item']['title'] }}</h3>
                             <div class="flex flex-wrap items-center gap-2.5">
                                 @foreach ($complect['item']['tags'] as $tag)
-                                <div class="bg-white rounded-[100px] px-3 text-black-100 font-['Helvetica_Neue'] text-sm font-medium leading-6">
+                                <div class="bg-white rounded-[100px] px-3 text-black-100  text-sm font-medium leading-6">
                                     {{ $tag['text'] }}
                                 </div>
                                 @endforeach
@@ -53,7 +53,7 @@
                                 <h3 class="font-bold text-black-100 hidden md:block md:mb-3">{{ $course['title'] }}</h3>
                                 <div class="flex flex-wrap items-center gap-2.5">
                                     @foreach ($course['tags'] as $tag)
-                                    <div class="bg-white rounded-[100px] px-3 text-black-100 font-['Helvetica_Neue'] text-sm font-medium leading-6">
+                                    <div class="bg-white rounded-[100px] px-3 text-black-100  text-sm font-medium leading-6">
                                         {{ $tag['text'] }}
                                     </div>
                                     @endforeach

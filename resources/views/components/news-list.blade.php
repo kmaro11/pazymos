@@ -33,8 +33,8 @@
                 <img src="{{ asset('images/blue-background.png') }}" alt="Background" class="w-full h-full object-cover">
             </div>
             <div class="relative z-10 mb-8">
-                <h2 class="text-center font-['Helvetica_Neue'] text-[36px] font-medium leading-[46px] text-black-100 mb-4">Prenumeruokite mūsų naujienlaiškį</h2>
-                <p class="text-center font-['Helvetica_Neue'] text-base font-normal leading-6 text-black-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                <h2 class="text-center  text-[36px] font-medium leading-[46px] text-black-100 mb-4">Prenumeruokite mūsų naujienlaiškį</h2>
+                <p class="text-center  text-base font-normal leading-6 text-black-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
             </div>
             <div class="relative max-w-[400px] w-full mx-auto">
                 <input type="text" type="email" placeholder="El. paštas" class="w-full h-[58px] rounded-[20px] pl-5 pr-[142px] text-base leading-5 bg-white placeholder-black-100/50 text-black-100 focus:outline-none">

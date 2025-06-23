@@ -48,8 +48,8 @@ $members = [
     <div class="px-4 md:px-14">
         <div class="max-w-[1200px] mx-auto">
             <div class="mb-[60px] md:mb-[100px]">
-                <h1 class="mb-6 md:mb-[30px] text-black-100 text-center font-['Helvetica_Neue'] text-[40px] md:text-[64px] font-medium leading-[50px] md:leading-[74px]">Apie Pažymos.lt</h1>
-                <p class="text-black-100 text-center font-['Helvetica_Neue'] text-base md:text-base font-normal leading-6 md:leading-[24px]">Trumpas aprašymas apie įmonę, kokias paslaugas ji suteikia ir vartotojams kuriamą vertę.</p>
+                <h1 class="mb-6 md:mb-[30px] text-black-100 text-center  text-[40px] md:text-[64px] font-medium leading-[50px] md:leading-[74px]">Apie Pažymos.lt</h1>
+                <p class="text-black-100 text-center  text-base md:text-base font-normal leading-6 md:leading-[24px]">Trumpas aprašymas apie įmonę, kokias paslaugas ji suteikia ir vartotojams kuriamą vertę.</p>
             </div>
         </div>
     </div>
@@ -59,11 +59,11 @@ $members = [
     </div>
     <div class="px-4 md:px-14 pt-[60px] md:pt-[100px]">
         <div class="max-w-[1200px] mx-auto flex flex-col md:flex-row gap-x-10 justify-between">
-            <h2 class="text-black-100 md:text-black-100 font-['Helvetica_Neue'] text-[32px] md:text-[48px] font-medium leading-[42px] md:leading-[58px] mb-6 md:mb-0">Kaip viskas prasidėjo</h2>
+            <h2 class="text-black-100 md:text-black-100  text-[32px] md:text-[48px] font-medium leading-[42px] md:leading-[58px] mb-6 md:mb-0">Kaip viskas prasidėjo</h2>
             <div class="max-w-[644px] space-y-6 w-full">
-                <p class="text-black-100 font-['Helvetica_Neue'] text-base font-normal leading-6">Cras a morbi id duis volutpat porta hendrerit ultrices. In sit blandit nunc lacus ipsum est eget proin in. Nunc fringilla cras quis imperdiet in urna enim erat. Diam nullam amet suspendisse elit ultricies tincidunt. Cras a morbi id duis volutpat porta hendrerit ultrices. In sit blandit nunc lacus ipsum est eget proin in. Nunc fringilla cras quis imperdiet in urna enim erat. Diam nullam amet suspendisse elit ultricies tincidunt.
+                <p class="text-black-100  text-base font-normal leading-6">Cras a morbi id duis volutpat porta hendrerit ultrices. In sit blandit nunc lacus ipsum est eget proin in. Nunc fringilla cras quis imperdiet in urna enim erat. Diam nullam amet suspendisse elit ultricies tincidunt. Cras a morbi id duis volutpat porta hendrerit ultrices. In sit blandit nunc lacus ipsum est eget proin in. Nunc fringilla cras quis imperdiet in urna enim erat. Diam nullam amet suspendisse elit ultricies tincidunt.
                 </p>
-                <p class="text-black-100 font-['Helvetica_Neue'] text-base font-normal leading-6">Diam sapien ut arcu tortor erat sed eu cras. Quam eu diam fermentum at. Magna a eget pellentesque tristique est volutpat. Augue turpis pellentesque in tortor porttitor risus scelerisque.</p>
+                <p class="text-black-100  text-base font-normal leading-6">Diam sapien ut arcu tortor erat sed eu cras. Quam eu diam fermentum at. Magna a eget pellentesque tristique est volutpat. Augue turpis pellentesque in tortor porttitor risus scelerisque.</p>
             </div>
         </div>
     </div>
@@ -95,8 +95,8 @@ $members = [
     <div class="bg-green pt-[60px] md:pt-20 pb-[68px] md:pb-[85px] rounded-[30px] px-4 md:px-14">
         <div class="max-w-[1320px] mx-auto">
             <div class="max-w-[530px] mx-auto px-4 mb-14 md:mb-[85px]">
-                <h2 class="text-white md:text-gray-100 text-center font-['Helvetica_Neue'] text-[32px] md:text-[48px] font-medium leading-[42px] md:leading-[58px] mb-4 md:mb-6">Mūsų komanda</h2>
-                <p class="text-white md:text-gray-100 text-center font-['Helvetica_Neue'] text-base md:text-base font-normal leading-6 md:leading-6">Tincidunt proin fringilla pulvinar ut aliquam diam gravida proin. Feugiat magna vulputate faucibus risus adipiscing.</p>
+                <h2 class="text-white md:text-gray-100 text-center  text-[32px] md:text-[48px] font-medium leading-[42px] md:leading-[58px] mb-4 md:mb-6">Mūsų komanda</h2>
+                <p class="text-white md:text-gray-100 text-center  text-base md:text-base font-normal leading-6 md:leading-6">Tincidunt proin fringilla pulvinar ut aliquam diam gravida proin. Feugiat magna vulputate faucibus risus adipiscing.</p>
             </div>
 
             <div class="px-4 md:px-0">
@@ -107,8 +107,8 @@ $members = [
                             class="w-full h-auto object-cover rounded-2xl mb-5">
                         <div class="flex justify-between items-start px-2">
                             <div>
-                                <h3 class="text-gray-100 font-['Helvetica_Neue'] text-[20px] font-medium leading-[30px] mb-2">{{ $member['name'] }}</h3>
-                                <p class="text-gray-100 font-['Helvetica_Neue'] text-base font-light leading-6">{{ $member['role'] }}</p>
+                                <h3 class="text-gray-100  text-[20px] font-medium leading-[30px] mb-2">{{ $member['name'] }}</h3>
+                                <p class="text-gray-100  text-base font-light leading-6">{{ $member['role'] }}</p>
                             </div>
                             <a href="{{ $member['linkedin'] }}" target="_blank" class="text-white">
                                 <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">

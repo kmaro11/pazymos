@@ -4,11 +4,11 @@
 
         <div class="flex flex-col-reverse lg:flex-row gap-[50px] lg:gap-12 items-center justify-between">
             <div class="max-w-[553px] w-full lg:pt-9">
-                <span class="block w-max text-green font-['Helvetica_Neue'] text-sm font-medium leading-[22px] py-[5px] px-3 rounded-[10px] bg-green/10 mb-3">{{ $step['step_label'] }}</span>
+                <span class="block w-max text-green  text-sm font-medium leading-[22px] py-[5px] px-3 rounded-[10px] bg-green/10 mb-3">{{ $step['step_label'] }}</span>
 
-                <h2 class="text-black-100 md:text-black-100 font-['Helvetica_Neue'] text-[24px] md:text-[36px] font-medium leading-[46px] mb-5">{{ $step['title'] }}</h2>
+                <h2 class="text-black-100 md:text-black-100  text-[24px] md:text-[36px] font-medium leading-[46px] mb-5">{{ $step['title'] }}</h2>
 
-                <p class="text-black-100 font-['Helvetica_Neue'] text-base font-normal leading-6 md:leading-6 mb-10" style="color: var(--Narrative-Dark-Primary, #0E0126); font-family: 'Helvetica Neue'; font-size: 16px; font-style: normal; font-weight: 400; line-height: 24px;">
+                <p class="text-black-100  text-base font-normal leading-6 md:leading-6 mb-10" style="color: var(--Narrative-Dark-Primary, #0E0126); font-family: 'Helvetica Neue'; font-size: 16px; font-style: normal; font-weight: 400; line-height: 24px;">
                     {{ $step['description'] }}
                 </p>
 
@@ -21,10 +21,10 @@
                             </svg>
 
                         </span>
-                        <h4 class="text-black-100 font-['Helvetica_Neue'] text-[18px] md:text-[20px] font-medium leading-[24px] md:leading-[30px] flex items-center mb-2" style="color: #0E0126; font-family: 'Helvetica Neue'; font-size: 18px; font-style: normal; font-weight: 500; line-height: 24px;">
+                        <h4 class="text-black-100  text-[18px] md:text-[20px] font-medium leading-[24px] md:leading-[30px] flex items-center mb-2" style="color: #0E0126; font-family: 'Helvetica Neue'; font-size: 18px; font-style: normal; font-weight: 500; line-height: 24px;">
                             {{ $feature['title'] }}
                         </h4>
-                        <p class="text-black-100 font-['Helvetica_Neue'] text-base font-normal leading-6">{{ $feature['description'] }}</p>
+                        <p class="text-black-100  text-base font-normal leading-6">{{ $feature['description'] }}</p>
                     </div>
                     @endforeach
                 </div>

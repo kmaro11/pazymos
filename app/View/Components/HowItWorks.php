@@ -26,7 +26,7 @@ class HowItWorks extends Component
         ],
         public ?string $title = null,
         public ?string $description = null,
-        public string $descriptionClasses = "text-gray-200 text-center font-['Helvetica_Neue'] text-base font-normal leading-6 mb-10"
+        public string $descriptionClasses = "text-gray-200 text-center  text-base font-normal leading-6 mb-10"
     ) {}
 
     public function render()

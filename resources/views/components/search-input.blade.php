@@ -10,6 +10,6 @@
         type="text"
         name="search"
         id="search"
-        class="block w-full py-[11px] pl-11 pr-3 border border-black-100/10 rounded-[10px] leading-6 bg-white placeholder-black-100/40 focus:outline-none focus:placeholder-black-100/40 focus:border-black-100/10 text-base font-['Helvetica_Neue'] font-medium text-black-100"
+        class="block w-full py-[11px] pl-11 pr-3 border border-black-100/10 rounded-[10px] leading-6 bg-white placeholder-black-100/40 focus:outline-none focus:placeholder-black-100/40 focus:border-black-100/10 text-base  font-medium text-black-100"
         placeholder="{{ $placeholder ?? '' }}">
 </div>

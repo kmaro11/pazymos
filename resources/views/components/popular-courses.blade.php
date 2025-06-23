@@ -7,10 +7,10 @@
                 </div>
                 <div class="flex flex-col md:flex-row md:items-end md:justify-between mb-[60px] md:mb-12">
                     <div>
-                        <h2 class="text-white text-center md:text-left font-['Helvetica_Neue'] text-[32px] md:text-[48px] font-medium leading-[42px] md:leading-[58px] mb-4 md:mb-[30px]">
+                        <h2 class="text-white text-center md:text-left  text-[32px] md:text-[48px] font-medium leading-[42px] md:leading-[58px] mb-4 md:mb-[30px]">
                             Populiariausi mokymų komplektai
                         </h2>
-                        <p class="text-white text-center md:text-left font-['Helvetica_Neue'] text-base font-normal leading-6">
+                        <p class="text-white text-center md:text-left  text-base font-normal leading-6">
                             Cras a morbi id duis volutpat porta hendrerit ultrices.
                         </p>
                     </div>

@@ -1,7 +1,7 @@
 <div class="bg-white rounded-3xl shadow-card flex flex-col p-2 md:p-2.5 pb-6 md:pb-9">
     <div class="relative w-full h-[205px] md:h-[252px] flex items-center justify-center mb-6 md:mb-[30px]">
         @if (!empty($article['category']))
-        <div class="absolute top-2.5 left-2.5 rounded-[100px] bg-white text-center font-['Helvetica_Neue'] text-sm font-medium leading-6 text-black-100 py-[3px] px-3">
+        <div class="absolute top-2.5 left-2.5 rounded-[100px] bg-white text-center  text-sm font-medium leading-6 text-black-100 py-[3px] px-3">
             {{ $article['category'] }}
         </div>
         @endif

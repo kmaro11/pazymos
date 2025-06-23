@@ -17,22 +17,22 @@ $alt = $training['alt'] ?? $title ?? 'Mokymo paveikslėlis';
         <img src="{{ $image }}" alt="{{ $alt }}" class="rounded-3xl w-full h-full object-cover object-center" />
         <div class="absolute top-2 md:top-2.5 left-2 md:left-2.5 flex gap-1.5 md:gap-2">
             @foreach($labels as $label)
-            <div class="bg-white rounded-[100px] flex items-center justify-center h-6 md:h-[30px] text-[14px] font-medium leading-[14px] text-black-100 px-3 w-max text-center font-['Helvetica_Neue']">{{ $label }}</div>
+            <div class="bg-white rounded-[100px] flex items-center justify-center h-6 md:h-[30px] text-[14px] font-medium leading-[14px] text-black-100 px-3 w-max text-center ">{{ $label }}</div>
             @endforeach
         </div>
     </div>
 
     <div class="px-2.5 flex flex-col flex-1">
         <div class="flex items-center justify-between mb-6 gap-x-2">
-            <span class="text-black-100 font-['Helvetica_Neue'] text-lg md:text-2xl font-medium leading-6 md:leading-[34px]">{{ $title }}</span>
-            <span class="text-black-100 font-['Helvetica_Neue'] text-lg md:text-2xl font-medium leading-6 md:leading-[34px]">{{ $price }}</span>
+            <span class="text-black-100  text-lg md:text-2xl font-medium leading-6 md:leading-[34px]">{{ $title }}</span>
+            <span class="text-black-100  text-lg md:text-2xl font-medium leading-6 md:leading-[34px]">{{ $price }}</span>
         </div>
 
-        <div class="text-black-100 font-['Helvetica_Neue'] text-base font-medium leading-6 mb-5">Į komplektą įeinantys mokymai:</div>
+        <div class="text-black-100  text-base font-medium leading-6 mb-5">Į komplektą įeinantys mokymai:</div>
 
         <ul class="mb-[30px] md:mb-5 list-disc pl-5">
             @foreach($features as $feature)
-            <li class="text-black-100 font-['Helvetica_Neue'] text-base font-normal leading-6">{{ $feature }}</li>
+            <li class="text-black-100  text-base font-normal leading-6">{{ $feature }}</li>
             @endforeach
         </ul>
 

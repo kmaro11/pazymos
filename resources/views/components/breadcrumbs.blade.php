@@ -3,7 +3,7 @@
         @foreach ($breadcrumbs as $breadcrumb)
         <li class="group flex items-center gap-x-2">
             <a href="{{ $breadcrumb['url'] }}"
-                class="text-black-100/50 font-['Helvetica_Neue'] text-sm font-normal leading-6 group-last:text-black-100 group-last:font-medium">
+                class="text-black-100/50  text-sm font-normal leading-6 group-last:text-black-100 group-last:font-medium">
                 {{ $breadcrumb['label'] }}
             </a>
             <span class="block group-last:hidden">
