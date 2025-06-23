@@ -15,9 +15,13 @@
     @font-face {
         font-family: 'Helvetica Neue';
         src: url('../fonts/HelveticaNeue.ttc') format('truetype');
-        /* It's good practice to specify weight and style if known, 
-           but with .ttc it can be complex. We'll start broad. */
         font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'Helvetica Neue';
+        src: url('../fonts/HelveticaNeue.ttc') format('truetype');
+        font-weight: 500;
         font-style: normal;
     }
 }

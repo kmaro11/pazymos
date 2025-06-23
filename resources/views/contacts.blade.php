@@ -27,7 +27,29 @@
                 </a>
             </div>
         </div>
-        <div class="max-w-[645px] w-full"></div>
+        <div class="max-w-[645px] w-full p-10 pt-8 rounded-[30px] bg-white shadow-large-card">
+            <h2 class="text-black-100 text-2xl font-medium leading-normal mb-4">Užpildykite šią formą.</h2>
+            <p class="text-black-100 text-base font-normal leading-6 mb-9">Mūsų komanda su jumis susisieks per 24 val.</p>
+            <form action="" class="">
+                <div class="grid grid-cols-1 gap-y-4 mb-5">
+                    <div class="grid grid-cols-2 gap-x-[30px]">
+                        <x-input name="name" label="Vardas" placeholder="Vardas" required />
+                        <x-input name="name" label="Pavardė" placeholder="Pavardė" required />
+                    </div>
+                    <div class="grid grid-cols-2 gap-x-[30px]">
+                        <x-input name="email" type="email" label="El. paštas" placeholder="El. paštas" required />
+                        <x-input name="phone" type="tel" label="Telefonas" placeholder="Telefonas" required />
+                    </div>
+                    <x-input name="message" as="textarea" label="Jūsų žinutė" placeholder="Jūsų žinutė" required />
+                </div>
+                <div class="mb-10">
+                    Siųsdami užklausą sutinkate su mūsų <a href="/privacy-policy">Taisyklėmis</a>.
+                </div>
+                <x-button type="submit" variant="dark" size="w-full">
+                    Siųsti užklausą
+                </x-button>
+            </form>
+        </div>
     </div>
 </section>
 @endsection

@@ -9,6 +9,9 @@ export default {
   ],
   theme: {
     extend: {
+      dropShadow: {
+        'soft': '0px 4px 40px rgba(181, 178, 172, 0.16)',
+    },  
       colors: {
         black: {
           DEFAULT: '#000000',
