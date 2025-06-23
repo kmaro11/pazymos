@@ -57,3 +57,4 @@ Route::get('/news/{slug}', function ($slug) {
 });
 
 Route::view('/contacts', 'contacts');
+Route::view('/thank-you', 'thank-you');
