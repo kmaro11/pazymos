@@ -1,6 +1,9 @@
-<div class="w-full">
+@php
+$baseClasses = 'py-[18px] px-5 border border-black/20 rounded-[10px] w-full placeholder:text-black-100/50 text-black-100 text-base font-normal leading-6';
+@endphp
+<div class="w-full space-y-2">
     @if ($label)
-    <label for="{{ $name }}" class="block text-sm font-medium text-gray-700 mb-1">{{ $label }}</label>
+    <label for="{{ $name }}" class="text-black-100 text-base font-normal leading-6">{{ $label }}</label>
     @endif
 
     @if ($as === 'textarea')
@@ -9,7 +12,7 @@
         id="{{ $name }}"
         placeholder="{{ $placeholder }}"
         rows="{{ $rows }}"
-        {{ $attributes->merge(['class' => 'block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm px-3']) }}>{{ old($name, $value) }}</textarea>
+        {{ $attributes->merge(['class' => $baseClasses]) }}>{{ old($name, $value) }}</textarea>
     @else
     <input
         type="{{ $type }}"
@@ -17,6 +20,6 @@
         id="{{ $name }}"
         value="{{ old($name, $value) }}"
         placeholder="{{ $placeholder }}"
-        {{ $attributes->merge(['class' => 'block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm h-12 px-3']) }}>
+        {{ $attributes->merge(['class' => $baseClasses . ' h-12']) }}>
     @endif
 </div>
