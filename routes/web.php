@@ -3,7 +3,50 @@
 use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'home')->name('home');
-Route::view('trainings', 'trainings')->name('trainings');
+Route::get('trainings', function () {
+    $trainings = [
+        [
+            'title' => 'Mokymų komplektas',
+            'price' => '€45',
+            'image' => 'https://images.pexels.com/photos/4065624/pexels-photo-4065624.jpeg',
+            'labels' => ['Online', 'Fiziniai'],
+            'features' => [
+                'Ultrices ultricies faucibus eu sit',
+                'Arcu pretium ultricies convallis ultricies',
+                'Sed turpis feugiat in id',
+                'Auge massa enim euismod purus',
+            ],
+            'link' => '#',
+        ],
+        [
+            'title' => 'Pirmosios pagalbos kursai',
+            'price' => '€35',
+            'image' => 'https://images.pexels.com/photos/532220/pexels-photo-532220.jpeg',
+            'labels' => ['Kontaktiniai', '16 val.'],
+            'features' => [
+                'Etiam cursus, arcu vitae convallis',
+                'Morbi facilisis, enim at dictum',
+                'Vestibulum ante ipsum primis',
+                'Nulla facilisi euismod purus',
+            ],
+            'link' => '#',
+        ],
+        [
+            'title' => 'Gaisrinė sauga',
+            'price' => '€40',
+            'image' => 'https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg',
+            'labels' => ['Online', '8 val.'],
+            'features' => [
+                'Suspendisse potenti euismod',
+                'Curabitur non nulla sit amet',
+                'Vivamus magna justo lacinia',
+                'Praesent sapien massa convallis',
+            ],
+            'link' => '#',
+        ],
+    ];
+    return view('trainings', ['trainings' => $trainings]);
+})->name('trainings');
 Route::view('trainings-individual-internal', 'trainings-individual-internal')->name('trainings-individual-internal');
 Route::view('training-category', 'training-category')->name('training-category');
 
@@ -94,3 +137,36 @@ Route::get('/payment', function () {
 
 Route::view('/contacts', 'contacts')->name('contact');
 Route::view('/thank-you', 'thank-you');
+
+Route::get('/all-trainings', function () {
+    $trainings = [
+        [
+            'title' => 'Higienos pažymėjimas',
+            'category' => 'Higiena',
+            'location' => 'Vilnius',
+            'date' => '2024-07-10',
+            'time' => '10:00',
+            'price' => 24,
+            'tags' => ['Online', '8 val.'],
+        ],
+        [
+            'title' => 'Pirmosios pagalbos kursai',
+            'category' => 'Pirmosios pagalbos',
+            'location' => 'Kaunas',
+            'date' => '2024-07-15',
+            'time' => '13:00',
+            'price' => 35,
+            'tags' => ['Kontaktiniai', '16 val.'],
+        ],
+        [
+            'title' => 'Gaisrinė sauga',
+            'category' => 'Gaisrinė ir civilinė sauga',
+            'location' => 'Klaipėda',
+            'date' => '2024-07-20',
+            'time' => '09:00',
+            'price' => 40,
+            'tags' => ['Online', '8 val.'],
+        ],
+    ];
+    return view('all-trainings', ['trainings' => $trainings]);
+})->name('all-trainings');

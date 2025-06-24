@@ -6,7 +6,6 @@
 <section class="pt-4 md:pt-14 pb-12 md:pb-[116px]">
     <div class="max-w-[1440px] mx-auto">
         <h1 class="mb-6 md:mb-16 text-black-100 text-center  text-[40px] md:text-[64px] font-normal font-medium leading-[50px] md:leading-[74px]">Mokymai pagal kategoriją</h1>
-
         <div class="flex flex-col lg:flex-row gap-6 mx-auto w-max">
             <div class="flex items-center bg-white shadow-soft rounded-[100px] pl-2.5 lg:pl-4 pr-4 lg:pr-5 py-2 lg:py-4 gap-4  lg:w-max">
                 <div class="flex-shrink-0 rounded-full w-10 lg:w-[58px] h-10 lg:h-[58px] flex items-center justify-center bg-green-200">
@@ -31,6 +30,7 @@
         </div>
     </div>
 </section>
+<x-all-trainings :trainings="$trainings" />
 <x-popular-courses />
 <div class="pt-[60px] md:pt-[100px] bg-gray-100">
     <x-testimonials-section />
