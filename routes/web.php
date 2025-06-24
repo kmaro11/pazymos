@@ -2,19 +2,14 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::view('/', 'home');
-Route::view('trainings', 'trainings');
-Route::view('trainings-individual-internal', 'trainings-individual-internal');
-Route::view('training-category', 'training-category');
+Route::view('/', 'home')->name('home');
+Route::view('trainings', 'trainings')->name('trainings');
+Route::view('trainings-individual-internal', 'trainings-individual-internal')->name('trainings-individual-internal');
+Route::view('training-category', 'training-category')->name('training-category');
 
-Route::view('about', 'about');
-Route::view('how-it-works', 'how-it-works');
-Route::view('news', 'news');
-Route::view('basket', 'basket');
-
-Route::get('/news', function () {
-    return view('news');
-});
+Route::view('about', 'about')->name('about');
+Route::view('how-it-works', 'how-it-works')->name('how-it-works');
+Route::view('news', 'news')->name('news');
 
 Route::get('/news/{slug}', function ($slug) {
     $article = [
@@ -90,12 +85,12 @@ Route::get('/basket', function () {
         'subtotal' => $subtotal,
         'totalItems' => $totalItems,
         'total' => $total,
-    ])->name('basket');
-});
+    ]);
+})->name('basket');
 
 Route::get('/payment', function () {
     return view('payment');
 })->name('payment');
 
-Route::view('/contacts', 'contacts');
+Route::view('/contacts', 'contacts')->name('contact');
 Route::view('/thank-you', 'thank-you');

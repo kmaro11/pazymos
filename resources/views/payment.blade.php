@@ -7,7 +7,7 @@
         <div class="max-w-[645px] w-full">
             <div class="bg-white py-8 md:pt-8 md:pb-10 rounded-[30px] shadow-large-card">
                 <div class="flex items-center mb-10 px-4 md:px-10">
-                    <a class="cursor-pointer pr-2.5" aria-label="Grižti į krepšelį">
+                    <a href="{{ route('basket') }}" class="cursor-pointer pr-2.5" aria-label="Grižti į krepšelį">
                         <img src="{{ asset('svg/arrow.svg') }}" alt="arrow">
                     </a>
                     <h2 class="text-2xl font-medium text-black-100">Kontaktiniai duomenys</h2>
