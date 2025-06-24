@@ -1,7 +1,7 @@
 <div>
-    <section class="lg:px-14 px-4 pt-4">
-        <div class="max-w-[1440px] mx-auto">
-            <div class=" flex flex-col lg:flex-row lg:items-start mb-[60px] md:mb-[100px] justify-between">
+    <section class="pt-4 lg:pt-14">
+        <div class="px-4 lg:px-5">
+            <div class="max-w-[1440px] mx-auto flex flex-col lg:flex-row lg:items-start mb-[60px] md:mb-[100px] justify-between">
                 <h1 class="max-w-[645px] text-[40px] lg:text-[74px] font-medium text-black-100 leading-[50px] lg:leading-[84px]  mb-6 lg:mb-0">
                     Pagrindinis pavadinimas apie mokymus
                 </h1>
@@ -18,11 +18,11 @@
                     </x-button>
                 </div>
             </div>
-            <div class="relative w-full h-[536px] md:h-[548px]">
-                <img class="w-full h-full rounded-[30px] object-cover object-center"
-                    src="{{ asset('images/home-hero.jpg') }}"
-                    alt="Moteris prie kompiuterio" />
-            </div>
+        </div>
+        <div class="relative w-full h-[536px] md:h-[548px] px-4 lg:px-5">
+            <img class="w-full h-full rounded-[30px] object-cover object-center"
+                src="{{ asset('images/home-hero.jpg') }}"
+                alt="Moteris prie kompiuterio" />
         </div>
     </section>
 

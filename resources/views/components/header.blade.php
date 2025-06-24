@@ -1,4 +1,4 @@
-<header class="w-full bg-white py-[22px] lg:py-[30px] px-4 lg:px-14">
+<header class="w-full bg-gray-100 py-[22px] lg:py-[30px] px-4 lg:px-14">
     <div class="max-w-[1440px] mx-auto w-full flex items-center justify-between">
         <a href="/">
             <img src="{{ asset('svg/pazymos-logo.svg') }}" alt="pazymos-logo">

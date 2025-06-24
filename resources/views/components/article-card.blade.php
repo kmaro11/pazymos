@@ -7,7 +7,7 @@
         @endif
         <img src="{{ $article['image'] }}" alt="{{ $article['title'] }}" class="rounded-[20px] w-full h-full object-cover object-center" />
     </div>
-    <div class="px-2.5">
+    <div class="px-2.5 flex flex-col justify-between h-full">
         <p class="leading-[22px] text-sm md:text-base md:leading-6 text-black-100 mb-4 md:mb-8">
             {{ $article['excerpt'] }}
         </p>

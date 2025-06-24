@@ -1,5 +1,5 @@
 <!-- TODO Change padding top when header will be completed -->
-<section class="bg-gray-100 px-4 sm:px-14 pt-4 md:pt-10 pb-[60px] md:pb-[100px]">
+<section class="bg-gray-100 px-4 sm:px-14 pt-4 pb-[60px] md:pb-[100px]">
     <div class="max-w-[1440px] mx-auto flex flex-col lg:flex-row justify-between">
         <div class="max-w-[644px] w-full mb-[60px] lg:mb-0">
             <x-breadcrumbs :breadcrumbs="$breadcrumbs" />

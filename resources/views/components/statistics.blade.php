@@ -2,7 +2,7 @@
     <div class="absolute inset-0 z-0">
         <img src="{{ asset('images/blue-background.png') }}" alt="Background" class="w-full h-full object-cover">
     </div>
-    <div class="max-w-[1440px] w-full mx-auto relative z-10 md:mb-[100px] mb-[50px]">
+    <div class="max-w-[1320px] w-full mx-auto relative z-10 md:mb-[100px] mb-[50px]">
         <div
             class="bg-white flex items-center justify-center rounded-[10px] px-3 py-[5px] text-sm font-medium leading-[22px] text-green w-max mx-auto mb-4 md:mb-[30px]">
             Statistika

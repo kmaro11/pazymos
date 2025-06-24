@@ -44,7 +44,7 @@ $members = [
 
 <x-header />
 
-<section class="bg-gray-100 pt-4 pb-[60px] md:pt-[90px] md:pb-20">
+<section class="bg-gray-100 pt-4 pb-[60px] md:pt-14 md:pb-20">
     <div class="px-4 md:px-14">
         <div class="max-w-[1200px] mx-auto">
             <div class="mb-[60px] md:mb-[100px]">
@@ -53,7 +53,7 @@ $members = [
             </div>
         </div>
     </div>
-    <div class="relative max-w-[1400px] px-5 mx-auto">
+    <div class="relative max-w-[1440px] px-5 mx-auto">
         <img src="{{ asset('images/about-hero.jpg') }}" alt="Apie Pažymos.lt" class="w-full h-full hidden md:block">
         <img src="{{ asset('images/about-hero-mobile.jpg') }}" alt="Apie Pažymos.lt" class="w-full h-full md:hidden">
     </div>
@@ -91,8 +91,9 @@ $members = [
     ],
     ]" />
 
+
 <section class="bg-gray-100">
-    <div class="bg-green pt-[60px] md:pt-20 pb-[68px] md:pb-[85px] rounded-[30px] px-4 md:px-14">
+    <div class="bg-green pt-4 md:pt-14 pb-[68px] md:pb-[85px] rounded-[30px] px-4 md:px-14">
         <div class="max-w-[1440px] mx-auto">
             <div class="max-w-[530px] mx-auto px-4 mb-14 md:mb-[85px]">
                 <h2 class="text-white md:text-gray-100 text-center  text-[32px] md:text-[48px] font-medium leading-[42px] md:leading-[58px] mb-4 md:mb-6">Mūsų komanda</h2>
@@ -124,6 +125,6 @@ $members = [
     </div>
 </section>
 
-<x-latest-articles />
+<x-latest-articles label="true" />
 <x-footer />
 @endsection

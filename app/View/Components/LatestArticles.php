@@ -21,7 +21,7 @@ class LatestArticles extends Component
             ],
             [
                 'title' => 'Auctor et magna feugiat pretium ante volutpat sagittis augue amet',
-                'description' => 'Auctor et magna feugiat pretium ante volutpat sagittis augue amet. Interdum dignissim aliquam nec augue leo mattis urna eros. Vivamus velit urna vitae integer sem in. Pretium ultricies ut aliquam nulla sed. Sagittis sed ac ut semper et sed a purus. Augue ut vel tristique malesuada mollis enim.',
+                'description' => 'Auctor et magna feugiat pretium ante volutpat.',
                 'image' => 'https://images.pexels.com/photos/4065624/pexels-photo-4065624.jpeg',
                 'link' => '#',
                 'category' => 'Atnaujinimai'

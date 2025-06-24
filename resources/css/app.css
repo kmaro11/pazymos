@@ -25,7 +25,10 @@
         font-style: normal;
     }
 }
-
+.body,
+.html {
+    @apply bg-gray-100;
+}
 .animation-block {
     display: flex;
     flex-direction: column;

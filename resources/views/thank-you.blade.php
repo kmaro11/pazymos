@@ -2,7 +2,7 @@
 
 @section('content')
 <x-header />
-<section class="pt-[194px] pb-[200px] px-4 md:px-14">
+<section class="pt-4 pt-[164px] pb-[200px] px-4 md:px-14">
     <h1 class="mb-6 text-black-100 text-center text-[48px] font-medium leading-[58px]">
         Dėkojame už pirkimą!
     </h1>

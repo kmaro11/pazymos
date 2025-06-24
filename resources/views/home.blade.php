@@ -8,6 +8,6 @@
 <x-how-it-works />
 <x-statistics />
 <x-testimonials />
-<x-latest-articles />
+<x-latest-articles label="true" />
 <x-footer />
 @endsection
