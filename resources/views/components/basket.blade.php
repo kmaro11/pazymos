@@ -47,7 +47,13 @@
             </div>
         </div>
     </div>
-    <x-button class="w-full" variant="dark">
+
+    <button
+        class="w-full bg-black-100 text-white py-4 rounded-lg font-medium hover:bg-black-100/90 transition-colors add-to-basket-btn"
+        data-training-id="{{ $trainingId ?? '1' }}"
+        data-training-title="{{ $trainingTitle ?? 'Mokymas' }}"
+        data-price-individual="{{ $individualPrice }}"
+        data-price-company="{{ $companyPrice }}">
         Dėti į krepšelį
-    </x-button>
+    </button>
 </div>

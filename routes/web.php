@@ -10,6 +10,7 @@ Route::view('training-category', 'training-category');
 Route::view('about', 'about');
 Route::view('how-it-works', 'how-it-works');
 Route::view('news', 'news');
+Route::view('basket', 'basket');
 
 Route::get('/news', function () {
     return view('news');
@@ -54,6 +55,42 @@ Route::get('/news/{slug}', function ($slug) {
     ];
 
     return view('news-internal', ['article' => $article]);
+});
+
+Route::get('/basket', function () {
+    $basket = [
+        [
+            'title' => 'Projektų valdymo pagrindai',
+            'tags' => [
+                ['text' => 'Online'],
+                ['text' => 'Lietuvių k.'],
+                ['text' => '8 val.'],
+            ],
+            'price' => 35.00,
+            'quantity' => 2,
+        ],
+        [
+            'title' => 'Komandinis darbas ir lyderystė',
+            'tags' => [
+                ['text' => 'Vilnius'],
+                ['text' => 'Anglų k.'],
+                ['text' => '16 val.'],
+            ],
+            'price' => 70.00,
+            'quantity' => 1,
+        ],
+    ];
+
+    $subtotal = collect($basket)->sum(fn($item) => $item['price'] * $item['quantity']);
+    $totalItems = collect($basket)->sum('quantity');
+    $total = $subtotal;
+
+    return view('basket', [
+        'basket' => $basket,
+        'subtotal' => $subtotal,
+        'totalItems' => $totalItems,
+        'total' => $total,
+    ]);
 });
 
 Route::view('/contacts', 'contacts');
