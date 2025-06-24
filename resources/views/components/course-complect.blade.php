@@ -1,6 +1,6 @@
 <section class="bg-gray-100">
     <div class="bg-green rounded-[30px] pt-[60px] md:pt-20 pb-[72px] md:pb-16 px-4 md:px-14">
-        <div class="max-w-[1320px] mx-auto">
+        <div class="max-w-[1440px] mx-auto">
             <h2 class="text-white  text-[32px] md:text-[48px] font-medium leading-[42px] md:leading-[58px] text-center md:text-left mb-4 md:mb-6">{{ $complect['main_title'] }}</h2>
             <p class="text-white  text-base font-normal leading-6 text-center md:text-left mb-10 md:mb-20">{{ $complect['main_subtitle'] }}</p>
 

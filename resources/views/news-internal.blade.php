@@ -4,7 +4,7 @@
 
 <!-- TODO: NEED MOBILE -->
 <article class="pt-20 pb-[100px] px-4 md:px-14">
-    <div class="max-w-[1320px] mx-auto">
+    <div class="max-w-[1440px] mx-auto">
         <div class=" text-[14px] font-medium leading-[22px] text-green mb-4 py-[5px] px-3 rounded-[10px] bg-gray-300 w-max">
             {{ $article['category'] }}
         </div>

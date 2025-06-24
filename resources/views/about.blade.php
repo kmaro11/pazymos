@@ -93,7 +93,7 @@ $members = [
 
 <section class="bg-gray-100">
     <div class="bg-green pt-[60px] md:pt-20 pb-[68px] md:pb-[85px] rounded-[30px] px-4 md:px-14">
-        <div class="max-w-[1320px] mx-auto">
+        <div class="max-w-[1440px] mx-auto">
             <div class="max-w-[530px] mx-auto px-4 mb-14 md:mb-[85px]">
                 <h2 class="text-white md:text-gray-100 text-center  text-[32px] md:text-[48px] font-medium leading-[42px] md:leading-[58px] mb-4 md:mb-6">Mūsų komanda</h2>
                 <p class="text-white md:text-gray-100 text-center  text-base md:text-base font-normal leading-6 md:leading-6">Tincidunt proin fringilla pulvinar ut aliquam diam gravida proin. Feugiat magna vulputate faucibus risus adipiscing.</p>

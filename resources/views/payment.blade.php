@@ -3,7 +3,7 @@
 @section('content')
 <x-header />
 <section class="pt-20 pb-[123px] px-4 md:px-14">
-    <div class="max-w-[1320px] mx-auto flex flex-col lg:flex-row justify-between gap-10">
+    <div class="max-w-[1440px] mx-auto flex flex-col lg:flex-row justify-between gap-10">
         <div class="max-w-[645px] w-full">
             <div class="bg-white py-8 md:pt-8 md:pb-10 rounded-[30px] shadow-large-card">
                 <div class="flex items-center mb-10 px-4 md:px-10">

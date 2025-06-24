@@ -11,7 +11,7 @@
             Naujausi straipsniai
         </h2>
 
-        <div class="max-w-[1320px] w-full mx-auto">
+        <div class="max-w-[1440px] w-full mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 @foreach($items as $item)
                 <x-article-card :article="$item" />

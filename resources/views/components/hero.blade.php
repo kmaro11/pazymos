@@ -1,6 +1,6 @@
 <div>
     <section class="lg:px-14 px-4 pt-4">
-        <div class="max-w-[1320px] mx-auto">
+        <div class="max-w-[1440px] mx-auto">
             <div class=" flex flex-col lg:flex-row lg:items-start mb-[60px] md:mb-[100px] justify-between">
                 <h1 class="max-w-[645px] text-[40px] lg:text-[74px] font-medium text-black-100 leading-[50px] lg:leading-[84px]  mb-6 lg:mb-0">
                     Pagrindinis pavadinimas apie mokymus
@@ -28,7 +28,7 @@
 
     {{-- Training Categories Section --}}
     <section class="lg:px-14 px-4 pb-10 lg:pb-[100px]">
-        <div class="max-w-[1320px] mx-auto flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-12">
+        <div class="max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-12">
             <h2 class="text-[32px] lg:text-[48px] font-medium text-black-100 leading-[42px] lg:leading-[58px]  text-center lg:text-left">
                 Mokymų kategorijos
             </h2>

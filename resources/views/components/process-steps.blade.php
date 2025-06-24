@@ -1,5 +1,5 @@
 <section class="px-4 bg-gradient-custom rounded-t-[30px] md:px-14 py-14 md:py-[100px]">
-    <div class="max-w-[1320px] mx-auto grid grid-cols-1 gap-y-[60px] md:gap-y-[100px]">
+    <div class="max-w-[1440px] mx-auto grid grid-cols-1 gap-y-[60px] md:gap-y-[100px]">
         @foreach ($steps as $step)
 
         <div class="flex flex-col-reverse lg:flex-row gap-[50px] lg:gap-12 items-center justify-between">

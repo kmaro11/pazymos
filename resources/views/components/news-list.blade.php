@@ -1,5 +1,5 @@
 <section class="py-20 md:py-[110px] px-4 md:px-14 bg-gradient-custom rounded-t-[30px]">
-    <div class="max-w-[1320px] mx-auto pb-20">
+    <div class="max-w-[1440px] mx-auto pb-20">
         <div class="flex flex-wrap justify-between items-center mb-10 md:mb-20 gap-6">
             <div class="flex flex-wrap gap-4">
                 <x-pill-button>Visos naujienos</x-pill-button>

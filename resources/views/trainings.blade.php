@@ -4,7 +4,7 @@
 <x-header />
 <!-- TODO: update top paddings when header will be done -->
 <section class="pt-4 md:pt-[100px] pb-12 md:pb-[116px]">
-    <div class="max-w-[1320px] mx-auto">
+    <div class="max-w-[1440px] mx-auto">
         <h1 class="mb-6 md:mb-16 text-black-100 text-center  text-[40px] md:text-[64px] font-normal font-medium leading-[50px] md:leading-[74px]">Mokymai pagal kategoriją</h1>
 
         <div class="flex flex-col lg:flex-row gap-6 mx-auto w-max">

@@ -2,7 +2,7 @@
 
 @section('content')
 <section class="pt-20 pb-[100px] px-4 md:px-14">
-    <div class="max-w-[1320px] mx-auto flex flex-col lg:flex-row gap-10">
+    <div class="max-w-[1440px] mx-auto flex flex-col lg:flex-row gap-10">
         <div class="max-w-[500px]">
             <h1 class="mb-6 text-black-100  text-[48px] font-normal font-medium leading-[58px]">Susisiekite su mumis</h1>
             <p class="mb-9 text-black-100  text-base font-normal leading-6">Mūsų komanda mielai jums padės.</p>
