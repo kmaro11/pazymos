@@ -37,7 +37,7 @@
                     </li>
                     @endforeach
                 </ul>
-                <x-button variant="dark" size="w-full" class="mt-9">Eiti į apmokėjimą</x-button>
+                <x-button variant="dark" size="w-full" class="mt-9" url="{{ route('payment') }}">Eiti į apmokėjimą</x-button>
             </div>
 
         </div>

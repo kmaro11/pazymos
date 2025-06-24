@@ -90,8 +90,12 @@ Route::get('/basket', function () {
         'subtotal' => $subtotal,
         'totalItems' => $totalItems,
         'total' => $total,
-    ]);
+    ])->name('basket');
 });
+
+Route::get('/payment', function () {
+    return view('payment');
+})->name('payment');
 
 Route::view('/contacts', 'contacts');
 Route::view('/thank-you', 'thank-you');
