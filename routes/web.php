@@ -48,7 +48,50 @@ Route::get('trainings', function () {
     return view('trainings', ['trainings' => $trainings]);
 })->name('trainings');
 Route::view('trainings-individual-internal', 'trainings-individual-internal')->name('trainings-individual-internal');
-Route::view('training-category', 'training-category')->name('training-category');
+Route::get('training-category', function () {
+    $trainings = [
+        [
+            'title' => 'Mokymų komplektas',
+            'price' => '€45',
+            'image' => 'https://images.pexels.com/photos/4065624/pexels-photo-4065624.jpeg',
+            'labels' => ['Online', 'Fiziniai'],
+            'features' => [
+                'Ultrices ultricies faucibus eu sit',
+                'Arcu pretium ultricies convallis ultricies',
+                'Sed turpis feugiat in id',
+                'Auge massa enim euismod purus',
+            ],
+            'link' => '#',
+        ],
+        [
+            'title' => 'Pirmosios pagalbos kursai',
+            'price' => '€35',
+            'image' => 'https://images.pexels.com/photos/532220/pexels-photo-532220.jpeg',
+            'labels' => ['Kontaktiniai', '16 val.'],
+            'features' => [
+                'Etiam cursus, arcu vitae convallis',
+                'Morbi facilisis, enim at dictum',
+                'Vestibulum ante ipsum primis',
+                'Nulla facilisi euismod purus',
+            ],
+            'link' => '#',
+        ],
+        [
+            'title' => 'Gaisrinė sauga',
+            'price' => '€40',
+            'image' => 'https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg',
+            'labels' => ['Online', '8 val.'],
+            'features' => [
+                'Suspendisse potenti euismod',
+                'Curabitur non nulla sit amet',
+                'Vivamus magna justo lacinia',
+                'Praesent sapien massa convallis',
+            ],
+            'link' => '#',
+        ],
+    ];
+    return view('training-category', ['trainings' => $trainings]);
+})->name('training-category');
 
 Route::view('about', 'about')->name('about');
 Route::view('how-it-works', 'how-it-works')->name('how-it-works');

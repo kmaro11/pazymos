@@ -1,20 +1,33 @@
 @props(['trainings' => []])
 
 <section class="pb-[60px] md:pb-[108px] pt-12 md:pt-[88px] px-4 md:px-14 bg-gradient-custom rounded-t-[30px]">
-    <h2 class="text-black-100 text-center text-[48px] font-medium leading-[58px] md:mb-24">Visi mokymai</h2>
     <div class="max-w-[1440px] mx-auto pb-20">
-        <div class="flex flex-wrap justify-between items-center mb-10 md:mb-20 gap-6">
-            <div class="flex flex-wrap gap-4">
-                <x-pill-button>Visi mokymai</x-pill-button>
-                <x-pill-button>Higiena</x-pill-button>
-                <x-pill-button>Pirmosios pagalbos</x-pill-button>
-                <x-pill-button>Gaisrinė ir civilinė sauga</x-pill-button>
-                <x-pill-button>Sveikatos priežiūra</x-pill-button>
-            </div>
-            <div class="w-full sm:max-w-[277px]">
-                <x-search-input placeholder="Ieškoti mokymų..." />
-            </div>
+        <h2 class="text-black-100 font-medium text-[36px] leading-[46px] mb-6 md:mb-12 text-center md:text-left">Rinktis pagal specializaciją</h2>
+
+        <div class="hidden md:flex flex-wrap gap-4 mb-16">
+            <x-pill-button>Visi mokymai</x-pill-button>
+            <x-pill-button>Higiena</x-pill-button>
+            <x-pill-button>Pirmosios pagalbos</x-pill-button>
+            <x-pill-button>Gaisrinė ir civilinė sauga</x-pill-button>
+            <x-pill-button>Sveikatos priežiūra</x-pill-button>
         </div>
+
+        <div class="md:hidden mb-8 md:mb-16">
+            <x-select
+                size="small"
+                name="trainings-category"
+                :options="[
+                    ['label' => 'Higiena', 'value' => 'Higiena'],
+                    ['label' => 'Pirmosios pagalbos', 'value' => 'Pirmosios pagalbos'],
+                    ['label' => 'Gaisrinė ir civilinė sauga', 'value' => 'Gaisrinė ir civilinė sauga'],
+                    ['label' => 'Sveikatos priežiūra', 'value' => 'Sveikatos priežiūra'],
+                ]" />
+        </div>
+
+        <div class="w-full sm:max-w-[277px] mb-[30px] md:mb-[60px]">
+            <x-search-input placeholder="Ieškoti mokymų..." />
+        </div>
+
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             @foreach ($trainings as $training)
             <x-training-card :training="$training" />

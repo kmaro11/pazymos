@@ -3,7 +3,7 @@
 @section('content')
 <x-header />
 <!-- TODO: update top paddings when header will be done -->
-<section class="pt-4 md:pt-14 pb-12 md:pb-[85px]">
+<section class="pt-4 md:pt-14 pb-12 md:pb-[85px] px-4 md:px-14">
     <div class="max-w-[1440px] mx-auto">
         <h1 class="max-w-[700px] w-full mx-auto mb-6 md:mb-[30px] text-black-100 text-center  text-[40px] md:text-[64px] font-normal font-medium leading-[50px] md:leading-[74px]">
             Higienos privalomieji mokymai
@@ -13,6 +13,8 @@
         </p>
     </div>
 </section>
+
+<x-trainings-category :trainings="$trainings" />
 
 <x-popular-courses />
 
