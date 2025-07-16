@@ -7,7 +7,7 @@
             <div class="bg-white rounded-2xl p-2.5 md:pt-11 md:px-10 md:pb-16">
 
                 {{-- Course Items --}}
-                <div class="mt-4  border border-gray-400">
+                <div class="mt-4 border border-gray-400">
                     @foreach ($complect['courses'] as $course)
 
                     @if ($course['type'] === 'complect')
