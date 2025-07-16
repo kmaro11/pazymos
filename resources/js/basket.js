@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const basket = [];
+
+    // Basket Component
     const basketComponent = document.querySelector('[data-component="basket"]');
     if (!basketComponent) {
         return;

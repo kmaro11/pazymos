@@ -5,38 +5,41 @@
             <p class="text-white  text-base font-normal leading-6 text-center md:text-left mb-10 md:mb-20">{{ $complect['main_subtitle'] }}</p>
 
             <div class="bg-white rounded-2xl p-2.5 md:pt-11 md:px-10 md:pb-16">
-                {{-- Complect Item --}}
-                <div class="bg-blue-100 rounded-[20px] p-2.5 py-6 md:py-6 md:pr-7 md:pl-[22px] flex flex-col md:flex-row md:items-center mb-6 md:mb-0">
-                    <div class="flex flex-col md:flex-row md:items-center mb-6 md:mb-0">
-                        <div class="flex mb-4 md:mb-0">
-                            <div class="bg-blue rounded-[12px] md:rounded-[20px] h-12 w-12 md:h-[68px] md:w-[68px] flex items-center justify-center mr-3 md:mr-6">
-                                <div class="w-4 h-4 md:w-6 md:h-6">
-                                    <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M9.92369 2.1081C9.56352 1.99872 9.18338 1.99942 8.8055 2.00011L8.71556 2.00022L8.35719 2.00022C7.27341 2.00021 6.39926 2.0002 5.69138 2.05804C4.96253 2.11759 4.32234 2.2434 3.73005 2.54519C2.78924 3.02455 2.02434 3.78946 1.54497 4.73027C1.24318 5.32256 1.11737 5.96275 1.05782 6.6916C0.999983 7.39947 0.99999 8.27363 1 9.35741V14.643C0.99999 15.7268 0.999982 16.601 1.05782 17.3088C1.11737 18.0377 1.24318 18.6779 1.54497 19.2702C2.02434 20.211 2.78924 20.9759 3.73005 21.4553C4.32234 21.757 4.96253 21.8829 5.69138 21.9424C6.39923 22.0002 7.27334 22.0002 8.35707 22.0002H15.6428C16.7266 22.0002 17.6008 22.0002 18.3086 21.9424C19.0375 21.8829 19.6777 21.757 20.27 21.4553C21.2108 20.9759 21.9757 20.211 22.455 19.2702C22.7568 18.6779 22.8826 18.0377 22.9422 17.3088C23 16.601 23 15.7269 23 14.6432V12.3574C23 11.2737 23 10.3994 22.9422 9.6916C22.8826 8.96275 22.7568 8.32256 22.455 7.73027C21.9757 6.78946 21.2108 6.02455 20.27 5.54519C19.6777 5.2434 19.0375 5.11759 18.3086 5.05804C17.6007 5.0002 16.7266 5.00021 15.6428 5.00022L13.2844 5.00022C12.7526 5.00022 12.695 4.99003 12.6575 4.97865C12.5946 4.95954 12.5361 4.92823 12.4853 4.88649C12.455 4.86161 12.4146 4.81934 12.1196 4.3768L11.5445 3.51424L11.4947 3.43934C11.2857 3.12454 11.0754 2.80786 10.7846 2.56886C10.5307 2.36017 10.2382 2.2036 9.92369 2.1081Z" fill="#0E0126" />
-                                    </svg>
-                                </div>
-                            </div>
-
-                            <h3 class="font-bold text-black-100 mb-3 block md:hidden">{{ $complect['item']['title'] }}</h3>
-                        </div>
-                        <div class="flex-grow">
-                            <h3 class="font-bold text-black-100 mb-3 hidden md:block">{{ $complect['item']['title'] }}</h3>
-                            <div class="flex flex-wrap items-center gap-2.5">
-                                @foreach ($complect['item']['tags'] as $tag)
-                                <div class="bg-white rounded-[100px] px-3 text-black-100  text-sm font-medium leading-6">
-                                    {{ $tag['text'] }}
-                                </div>
-                                @endforeach
-                            </div>
-                        </div>
-                    </div>
-                    <x-button variant="dark" size="w-full md:w-max" class="md:ml-auto">Dėti į krepšelį</x-button>
-                </div>
 
                 {{-- Course Items --}}
-                <div class="mt-4 rounded-[20px] bg-gray-300 border border-gray-400">
+                <div class="mt-4  border border-gray-400">
                     @foreach ($complect['courses'] as $course)
-                    <div class="flex md:items-center border-b border-black-100/10 last:border-b-0 p-2.5 py-6 md:py-6 md:pr-7 md:pl-[22px] flex-col md:flex-row">
+
+                    @if ($course['type'] === 'complect')
+
+                    <div class="bg-blue-100 rounded-[20px] p-2.5 py-6 md:py-6 md:pr-7 md:pl-[22px] flex flex-col md:flex-row md:items-center mb-6 md:mb-0">
+                        <div class="flex flex-col md:flex-row md:items-center mb-6 md:mb-0">
+                            <div class="flex mb-4 md:mb-0">
+                                <div class="bg-blue rounded-[12px] md:rounded-[20px] h-12 w-12 md:h-[68px] md:w-[68px] flex items-center justify-center mr-3 md:mr-6">
+                                    <div class="w-4 h-4 md:w-6 md:h-6">
+                                        <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.92369 2.1081C9.56352 1.99872 9.18338 1.99942 8.8055 2.00011L8.71556 2.00022L8.35719 2.00022C7.27341 2.00021 6.39926 2.0002 5.69138 2.05804C4.96253 2.11759 4.32234 2.2434 3.73005 2.54519C2.78924 3.02455 2.02434 3.78946 1.54497 4.73027C1.24318 5.32256 1.11737 5.96275 1.05782 6.6916C0.999983 7.39947 0.99999 8.27363 1 9.35741V14.643C0.99999 15.7268 0.999982 16.601 1.05782 17.3088C1.11737 18.0377 1.24318 18.6779 1.54497 19.2702C2.02434 20.211 2.78924 20.9759 3.73005 21.4553C4.32234 21.757 4.96253 21.8829 5.69138 21.9424C6.39923 22.0002 7.27334 22.0002 8.35707 22.0002H15.6428C16.7266 22.0002 17.6008 22.0002 18.3086 21.9424C19.0375 21.8829 19.6777 21.757 20.27 21.4553C21.2108 20.9759 21.9757 20.211 22.455 19.2702C22.7568 18.6779 22.8826 18.0377 22.9422 17.3088C23 16.601 23 15.7269 23 14.6432V12.3574C23 11.2737 23 10.3994 22.9422 9.6916C22.8826 8.96275 22.7568 8.32256 22.455 7.73027C21.9757 6.78946 21.2108 6.02455 20.27 5.54519C19.6777 5.2434 19.0375 5.11759 18.3086 5.05804C17.6007 5.0002 16.7266 5.00021 15.6428 5.00022L13.2844 5.00022C12.7526 5.00022 12.695 4.99003 12.6575 4.97865C12.5946 4.95954 12.5361 4.92823 12.4853 4.88649C12.455 4.86161 12.4146 4.81934 12.1196 4.3768L11.5445 3.51424L11.4947 3.43934C11.2857 3.12454 11.0754 2.80786 10.7846 2.56886C10.5307 2.36017 10.2382 2.2036 9.92369 2.1081Z" fill="#0E0126" />
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <h3 class="font-bold text-black-100 mb-3 block md:hidden">{{ $complect['item']['title'] }}</h3>
+                            </div>
+                            <div class="flex-grow">
+                                <h3 class="font-bold text-black-100 mb-3 hidden md:block">{{ $complect['item']['title'] }}</h3>
+                                <div class="flex flex-wrap items-center gap-2.5">
+                                    @foreach ($complect['item']['tags'] as $tag)
+                                    <div class="bg-white rounded-[100px] px-3 text-black-100  text-sm font-medium leading-6">
+                                        {{ $tag }}
+                                    </div>
+                                    @endforeach
+                                </div>
+                            </div>
+                        </div>
+                        <x-button variant="dark" size="w-full md:w-max" class="md:ml-auto">Dėti į krepšelį</x-button>
+                    </div>
+                    @else
+                    <div class="rounded-[20px] bg-gray-300 flex md:items-center border-b border-black-100/10 last:border-b-0 p-2.5 py-6 md:py-6 md:pr-7 md:pl-[22px] flex-col md:flex-row">
                         <div class="flex flex-col md:flex-row md:items-center mb-6 md:mb-0">
                             <div class="flex mb-4 md:mb-0">
                                 <div class="bg-[#E7E7E7] rounded-[12px] md:rounded-[20px] h-12 w-12 md:h-[68px] md:w-[68px] flex items-center justify-center mr-3 md:mr-6">
@@ -54,7 +57,7 @@
                                 <div class="flex flex-wrap items-center gap-2.5">
                                     @foreach ($course['tags'] as $tag)
                                     <div class="bg-white rounded-[100px] px-3 text-black-100  text-sm font-medium leading-6">
-                                        {{ $tag['text'] }}
+                                        {{ $tag }}
                                     </div>
                                     @endforeach
                                 </div>
@@ -65,6 +68,7 @@
                             <x-button variant="dark" size="w-full md:w-max">Dėti į krepšelį</x-button>
                         </div>
                     </div>
+                    @endif
                     @endforeach
                 </div>
             </div>
