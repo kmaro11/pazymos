@@ -4,10 +4,10 @@
         <div class="px-4 md:pl-7 md:pr-6 py-5 flex justify-between">
             <div>
                 <div class="text-lg font-medium text-black-100 leading-6 mb-0.5">Tarpinė suma</div>
-                <div class="text-sm text-black-100/60">3 prekės</div>
+                <div class="text-sm text-black-100/60" data-basket-count>0 prekės</div>
             </div>
-            <div class="text-lg font-medium text-black-100 leading-6 text-right">
-                €70.00
+            <div class="text-lg font-medium text-black-100 leading-6 text-right" data-basket-price>
+                €0.00
             </div>
         </div>
         <div class="flex items-end space-x-5 px-4 md:pl-7 md:pr-6 pt-4 pb-6 border-t border-b border-black/10">
@@ -16,7 +16,7 @@
         </div>
         <div class="flex justify-between items-center px-4 md:pl-7 md:pr-6 pb-8 pt-7">
             <span class="text-black-100 text-2xl font-medium leading-[34px]">Viso mokėti</span>
-            <span class="text-2xl font-medium text-black-100 leading-[34px]">€70.00</span>
+            <span class="text-2xl font-medium text-black-100 leading-[34px]" data-basket-price>€0.00</span>
         </div>
     </div>
 </div>

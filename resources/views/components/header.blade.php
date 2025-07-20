@@ -34,8 +34,11 @@
             </ul>
         </nav>
         <div class="flex items-center gap-x-10">
-            <a href="{{ route('basket') }}" class="cursor-pointer flex items-center bg-green-100 rounded-[100px] py-[7px] px-2 lg:pr-3 gap-2">
-                <div class="flex items-center justify-center w-6 h-6">
+            <a href="{{ route('basket') }}" class=" cursor-pointer flex items-center bg-green-100 rounded-[100px] py-[7px] px-2 lg:pr-3 gap-2">
+
+                <div class="relative flex items-center justify-center w-6 h-6">
+                    <div data-basket-count="0" class="hidden absolute -top-[5px] -right-1.5 flex items-center justify-center w-4 h-4 bg-yellow-100 rounded-full text-green text-xs font-medium">
+                    </div>
                     <div class="bg-green-100 lg:bg-white rounded-full w-6 h-6 flex items-center justify-center">
                         <img src="{{ asset('svg/basket.svg') }}" alt="basket">
                     </div>
