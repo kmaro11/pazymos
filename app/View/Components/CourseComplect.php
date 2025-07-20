@@ -19,14 +19,9 @@ class CourseComplect extends Component
         $this->complect = $complect ?? [
             'main_title' => 'Šie mokymai priklauso "Y komplektui"',
             'main_subtitle' => 'Cras a morbi id duis volutpat porta hendrerit ultrices.',
-            'item' => [
-                'title' => 'Komplekto pavadinimas "Y"',
-                'price' => 40,
-                'original_price' => 45,
-                'tags' => ['Individualiai / Įmonėms', 'Online', 'Fiziniai'],
-            ],
             'courses' => [
                 [
+                    'id' => 1,
                     'type' => 'complect',
                     'title' => 'Komplekto pavadinimas "Y"',
                     'price' => 40,
@@ -34,18 +29,21 @@ class CourseComplect extends Component
                     'tags' => ['Individualiai / Įmonėms', 'Online', 'Fiziniai'],
                 ],
                 [
+                    'id' => 2,
                     'type' => 'course',
                     'title' => 'Mokymų pavadinimas',
                     'price' => 15,
                     'tags' => ['Individualiai / Įmonėms', 'Online'],
                 ],
                 [
+                    'id' => 3,
                     'type' => 'course',
                     'title' => 'Mokymų pavadinimas',
                     'price' => 15,
                     'tags' => ['Individualiai / Įmonėms', 'Online', 'Fiziniai'],
                 ],
                 [
+                    'id' => 4,
                     'type' => 'course',
                     'title' => 'Mokymų pavadinimas',
                     'price' => 15,

@@ -22,12 +22,12 @@
                                     </div>
                                 </div>
 
-                                <h3 class="font-bold text-black-100 mb-3 block md:hidden">{{ $complect['item']['title'] }}</h3>
+                                <h3 class="font-bold text-black-100 mb-3 block md:hidden">{{ $course['title'] }}</h3>
                             </div>
                             <div class="flex-grow">
-                                <h3 class="font-bold text-black-100 mb-3 hidden md:block">{{ $complect['item']['title'] }}</h3>
+                                <h3 class="font-bold text-black-100 mb-3 hidden md:block">{{ $course['title'] }}</h3>
                                 <div class="flex flex-wrap items-center gap-2.5">
-                                    @foreach ($complect['item']['tags'] as $tag)
+                                    @foreach ($course['tags'] as $tag)
                                     <div class="bg-white rounded-[100px] px-3 text-black-100  text-sm font-medium leading-6">
                                         {{ $tag }}
                                     </div>
@@ -35,7 +35,8 @@
                                 </div>
                             </div>
                         </div>
-                        <x-button variant="dark" size="w-full md:w-max" class="md:ml-auto">Dėti į krepšelį</x-button>
+                        <x-button variant="dark" size="w-full md:w-max" class="md:ml-auto"
+                            data-course="{{ json_encode($course) }}">Dėti į krepšelį</x-button>
                     </div>
                     @else
                     <div class="[&:nth-child(2)]:rounded-t-[20px] last:rounded-b-[20px] bg-gray-300 flex md:items-center border-b border-black-100/10 last:border-b-0 p-2.5 py-6 md:py-6 md:pr-7 md:pl-[22px] flex-col md:flex-row">
@@ -64,7 +65,7 @@
                         </div>
                         <div class="flex space-x-2 md:ml-auto">
                             <x-button variant="light" showIcon="false">Peržiūrėti</x-button>
-                            <x-button variant="dark" size="w-full md:w-max">Dėti į krepšelį</x-button>
+                            <x-button variant="dark" size="w-full md:w-max" data-course="{{ json_encode($course) }}">Dėti į krepšelį</x-button>
                         </div>
                     </div>
                     @endif
