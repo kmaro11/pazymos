@@ -5,23 +5,25 @@
     <div class="max-w-[1440px] mx-auto pb-20">
         <div class="flex flex-wrap justify-between items-center mb-10 md:mb-20 gap-6">
             <div class="flex flex-wrap gap-4">
-                <x-pill-button>Visi mokymai</x-pill-button>
-                <x-pill-button>Higiena</x-pill-button>
-                <x-pill-button>Pirmosios pagalbos</x-pill-button>
-                <x-pill-button>Gaisrinė ir civilinė sauga</x-pill-button>
-                <x-pill-button>Sveikatos priežiūra</x-pill-button>
+                <x-pill-button dataTab="all">Visi mokymai</x-pill-button>
+                <x-pill-button dataTab="higiena">Higiena</x-pill-button>
+                <x-pill-button dataTab="pirmosios-pagalbos">Pirmosios pagalbos</x-pill-button>
+                <x-pill-button dataTab="gaisrine-ir-civiline-sauga">Gaisrinė ir civilinė sauga</x-pill-button>
+                <x-pill-button dataTab="sveikatos-prieziura">Sveikatos priežiūra</x-pill-button>
             </div>
             <div class="w-full sm:max-w-[277px]">
-                <x-search-input placeholder="Ieškoti mokymų..." />
+                <x-search-input placeholder="Ieškoti mokymų..." dataSearchInput="true" />
             </div>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             @foreach ($trainings as $training)
-            <x-training-card :training="$training" />
+            <div data-training>
+                <x-training-card :training="$training" />
+            </div>
             @endforeach
         </div>
 
-        <x-button variant="dark" class="mt-[88px] mx-auto" showIcon="false">
+        <x-button variant="dark" class="mt-[88px] mx-auto" showIcon="false" data-load-more>
             <span class="block">Išskleisti daugiau</span>
             <span class="block">
                 <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">

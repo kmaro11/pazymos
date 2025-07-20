@@ -1,3 +1,5 @@
+@props(['placeholder' => '', 'dataSearchInput' => ''])
+
 <div class="relative w-full">
     <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -11,5 +13,6 @@
         name="search"
         id="search"
         class="block w-full py-[11px] pl-11 pr-3 border border-black-100/10 rounded-[10px] leading-6 bg-white placeholder-black-100/40 focus:outline-none focus:placeholder-black-100/40 focus:border-black-100/10 text-base  font-medium text-black-100"
-        placeholder="{{ $placeholder ?? '' }}">
+        placeholder="{{ $placeholder ?? '' }}"
+        data-search-input="{{ $dataSearchInput ?? '' }}">
 </div>

@@ -4,3 +4,4 @@ import './faq.js';
 import './popular-courses.js';
 import './select.js';
 import './modal.js';
+import './trainings-filter.js';
