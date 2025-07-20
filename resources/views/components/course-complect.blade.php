@@ -7,12 +7,11 @@
             <div class="bg-white rounded-2xl p-2.5 md:pt-11 md:px-10 md:pb-16">
 
                 {{-- Course Items --}}
-                <div class="mt-4 border border-gray-400">
+                <div class="">
                     @foreach ($complect['courses'] as $course)
 
                     @if ($course['type'] === 'complect')
-
-                    <div class="bg-blue-100 rounded-[20px] p-2.5 py-6 md:py-6 md:pr-7 md:pl-[22px] flex flex-col md:flex-row md:items-center mb-6 md:mb-0">
+                    <div class="bg-blue-100 first:mb-4 rounded-[20px] p-2.5 py-6 md:py-6 md:pr-7 md:pl-[22px] flex flex-col md:flex-row md:items-center mb-6 md:mb-0">
                         <div class="flex flex-col md:flex-row md:items-center mb-6 md:mb-0">
                             <div class="flex mb-4 md:mb-0">
                                 <div class="bg-blue rounded-[12px] md:rounded-[20px] h-12 w-12 md:h-[68px] md:w-[68px] flex items-center justify-center mr-3 md:mr-6">
@@ -39,7 +38,7 @@
                         <x-button variant="dark" size="w-full md:w-max" class="md:ml-auto">Dėti į krepšelį</x-button>
                     </div>
                     @else
-                    <div class="rounded-[20px] bg-gray-300 flex md:items-center border-b border-black-100/10 last:border-b-0 p-2.5 py-6 md:py-6 md:pr-7 md:pl-[22px] flex-col md:flex-row">
+                    <div class="[&:nth-child(2)]:rounded-t-[20px] last:rounded-b-[20px] bg-gray-300 flex md:items-center border-b border-black-100/10 last:border-b-0 p-2.5 py-6 md:py-6 md:pr-7 md:pl-[22px] flex-col md:flex-row">
                         <div class="flex flex-col md:flex-row md:items-center mb-6 md:mb-0">
                             <div class="flex mb-4 md:mb-0">
                                 <div class="bg-[#E7E7E7] rounded-[12px] md:rounded-[20px] h-12 w-12 md:h-[68px] md:w-[68px] flex items-center justify-center mr-3 md:mr-6">

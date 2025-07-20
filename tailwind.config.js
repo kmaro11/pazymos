@@ -48,5 +48,9 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function({ addVariant }) {
+      addVariant('nth-2', '&:nth-child(2)');
+    }
+  ],
 } 
