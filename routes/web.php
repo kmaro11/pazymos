@@ -10,6 +10,7 @@ Route::get('trainings', function () {
             'price' => '€45',
             'image' => 'https://images.pexels.com/photos/4065624/pexels-photo-4065624.jpeg',
             'labels' => ['Online', 'Fiziniai'],
+            'filters' => ['higiena', 'pirmosios-pagalbos', 'gaisrine-ir-civiline-sauga', 'sveikatos-prieziura'],
             'features' => [
                 'Ultrices ultricies faucibus eu sit',
                 'Arcu pretium ultricies convallis ultricies',
@@ -23,6 +24,7 @@ Route::get('trainings', function () {
             'price' => '€35',
             'image' => 'https://images.pexels.com/photos/532220/pexels-photo-532220.jpeg',
             'labels' => ['Kontaktiniai', '16 val.'],
+            'filters' => ['pirmosios-pagalbos'],
             'features' => [
                 'Etiam cursus, arcu vitae convallis',
                 'Morbi facilisis, enim at dictum',
@@ -36,6 +38,7 @@ Route::get('trainings', function () {
             'price' => '€40',
             'image' => 'https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg',
             'labels' => ['Online', '8 val.'],
+            'filters' => ['gaisrine-ir-civiline-sauga'],
             'features' => [
                 'Suspendisse potenti euismod',
                 'Curabitur non nulla sit amet',
@@ -44,6 +47,21 @@ Route::get('trainings', function () {
             ],
             'link' => '#',
         ],
+        [
+            'title' => 'Sveikatos priežiūra',
+            'price' => '€50',
+            'image' => 'https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg',
+            'labels' => ['Online', '12 val.'],
+            'filters' => ['sveikatos-prieziura'],
+            'features' => [
+                'Suspendisse potenti euismod',
+                'Curabitur non nulla sit amet',
+                'Vivamus magna justo lacinia',
+                'Praesent sapien massa convallis',
+            ],
+            'link' => '#',
+        ],
+
     ];
     return view('trainings', ['trainings' => $trainings]);
 })->name('trainings');
@@ -55,6 +73,7 @@ Route::get('training-category', function () {
             'price' => '€45',
             'image' => 'https://images.pexels.com/photos/4065624/pexels-photo-4065624.jpeg',
             'labels' => ['Online', 'Fiziniai'],
+            'filters' => ['higiena'],
             'features' => [
                 'Ultrices ultricies faucibus eu sit',
                 'Arcu pretium ultricies convallis ultricies',
@@ -68,6 +87,7 @@ Route::get('training-category', function () {
             'price' => '€35',
             'image' => 'https://images.pexels.com/photos/532220/pexels-photo-532220.jpeg',
             'labels' => ['Kontaktiniai', '16 val.'],
+            'filters' => ['pirmosios-pagalbos'],
             'features' => [
                 'Etiam cursus, arcu vitae convallis',
                 'Morbi facilisis, enim at dictum',
@@ -81,6 +101,7 @@ Route::get('training-category', function () {
             'price' => '€40',
             'image' => 'https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg',
             'labels' => ['Online', '8 val.'],
+            'filters' => ['gaisrine-ir-civiline-sauga'],
             'features' => [
                 'Suspendisse potenti euismod',
                 'Curabitur non nulla sit amet',
@@ -191,6 +212,7 @@ Route::get('/all-trainings', function () {
             'time' => '10:00',
             'price' => 24,
             'tags' => ['Online', '8 val.'],
+            'filters' => ['higiena'],
         ],
         [
             'title' => 'Pirmosios pagalbos kursai',
@@ -200,6 +222,7 @@ Route::get('/all-trainings', function () {
             'time' => '13:00',
             'price' => 35,
             'tags' => ['Kontaktiniai', '16 val.'],
+            'filters' => ['pirmosios-pagalbos'],
         ],
         [
             'title' => 'Gaisrinė sauga',
@@ -209,6 +232,7 @@ Route::get('/all-trainings', function () {
             'time' => '09:00',
             'price' => 40,
             'tags' => ['Online', '8 val.'],
+            'filters' => ['gaisrine-ir-civiline-sauga'],
         ],
     ];
     return view('all-trainings', ['trainings' => $trainings]);

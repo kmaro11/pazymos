@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Basket Component (only on pages that have it)
     const basketComponent = document.querySelector('[data-component="basket"]');
-    console.log('wtf', basketComponent);
     
     if (basketComponent) {
         const individualButton = basketComponent.querySelector('#btn-individual');
@@ -146,9 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
         
-        // You can add UI updates here
-        console.log('Basket updated:', basket);
-        console.log('Total items:', basketCount);
+        // UI updates completed
     }
 
     // Event delegation for "Dėti į krepšelį" buttons
@@ -165,10 +162,8 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Render basket page if we're on basket page
     function renderBasketPage() {
-        console.log('renderBasketPage called'); // Debug
         const basketContainer = document.getElementById('basket-container');
         if (!basketContainer) {
-            console.log('basket-container not found'); // Debug
             return;
         }
         
@@ -203,10 +198,8 @@ document.addEventListener('DOMContentLoaded', () => {
         `).join('');
         
         basketContainer.innerHTML = `<ul class="space-y-4">${basketHTML}</ul>`;
-        console.log('Basket rendered with', basket.length, 'items'); // Debug
     }
     
     // Initialize basket page if we're on it
-    console.log('Initializing basket page...'); // Debug
     renderBasketPage();
 }); 

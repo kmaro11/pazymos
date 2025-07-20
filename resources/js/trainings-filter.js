@@ -7,13 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.querySelector('[data-search-input]');
     const loadMoreButton = document.querySelector('[data-load-more]');
     
-    console.log('Found elements:', { // Debug
-        trainingCards: trainingCards.length,
-        tabButtons: tabButtons.length,
-        searchInput: searchInput,
-        loadMoreButton: loadMoreButton
-    });
-    
     // Store original trainings data
     let originalTrainings = [];
     let filteredTrainings = [];
@@ -24,15 +17,16 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize trainings data
     function initializeTrainings() {
         trainingCards.forEach((card, index) => {
-            const titleElement = card.querySelector('[data-training-title]');
-            const categoryElement = card.querySelector('[data-training-category]');
-            const tagElements = card.querySelectorAll('[data-training-tag]');
+            // Find the span element that contains only the title (not the labels)
+            const titleElement = card.querySelector('span[data-training-title]');
+            const title = titleElement ? titleElement.textContent.trim() : '';
+            console.log('Title found:', title);
+            const filtersElement = card.querySelector('[data-training-filters]');
             
             const trainingData = {
                 element: card,
-                title: titleElement ? titleElement.textContent.trim() : '',
-                category: categoryElement ? categoryElement.textContent.trim() : '',
-                tags: Array.from(tagElements).map(tag => tag.textContent.trim()),
+                title: title,
+                filters: filtersElement ? filtersElement.dataset.trainingFilters.split(',').map(f => f.trim()) : [],
                 index: index
             };
             
@@ -49,8 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Filter by tab
         if (currentTab !== 'all') {
             filtered = filtered.filter(training => 
-                training.category.toLowerCase() === currentTab.toLowerCase() ||
-                training.tags.some(tag => tag.toLowerCase().includes(currentTab.toLowerCase()))
+                training.filters.some(filter => filter.toLowerCase() === currentTab.toLowerCase())
             );
         }
         
@@ -58,9 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (currentSearch.trim() !== '') {
             const searchTerm = currentSearch.toLowerCase();
             filtered = filtered.filter(training =>
-                training.title.toLowerCase().includes(searchTerm) ||
-                training.category.toLowerCase().includes(searchTerm) ||
-                training.tags.some(tag => tag.toLowerCase().includes(searchTerm))
+                training.title.toLowerCase().includes(searchTerm)
             );
         }
         
@@ -157,7 +148,6 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Initialize
     function init() {
-        console.log('Initializing trainings filter...'); // Debug
         if (trainingCards.length > 0) {
             console.log('Found training cards, initializing...'); // Debug
             initializeTrainings();
