@@ -22,6 +22,10 @@
             </div>
             @endforeach
         </div>
+        <div class="hidden flex flex-col items-center" id="no-results">
+            <span class="text-center text-black-100 text-2xl mx-auto font-medium leading-6">Rezultatų nerasta</span>
+            <x-button variant="dark" class="mt-10 mx-auto" showIcon="false">Išvalyti paiešką</x-button>
+        </div>
 
         <x-button variant="dark" class="mt-[88px] mx-auto" showIcon="false" data-load-more>
             <span class="block">Išskleisti daugiau</span>

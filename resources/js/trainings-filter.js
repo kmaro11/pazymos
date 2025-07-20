@@ -62,6 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Update visible trainings
     function updateVisibleTrainings() {
         const visibleTrainings = filteredTrainings.slice(0, visibleCount);
+        const noResultsElement = document.getElementById('no-results');
         
         // Hide all trainings
         originalTrainings.forEach(training => {
@@ -72,6 +73,15 @@ document.addEventListener('DOMContentLoaded', () => {
         visibleTrainings.forEach(training => {
             training.element.style.display = '';
         });
+        
+        // Show/hide no results message
+        if (noResultsElement) {
+            if (filteredTrainings.length === 0) {
+                noResultsElement.classList.remove('hidden');
+            } else {
+                noResultsElement.classList.add('hidden');
+            }
+        }
         
         // Update load more button
         if (loadMoreButton) {
@@ -128,6 +138,16 @@ document.addEventListener('DOMContentLoaded', () => {
         updateVisibleTrainings();
     }
     
+    // Clear search handler
+    function handleClearSearch() {
+        if (searchInput) {
+            searchInput.value = '';
+        }
+        currentSearch = '';
+        visibleCount = 6; // Reset visible count
+        filterTrainings();
+    }
+    
     // Add event listeners
     function addEventListeners() {
         // Tab buttons
@@ -143,6 +163,12 @@ document.addEventListener('DOMContentLoaded', () => {
         // Load more button
         if (loadMoreButton) {
             loadMoreButton.addEventListener('click', handleLoadMore);
+        }
+        
+        // Clear search button
+        const clearSearchButton = document.querySelector('#no-results button');
+        if (clearSearchButton) {
+            clearSearchButton.addEventListener('click', handleClearSearch);
         }
     }
     
