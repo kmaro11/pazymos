@@ -30,7 +30,7 @@
     <div class="max-w-[1094px] w-full mx-auto">
         <div class="py-[60px] md:pt-[70px] md:pb-16 px-4 md:px-14 rounded-[30px] relative overflow-hidden">
             <div class="absolute inset-0 z-0">
-                <img src="{{ asset('images/blue-background.png') }}" alt="Background" class="w-full h-full object-cover">
+                <img src="{{ asset('images/yellow-background.png') }}" alt="Background" class="w-full h-full object-cover">
             </div>
             <div class="relative z-10 mb-8">
                 <h2 class="text-center  text-[36px] font-medium leading-[46px] text-black-100 mb-4">Prenumeruokite mūsų naujienlaiškį</h2>

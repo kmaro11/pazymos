@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const valueInput = wrapper.querySelector('.custom-select-value');
         const triggerText = wrapper.querySelector('.custom-select-text');
         const optionItems = wrapper.querySelectorAll('.custom-pointer');
+        const optionLabels = wrapper.querySelectorAll('.custom-pointer span');
 
         trigger.addEventListener('click', () => {
             options.classList.toggle('hidden');
@@ -27,9 +28,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 options.classList.add('hidden');
 
-                // Optional: add a 'selected' class for styling the chosen option
-                optionItems.forEach(item => item.classList.remove('bg-black-100/10'));
-                option.classList.add('bg-black-100/10');
+               // Highlight selected option text (label is inside child span)
+               optionLabels.forEach(label => label.classList.remove('text-green'));
+               const label = option.querySelector('span');
+               if (label) {
+                   label.classList.add('text-green');
+               }
             });
         });
     });

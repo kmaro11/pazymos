@@ -31,10 +31,10 @@ $optionTextClasses = $size === 'small'
             </span>
         </button>
 
-        <ul class="custom-select-options absolute z-10 mt-3 w-full bg-white shadow-lg max-h-60 rounded-[10px] py-1 overflow-auto focus:outline-none hidden" tabindex="-1" role="listbox">
+        <ul class="custom-select-options absolute z-10 mt-2 w-full bg-white shadow-dropdown max-h-60 rounded-[20px] pt-5 pb-7 overflow-auto focus:outline-none hidden space-y-4" tabindex="-1" role="listbox">
             @foreach ($options as $option)
-            <li class="custom-pointer select-none cursor-pointer relative py-2 pl-3 pr-9 hover:bg-black-100/10 transition-all duration-300" data-value="{{ $option['value'] }}">
-                <span class="text-black-100 leading-6 block truncate {{ $optionTextClasses }}">{{ $option['label'] }}</span>
+            <li class="group custom-pointer select-none cursor-pointer relative pl-5 pr-9 transition-all duration-300" data-value="{{ $option['value'] }}">
+                <span class="text-black-100 font-medium leading-6 block truncate group-hover:text-green {{ $optionTextClasses }}">{{ $option['label'] }}</span>
             </li>
             @endforeach
         </ul>
