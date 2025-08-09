@@ -5,3 +5,4 @@ import './popular-courses.js';
 import './select.js';
 import './modal.js';
 import './trainings-filter.js';
+import './header.js';
