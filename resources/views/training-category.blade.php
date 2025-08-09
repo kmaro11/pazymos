@@ -18,9 +18,10 @@
 
 <x-popular-courses />
 
-<div class="pt-[60px] md:pt-[100px] bg-gray-100">
+<!-- For now we hide this section -->
+<!-- <div class="pt-[60px] md:pt-[100px] bg-gray-100">
     <x-testimonials-section />
-</div>
+</div> -->
 
 <x-faq />
 

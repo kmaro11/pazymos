@@ -40,7 +40,7 @@
     </div>
 </article>
 
-<x-latest-articles button="true" title="Susiję straipsniai" />
+<x-latest-articles title="Susiję straipsniai" />
 
 <x-footer />
 @endsection

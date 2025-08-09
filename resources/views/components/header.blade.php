@@ -6,9 +6,8 @@
         <nav class="flex-1 lg:flex justify-center hidden">
             <ul class="flex gap-x-[30px] list-none m-0 p-0">
                 <li class="relative group cursor-pointer">
-                    <a class="flex items-center gap-2">
+                    <a href="{{ route('trainings') }}" class="flex items-center gap-2">
                         <span class="text-black-100 text-base font-medium leading-6 text-right">Mokymai</span>
-                        <img src="{{ asset('svg/arrow-down.svg') }}" alt="arrow-down">
                     </a>
                 </li>
                 <li class="relative group cursor-pointer">

@@ -2,7 +2,6 @@
 'label' => null,
 'title' => null,
 'items' => [],
-'button' => false,
 ])
 
 <section
@@ -27,10 +26,8 @@
             </div>
         </div>
 
-        @if ($button)
         <x-button url="{{ route('news') }}" variant="dark" class="mt-16 mx-auto">
             Peržiūrėti visus
         </x-button>
-        @endif
     </div>
 </section>

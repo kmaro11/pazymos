@@ -1,5 +1,6 @@
 <section class="pb-14 pt-[60px] md:pb-[116px] md:pt-[110px]">
-    <x-testimonials-section />
+    <!-- For now we hide this section -->
+    <!-- <x-testimonials-section /> -->
     <div class="px-4">
         <div
             class="h-[636px] lg:h-[316px] w-[343px] lg:w-auto bg-green-100 justify-between rounded-[30px] lg:pl-14 pr-2.5 max-w-[1095px] w-full mx-auto flex lg:flex-row flex-col overflow-hidden gap-x-10">
