@@ -53,7 +53,7 @@
             class="flex flex-col md:flex-row md:justify-between md:items-center gap-6 border-t border-gray/15 py-10">
             <div class="text-sm text-gray leading-[22px] tracking-[0.15px]">© 2025 Pažymos.lt. Visos teisės
                 saugomos.</div>
-            <a href="#"
+            <a href="{{ route('privacy') }}"
                 class="block text-white/50 hover:underline text-sm leading-[22px] tracking-[0.15px]">Privatumo
                 politika ir naudojimosi
                 sąlygos</a>

@@ -54,7 +54,7 @@
                     <x-input as="textarea" name="message" label="Jūsų žinutė" placeholder="Parašykite savo pranešimą čia..." rows="5" />
                 </div>
                 <div class="mb-10">
-                    Siųsdami užklausą sutinkate su mūsų <a href="/privacy-policy">Taisyklėmis</a>.
+                    Siųsdami užklausą sutinkate su mūsų <a href="{{ route('privacy') }}">Taisyklėmis</a>.
                 </div>
                 <x-button type="submit" variant="dark" size="w-full">
                     Siųsti užklausą

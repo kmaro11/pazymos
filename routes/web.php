@@ -202,6 +202,8 @@ Route::get('/payment', function () {
 Route::view('/contacts', 'contacts')->name('contact');
 Route::view('/thank-you', 'thank-you');
 
+Route::view('/privacy', 'privacy')->name('privacy');
+
 Route::get('/all-trainings', function () {
     $trainings = [
         [
