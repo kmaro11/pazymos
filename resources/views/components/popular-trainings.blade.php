@@ -22,12 +22,12 @@
             </div>
 
             <!-- Swiper container for desktop, stacked for mobile -->
-            <div class="relative lg:pl-14 lg:pr-0 px-4 hidden md:block">
-                <div class="swiper popular-trainings-swiper hidden md:block overflow-hidden md:pb-[110px]">
+            <div class="relative hidden md:block">
+                <div class="swiper popular-trainings-swiper hidden md:block overflow-hidden md:pb-[110px] -mr-4 lg:-mr-14">
                     <div class="swiper-wrapper">
                         @foreach($trainings as $training)
                         <div class="swiper-slide h-auto">
-                            <x-training-card :training="$training" />
+                            <x-training-card :training="$training" type='text' />
                         </div>
                         @endforeach
                     </div>
@@ -49,7 +49,7 @@
             <!-- Stacked cards for mobile -->
             <div class="block md:hidden space-y-4 px-4">
                 @foreach($trainings as $training)
-                <x-training-card :training="$training" />
+                <x-training-card :training="$training" type='text' />
                 @endforeach
             </div>
         </div>

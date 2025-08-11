@@ -1,5 +1,6 @@
 @props([
-'training' => []
+'training' => [],
+'type' => 'list'
 ])
 
 @php
@@ -29,13 +30,18 @@ $alt = $training['alt'] ?? $title ?? 'Mokymo paveikslėlis';
             <span class="text-black-100  text-lg md:text-2xl font-medium leading-6 md:leading-[34px]">{{ $price }}</span>
         </div>
 
-        <div class="text-black-100  text-base font-medium leading-6 mb-5">Į komplektą įeinantys mokymai:</div>
-
+        @if($type === 'text')
+        <div class="mb-[30px] md:mb-5">
+            <div class="text-black-100 text-base font-normal leading-6">Privalomojo higienos įgūdžių specialioji mokymo programa darbuotojams, kurių veikla susijusi su medicininių atliekų tvarkymu sveikatos priežiūros įstaigose</div>
+        </div>
+        @else
+        <div class="text-black-100 text-base font-medium leading-6 mb-5">Į komplektą įeinantys mokymai:</div>
         <ul class="mb-[30px] md:mb-5 list-disc pl-5">
             @foreach($features as $feature)
-            <li class="text-black-100  text-base font-normal leading-6">{{ $feature }}</li>
+            <li class="text-black-100 text-base font-normal leading-6">{{ $feature }}</li>
             @endforeach
         </ul>
+        @endif
 
         <x-button variant="dark" url="{{ $link }}" class="mt-auto">Peržiūrėti</x-button>
     </div>

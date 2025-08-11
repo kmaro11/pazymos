@@ -21,8 +21,8 @@
         </div>
 
         <!-- Swiper container for desktop, stacked for mobile -->
-        <div class="relative lg:pl-14 lg:pr-0 px-4 hidden md:block">
-            <div class="swiper popular-courses-swiper hidden md:block overflow-hidden md:pb-[110px]">
+        <div class="relative hidden md:block">
+            <div class="swiper popular-courses-swiper hidden md:block overflow-hidden md:pb-[110px] -mr-4 lg:-mr-14">
                 <div class="swiper-wrapper">
                     @foreach($courses as $course)
                     <div class="swiper-slide h-auto">

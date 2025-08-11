@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', function () {
         if (popularCoursesSwiper) {
             new Swiper('.popular-courses-swiper', {
                 modules: [Navigation],
-                slidesPerView: 3.15,
                 spaceBetween: 24,
                 navigation: {
                     nextEl: '.popular-courses-next',
@@ -31,10 +30,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 loop: false,
                 breakpoints: {
                     1024: {
-                        slidesPerView: 3.15,
+                        slidesPerView: 3.22,
                         spaceBetween: 24,
+                        slidesOffsetBefore: 56,
+                        slidesOffsetAfter: 56,
                     },
-                    768: { slidesPerView: 2 },
+                    768: { slidesPerView: 2,
+                        slidesOffsetBefore: 14,
+                        slidesOffsetAfter: 14, },
                 },
                 on: {
                     setTranslate: function () {
@@ -55,7 +58,6 @@ document.addEventListener('DOMContentLoaded', function () {
         if (popularTrainingsSwiper) {
             new Swiper('.popular-trainings-swiper', {
                 modules: [Navigation],
-                slidesPerView: 3.15,
                 spaceBetween: 24,
                 navigation: {
                     nextEl: '.popular-trainings-next',
@@ -64,10 +66,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 loop: false,
                 breakpoints: {
                     1024: {
-                        slidesPerView: 3.15,
+                        slidesPerView: 3.22,
                         spaceBetween: 24,
+                        slidesOffsetBefore: 56,
+                        slidesOffsetAfter: 56,
                     },
-                    768: { slidesPerView: 2 },
+                    768: { slidesPerView: 2,
+                        slidesOffsetBefore: 14,
+                        slidesOffsetAfter: 14, },
                 },
                 on: {
                     setTranslate: function () {
