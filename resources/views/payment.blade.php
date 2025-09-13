@@ -13,13 +13,13 @@
                     <h2 class="text-2xl font-medium text-black-100">Kontaktiniai duomenys</h2>
                 </div>
                 <form action="">
-                    <div class="flex flex-col gap-4">
+                    <div class="flex flex-col">
                         <div class="px-4 md:px-10 pb-10">
                             <div class="grid grid-cols-2 gap-[30px] ">
                                 <x-input name="name" label="Vardas" placeholder="Įveskite savo vardą" />
                                 <x-input name="last_name" label="Pavardė" placeholder="Įveskite savo pavardę" />
                             </div>
-                            <div class="grid grid-cols-1">
+                            <div class="grid grid-cols-1 pt-7">
                                 <x-input name="email" label="El. paštas" placeholder="Įveskite savo el. pašto adresą" />
                             </div>
                         </div>
@@ -50,8 +50,26 @@
 
                             </div>
                         </div>
-                        <div class="px-4 md:px-10">
-                            Pridesiu veliau, kai bus aisku su paymentais.
+                        <div class="px-4 md:px-10 pt-[30px]">
+                            <h3 class="text-2xl font-medium text-black-100 mb-6">Mokėjimo būdas</h3>
+                            <div class="grid gap-y-4">
+                                <div class="grid grid-cols-1">
+                                    <x-input name="card_number" label="Kortelės nr." placeholder="XXXX XXXX XXXX XXXX" />
+                                </div>
+                                <div class="grid grid-cols-2 gap-[30px]">
+                                    <x-input name="card_expiration_date" label="Galiojimo data" placeholder="YY / MM" />
+                                    <x-input name="card_cvv" label="Triženklis kodas" placeholder="XXX" />
+                                </div>
+                                <div class="grid grid-cols-2 gap-[30px]">
+                                    <x-input name="name" label="Vardas" placeholder="Įveskite savo vardą" />
+                                    <x-input name="last_name" label="Pavardė" placeholder="Įveskite savo pavardę" />
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-1 mt-5 gap-y-5">
+                                <x-checkbox id="privacy-policy" name="save_card">Perskaičiau ir sutinku su <a href="{{ route('privacy') }}" class="underline">Privatumo politika ir naudojimosi sąlygomis</a>.</x-checkbox>
+                                <x-checkbox id="terms-of-service" name="save_card">Perskaičiau ir sutinku su <a href="{{ route('privacy') }}" class="underline">Paslaugų pirkimo taisyklėmis</a>.</x-checkbox>
+                                <x-checkbox id="marketing-consent" name="save_card">Sutinku gauti <a href="{{ route('privacy') }}" class="underline">tiesioginės rinkodaros pranešimus</a> el. paštu, SMS žinutėmis ir (arba) telefonu. </x-checkbox>
+                            </div>
                         </div>
                     </div>
                 </form>
