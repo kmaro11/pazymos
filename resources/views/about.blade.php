@@ -59,11 +59,33 @@ $members = [
     </div>
     <div class="px-4 md:px-14 pt-[60px] md:pt-[100px]">
         <div class="max-w-[1200px] mx-auto flex flex-col md:flex-row gap-x-10 justify-between">
-            <h2 class="text-black-100 md:text-black-100  text-[32px] md:text-[48px] font-medium leading-[42px] md:leading-[58px] mb-6 md:mb-0">Kaip viskas prasidėjo</h2>
-            <div class="max-w-[644px] space-y-6 w-full">
-                <p class="text-black-100  text-base font-normal leading-6">Cras a morbi id duis volutpat porta hendrerit ultrices. In sit blandit nunc lacus ipsum est eget proin in. Nunc fringilla cras quis imperdiet in urna enim erat. Diam nullam amet suspendisse elit ultricies tincidunt. Cras a morbi id duis volutpat porta hendrerit ultrices. In sit blandit nunc lacus ipsum est eget proin in. Nunc fringilla cras quis imperdiet in urna enim erat. Diam nullam amet suspendisse elit ultricies tincidunt.
-                </p>
-                <p class="text-black-100  text-base font-normal leading-6">Diam sapien ut arcu tortor erat sed eu cras. Quam eu diam fermentum at. Magna a eget pellentesque tristique est volutpat. Augue turpis pellentesque in tortor porttitor risus scelerisque.</p>
+            <h2 class="text-black-100 md:text-black-100  text-[32px] md:text-[48px] font-medium leading-[42px] md:leading-[58px] mb-6 md:mb-0">Apie mus</h2>
+            <div class="max-w-[644px] w-full">
+                <x-read-more id="about-read-more" :height="290">
+                    <p class="text-black-100  text-base font-normal leading-6">Pazymos.lt – tai mokymų platforma, jungianti specialistus, turinčius ilgametę patirtį privalomųjų mokymų srityje. Mūsų tikslas – pateikti kokybiškus, įtraukiančius ir lengvai prieinamus nuotolinius bei mišrius mokymus, kurie atitiktų galiojančius teisės aktus ir realius rinkos poreikius.
+                    </p>
+                    <p class="text-black-100  text-base font-normal leading-6">
+                    Specializuojamės privalomuosiuose mokymuose, kurie reikalingi daugeliui profesijų – nuo pirmosios pagalbos, higienos, civilinės saugos iki priešgaisrinės saugos, dalinai apimančios ir darbuotojų saugą. Taip pat siūlome aktualius psichologinio smurto prevencijos mokymus, kurie tampa vis svarbesni šiuolaikinėse darbo aplinkose.
+                    </p>
+                    <p class="text-black-100  text-base font-normal leading-6">
+                    Mūsų lektoriai – aukštos kvalifikacijos specialistai, kurie ne tik perteikia reikiamas žinias, bet ir užtikrina, kad mokymų procesas būtų įtraukiantis, aiškus ir praktiškai naudingas.
+                    </p>
+                    <p class="text-black-100  text-base font-normal leading-6">
+                    Pazymos.lt mokymų platformoje kiekvienas specialistas – nesvarbu, ar tai būtų pedagogas, vairuotojas, sveikatos priežiūros ar maisto pramonės darbuotojas, – gali lengvai įsigyti reikalingą mokymo medžiagą, leidžiančią teisėtai ir užtikrintai dirbti savo profesinėje srityje.
+                    </p>
+                    <p class="text-black-100  text-base font-normal leading-6" data-collapse-break>
+                    Išsiskiriame tuo, kad:
+                    </p>
+                    <ul class="text-black-100  text-base font-normal leading-6 list-disc pl-7">
+                    <li>kuriame modernią ir patogią mokymosi aplinką;</li>
+                    <li>užtikriname greitą registraciją ir pažymėjimų išdavimą;</li>
+                    <li>nuolat atnaujiname mokymų programas pagal teisės aktų ir rinkos pokyčius;</li>
+                    <li>rūpinamės, kad mokymų turinys būtų ne tik formaliai būtinas, bet ir įdomus, įtraukiantis bei realiai vertingas.</li>
+                    </ul>
+                    <p class="text-black-100  text-base font-normal leading-6">
+                    Tikime, kad privalomieji mokymai neturi būti tik formalumas – jie gali tapti prasminga patirtimi, padedančia augti tiek darbuotojui, tiek organizacijai. Todėl nuolat plečiame pasiūlą ir ieškome inovatyvių sprendimų, kad mokytis būtų malonu ir lengva.
+                    </p>
+                </x-read-more>
             </div>
         </div>
     </div>
@@ -108,14 +130,18 @@ $members = [
                             class="w-full h-auto object-cover rounded-2xl mb-5">
                         <div class="flex justify-between items-start px-2">
                             <div>
-                                <h3 class="text-gray-100  text-[20px] font-medium leading-[30px] mb-2">{{ $member['name'] }}</h3>
-                                <p class="text-gray-100  text-base font-light leading-6">{{ $member['role'] }}</p>
+                                <div class="flex justify-between items-start">
+                                    <h3 class="text-gray-100 text-[20px] font-medium leading-[30px]">{{ $member['name'] }}</h3>
+                                    <a href="{{ $member['linkedin'] }}" target="_blank" class="text-white">
+                                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.66667 4C4.74619 4 4 4.74619 4 5.66667V22.3333C4 23.2538 4.74619 24 5.66667 24H22.3333C23.2538 24 24 23.2538 24 22.3333V5.66667C24 4.74619 23.2538 4 22.3333 4H5.66667ZM10.1342 8.44747C10.1404 9.50997 9.34512 10.1647 8.40137 10.16C7.5123 10.1553 6.7373 9.44747 6.74199 8.44903C6.74668 7.50997 7.48887 6.75528 8.45293 6.77716C9.43106 6.79903 10.1404 7.51622 10.1342 8.44747ZM14.3108 11.5131H11.5108H11.5092V21.024H14.4686V20.8021C14.4686 20.38 14.4682 19.9578 14.4679 19.5354C14.467 18.409 14.466 17.2813 14.4718 16.1552C14.4733 15.8818 14.4858 15.5974 14.5561 15.3364C14.8201 14.3614 15.6968 13.7318 16.6749 13.8866C17.303 13.9849 17.7186 14.349 17.8936 14.9412C18.0014 15.3114 18.0499 15.7099 18.0546 16.0959C18.0672 17.2599 18.0654 18.4239 18.0637 19.588C18.063 19.9989 18.0623 20.41 18.0623 20.8209V21.0224H21.0311V20.7943C21.0311 20.2921 21.0309 19.79 21.0306 19.2879C21.03 18.0329 21.0293 16.7779 21.0327 15.5224C21.0342 14.9552 20.9733 14.3959 20.8342 13.8474C20.6264 13.0318 20.1968 12.3568 19.4983 11.8693C19.003 11.5224 18.4592 11.299 17.8514 11.274C17.7822 11.2711 17.7124 11.2674 17.6423 11.2636C17.3316 11.2468 17.0157 11.2297 16.7186 11.2896C15.8686 11.4599 15.1218 11.849 14.5577 12.5349C14.4921 12.6136 14.428 12.6934 14.3323 12.8127L14.3108 12.8397V11.5131ZM6.9796 21.0271H9.92491V11.5193H6.9796V21.0271Z" fill="#FDFCFA" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <x-member-bio id="member-{{ $loop->index }}-bio" title="Priešgaisrinės ir civilinės saugos mokymo lektorė">
+                                    <p class="text-sm leading-[22px] mt-3">20 metų darbo patirtis valstybinėje priešgaisrinėje gelbėjimo tarnyboje: valstybinės priešgaisrinės priežiūros ir priešgaisrinės saugos mokymo srityse; civilinės saugos mokymo srityje; VDU įgyta pedagogo kvalifikacija. Nuo 2018 metų vykdo individualią veiklą priešgaisrinės bei civilinės saugos mokymo srityje.</p>
+                                </x-member-bio>
                             </div>
-                            <a href="{{ $member['linkedin'] }}" target="_blank" class="text-white">
-                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.66667 4C4.74619 4 4 4.74619 4 5.66667V22.3333C4 23.2538 4.74619 24 5.66667 24H22.3333C23.2538 24 24 23.2538 24 22.3333V5.66667C24 4.74619 23.2538 4 22.3333 4H5.66667ZM10.1342 8.44747C10.1404 9.50997 9.34512 10.1647 8.40137 10.16C7.5123 10.1553 6.7373 9.44747 6.74199 8.44903C6.74668 7.50997 7.48887 6.75528 8.45293 6.77716C9.43106 6.79903 10.1404 7.51622 10.1342 8.44747ZM14.3108 11.5131H11.5108H11.5092V21.024H14.4686V20.8021C14.4686 20.38 14.4682 19.9578 14.4679 19.5354C14.467 18.409 14.466 17.2813 14.4718 16.1552C14.4733 15.8818 14.4858 15.5974 14.5561 15.3364C14.8201 14.3614 15.6968 13.7318 16.6749 13.8866C17.303 13.9849 17.7186 14.349 17.8936 14.9412C18.0014 15.3114 18.0499 15.7099 18.0546 16.0959C18.0672 17.2599 18.0654 18.4239 18.0637 19.588C18.063 19.9989 18.0623 20.41 18.0623 20.8209V21.0224H21.0311V20.7943C21.0311 20.2921 21.0309 19.79 21.0306 19.2879C21.03 18.0329 21.0293 16.7779 21.0327 15.5224C21.0342 14.9552 20.9733 14.3959 20.8342 13.8474C20.6264 13.0318 20.1968 12.3568 19.4983 11.8693C19.003 11.5224 18.4592 11.299 17.8514 11.274C17.7822 11.2711 17.7124 11.2674 17.6423 11.2636C17.3316 11.2468 17.0157 11.2297 16.7186 11.2896C15.8686 11.4599 15.1218 11.849 14.5577 12.5349C14.4921 12.6136 14.428 12.6934 14.3323 12.8127L14.3108 12.8397V11.5131ZM6.9796 21.0271H9.92491V11.5193H6.9796V21.0271Z" fill="#FDFCFA" />
-                                </svg>
-                            </a>
                         </div>
                     </div>
                     @endforeach
