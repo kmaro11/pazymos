@@ -14,7 +14,7 @@ $link = $training['link'] ?? '#';
 $alt = $training['alt'] ?? $title ?? 'Mokymo paveikslėlis';
 @endphp
 
-<div class="bg-white rounded-[20px] md:rounded-3xl shadow-card flex flex-col p-2 md:p-2.5 pb-6 md:pb-8 h-full" data-training-title="{{ $title }}" data-training-filters="{{ implode(',', $filters) }}">
+<div class="bg-white rounded-[20px] md:rounded-3xl shadow-card flex flex-col p-2 md:p-2.5 pb-6 md:pb-8 h-full md:min-h-[580px]" data-training-title="{{ $title }}" data-training-filters="{{ implode(',', $filters) }}">
     <div class="relative w-full h-[206px] md:h-[250px] flex items-center justify-center mb-6 md:mb-[30px]">
         <img src="{{ $image }}" alt="{{ $alt }}" class="rounded-3xl w-full h-full object-cover object-center" />
         <div class="absolute top-2 md:top-2.5 left-2 md:left-2.5 flex gap-1.5 md:gap-2">
