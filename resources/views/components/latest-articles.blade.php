@@ -6,7 +6,7 @@
 
 <section
     class="mx-auto bg-gradient-custom lg:px-14 px-4 pt-14 md:pt-[110px] pb-[86px] md:pb-[263px] -mt-5 md:-mt-10 translate-y-5 md:translate-y-10 rounded-t-[30px]">
-    <div class="max-w-[1440px] w-full mx-auto px-4 md:px-0">
+    <div class="max-w-[1440px] w-full mx-auto md:px-0">
         @if ($label)
         <div
             class="bg-white flex items-center justify-center rounded-[10px] px-3 py-[5px] text-sm font-medium leading-[22px] text-green w-max mx-auto mb-[30px]">

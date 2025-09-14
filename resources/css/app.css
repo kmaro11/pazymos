@@ -110,27 +110,27 @@ html {
 }
 
 .news-article h1 {
-    @apply my-6 text-[#1F2632]  text-[40px] font-normal font-bold leading-[48px] tracking-[-1.4px];
+    @apply my-4 md:my-6 text-black-100 text-3xl md:text-[40px] font-normal font-medium md:font-bold leading-[42px] md:leading-[48px] md:tracking-[-1.4px];
 }
 
 .news-article h2 {
-    @apply my-6 text-[#1F2632]  text-[32px] font-bold leading-[37.36px] tracking-[-1.12px];
+    @apply my-4 md:my-6 text-black-100 text-xl md:text-[32px] font-medium md:font-bold leading-[42px] md:leading-[37.36px] md:tracking-[-1.12px];
 }
 
 .news-article h3 {
-    @apply my-6 text-[#1F2632]  text-2xl font-bold leading-7 tracking-[-0.84px];
+    @apply my-4 md:my-6 text-black-100 text-lg md:text-2xl leading-[42px] md:leading-7 md:tracking-[-0.84px] md:font-bold;
 }
 
 .news-article p {
-    @apply my-6 text-[#1F2632]  text-base font-normal leading-6;
+    @apply my-4 md:my-6 text-black-100 text-base font-normal leading-6;
 }
 
 .news-article ul {
-    @apply my-6 text-[#1F2632]  text-base font-normal leading-6;
+    @apply my-4 md:my-6 text-black-100 text-base font-normal leading-6;
 }
 
 .news-article ul li {
-    @apply my-3 text-[#1F2632]  text-base font-normal leading-6;
+    @apply my-3 text-black-100  text-base font-normal leading-6;
 }
 
 .cms-content {

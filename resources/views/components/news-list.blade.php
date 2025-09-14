@@ -1,6 +1,6 @@
-<section class="py-20 md:py-[110px] px-4 md:px-14 bg-gradient-custom rounded-t-[30px]">
+<section class="py-10 md:py-[110px] px-4 md:px-14 bg-gradient-custom rounded-t-[30px]">
     <div class="max-w-[1440px] mx-auto pb-20">
-        <div class="flex flex-wrap justify-between items-center mb-10 md:mb-20 gap-6">
+        <div class="flex flex-wrap justify-between items-center mb-[30px] md:mb-20 gap-10 md:gap-6">
             <div class="flex flex-wrap gap-4">
                 <x-pill-button>Visos naujienos</x-pill-button>
                 <x-pill-button>Kategorija 1</x-pill-button>
@@ -12,7 +12,7 @@
                 <x-search-input placeholder="Ieškoti naujienų..." />
             </div>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
             @foreach ($articles as $article)
             <x-article-card :article="$article" />
             @endforeach
@@ -28,17 +28,17 @@
         </x-button>
     </div>
     <div class="max-w-[1094px] w-full mx-auto">
-        <div class="py-[60px] md:pt-[70px] md:pb-16 px-4 md:px-14 rounded-[30px] relative overflow-hidden">
+        <div class="pb-[100px] pt-12 md:pt-[70px] md:pb-16 px-4 md:px-14 rounded-[30px] relative overflow-hidden">
             <div class="absolute inset-0 z-0">
                 <img src="{{ asset('images/yellow-background.png') }}" alt="Background" class="w-full h-full object-cover">
             </div>
-            <div class="relative z-10 mb-8">
-                <h2 class="text-center  text-[36px] font-medium leading-[46px] text-black-100 mb-4">Prenumeruokite mūsų naujienlaiškį</h2>
-                <p class="text-center  text-base font-normal leading-6 text-black-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            <div class="relative z-10 mb-8 max-w-[560px] mx-auto">
+                <h2 class="text-center text-[36px] font-medium leading-[46px] text-black-100 mb-4">Prenumeruokite mūsų naujienlaiškį</h2>
+                <p class="text-center text-base font-normal leading-6 text-black-100">Leiskite mums priminti jums apie reikalingus mokymus bei dalintis naudingomis žiniomis.</p>
             </div>
             <div class="relative max-w-[400px] w-full mx-auto">
-                <input type="text" type="email" placeholder="El. paštas" class="w-full h-[58px] rounded-[20px] pl-5 pr-[142px] text-base leading-5 bg-white placeholder-black-100/50 text-black-100 focus:outline-none">
-                <x-button showIcon="false" variant="dark" class="absolute right-2.5 top-1/2 -translate-y-1/2">Prenumeruoti</x-button>
+                <input name="email" autocomplete="email" type="text" type="email" placeholder="El. paštas" class="w-full h-10 md:h-[58px] rounded-[20px] pl-5 pr-[142px] text-base leading-5 bg-white placeholder-black-100/50 text-black-100 focus:outline-none">
+                <x-button showIcon="false" variant="dark" class="absolute left-1/2 -translate-x-1/2 md:left-[unset] md:translate-x-0 md:right-2.5 -bottom-16 md:bottom-[unset] md:top-1/2 md:-translate-y-1/2">Prenumeruoti</x-button>
             </div>
         </div>
     </div>
