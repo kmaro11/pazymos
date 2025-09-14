@@ -3,7 +3,7 @@
 @section('content')
 <x-header />
 
-<section class="relative py-10 md:py-[100px] h-[calc(100vh-98px)] flex items-center justify-center px-4 md:px-14">
+<section class="relative py-10 md:py-[200px] flex items-center justify-center px-4 md:px-14">
     <div class="absolute inset-0 z-0">
         <img src="{{ asset('images/404-background.png') }}" alt="Background" class="w-full h-full object-cover">
     </div>
@@ -16,6 +16,8 @@
         </x-button>
     </div>
 </section>
+
+<x-footer />
 @endsection
 
 

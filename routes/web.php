@@ -203,6 +203,7 @@ Route::view('/contacts', 'contacts')->name('contact');
 Route::view('/thank-you', 'thank-you');
 
 Route::view('/privacy', 'privacy')->name('privacy');
+Route::view('/direct-marketing-consent', 'direct-marketing-consent')->name('direct-marketing-consent');
 
 Route::get('/all-trainings', function () {
     $trainings = [
