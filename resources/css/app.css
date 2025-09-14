@@ -133,3 +133,16 @@ html {
     @apply my-3 text-[#1F2632]  text-base font-normal leading-6;
 }
 
+.cms-content {
+    @apply text-black-100 text-base font-normal leading-6;
+}
+
+.cms-content p,
+.cms-content div
+.cms-content ul {
+    @apply my-4 md:my-6;
+}
+
+.cms-content ul{
+    @apply list-disc pl-7;
+}

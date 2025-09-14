@@ -1,20 +1,33 @@
-<section class="bg-gray-100 pt-10 pb-[60px] md:py-[100px] px-4 sm:px-14 border-t border-gray-400">
-    <div class="max-w-[1440px] mx-auto">
-        <h2 class="text-[32px] font-medium text-black-100  leading-[42px] mb-10 md:mb-[60px]">
-            Mokymų aprašymas
-        </h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8">
-            @foreach ($items as $item)
-            <div>
-                <div class="flex items-center mb-6 space-x-2.5">
-                    <img src="{{ asset('svg/' . $item['icon']) }}" alt="{{ $item['title'] }} icon" class="w-6 h-6">
-                    <h3 class="text-lg font-medium text-black-100  leading-6 md:text-2xl md:leading-normal">{{ $item['title'] }}</h3>
+@props(['items' => null, 'sections' => null, 'title' => null])
+
+<div class="pt-20 pb-[60px] md:pt-24">
+     <h2 class="text-[32px] font-medium text-black-100  leading-[42px] mb-10 md:mb-[60px]">
+        {{ $title ?? 'Mokymų aprašymas' }}
+    </h2>
+
+    @if(!empty($sections))
+        <div class="space-y-14">
+            @foreach ($sections as $section)
+                <div>
+                    <div class="flex items-center gap-2.5">
+                        @if(!empty($section['icon']))
+                            <img src="{{ asset('svg/' . $section['icon']) }}" alt="{{ $section['title'] }} icon" class="w-6 h-6">
+                        @endif
+                        <h3 class="text-black-100  text-[24px] md:text-[28px] font-medium leading-7 md:leading-8">{{ $section['title'] }}</h3>
+                    </div>
+                    <x-read-more 
+                        :id="'training-desc-'.$loop->index" 
+                        :height="312" 
+                        :containerClass="'text-black-100  text-base font-normal leading-6 space-y-4'" 
+                        :toggleClass="'mt-4 inline-flex items-center gap-2 text-green underline underline-offset-4'"
+                        :buttonWrapperClass="'flex justify-start'"
+                        >
+                        <div class="cms-content">
+                            {!! $section['html'] !!}
+                        </div>
+                    </x-read-more>
                 </div>
-                <p class="text-black-100  text-base font-normal leading-6">
-                    {{ $item['description'] }}
-                </p>
-            </div>
             @endforeach
         </div>
-    </div>
-</section>
+    @endif
+</div>

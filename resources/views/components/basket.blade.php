@@ -1,4 +1,4 @@
-<div class="max-w-[420px] w-full bg-gray-400 rounded-[30px] pt-5 px-[14px] md:px-[30px] pb-7 md:pb-[30px]" data-component="basket">
+<div class="max-w-[420px] w-full bg-gray-400 rounded-[30px] pt-5 px-[14px] md:px-[30px] pb-7 md:pb-[30px] sticky top-[120px]" data-component="basket">
     <h2 class="text-black-100  text-2xl font-medium leading-8 mb-5">Mokymų tipas</h2>
 
     <div class="flex items-center bg-white rounded-[100px] p-2 max-w-[200px] mb-6">
