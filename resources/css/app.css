@@ -143,6 +143,58 @@ html {
     @apply my-4 md:my-6;
 }
 
+.cms-content {
+    @apply text-black-100;
+}
+
 .cms-content ul{
     @apply list-disc pl-7;
+}
+
+.policy-content {
+    @apply text-black-100;
+}
+
+.policy-content h1 {
+    @apply text-[32px] md:text-[40px] font-bold leading-[42px] md:leading-[48px] mb-6;
+}
+.policy-content h2 {
+    @apply text-xl md:text-2xl font-medium md:font-bold leading-6;
+}
+.policy-content h3 {
+    @apply text-lg md:text-xl leading-6 md:font-bold;
+}
+
+.policy-content p,
+.policy-content div,
+.policy-content li,
+.policy-content h3,
+.policy-content h2 {
+    @apply my-4 md:my-6;
+}
+
+.policy-content ul li {
+    @apply list-disc;
+}
+
+.policy-content table {
+    @apply w-full border border-black overflow-hidden border-separate;
+    border-spacing: 0;
+}
+
+.policy-content table th {
+     @apply font-medium text-xl leading-[30px] text-left pl-4 pr-5 pt-5; 
+}
+.policy-content table td {
+     @apply align-top font-medium text-base leading-6 text-left px-5; 
+}
+.policy-content table thead th + th,
+.policy-content table tbody td + td {
+     @apply border-l border-black;
+}
+.policy-content table ul { 
+    @apply m-0 pl-5 list-disc; 
+}
+.policy-content table li { 
+    @apply leading-6 m-0 py-3; 
 }
