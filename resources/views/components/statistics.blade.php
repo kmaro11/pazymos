@@ -18,7 +18,7 @@
     <div class="bg-white/20 rounded-[16px] p-6 gap-y-4 gap-x-8 grid grid-cols-1 md:grid-cols-3 relative z-10">
         <div class="bg-white p-6 rounded-[16px] md:pt-[38px] md:pb-[50px]">
             <div
-                class="text-black-100 text-center font-['Reddit_Mono'] text-[64px] font-medium leading-[74px] mb-2 md:mb-0 text-center">
+                class="text-black-100 text-center font-reddit text-[64px] font-medium leading-[74px] mb-2 md:mb-0 text-center">
                 150+</div>
             <div class="text-black-100 text-center text-lg font-normal leading-6 text-center">
                 Moksleivių
@@ -27,7 +27,7 @@
 
         <div class="bg-white p-6 rounded-[16px] md:pt-[38px] md:pb-[50px]">
             <div
-                class="text-black-100 text-center font-['Reddit_Mono'] text-[64px] font-medium leading-[74px] mb-2 md:mb-0 text-center">
+                class="text-black-100 text-center font-reddit text-[64px] font-medium leading-[74px] mb-2 md:mb-0 text-center">
                 61</div>
             <div class="text-black-100 text-center text-lg font-normal leading-6 text-center">
                 Skirtingų specialybių
@@ -36,7 +36,7 @@
 
         <div class="bg-white p-6 rounded-[16px] md:pt-[38px] md:pb-[50px]">
             <div
-                class="text-black-100 text-center font-['Reddit_Mono'] text-[64px] font-medium leading-[74px] mb-2 md:mb-0 text-center">
+                class="text-black-100 text-center font-reddit text-[64px] font-medium leading-[74px] mb-2 md:mb-0 text-center">
                 1968</div>
             <div class="text-black-100 text-center text-lg font-normal leading-6 text-center">
                 Asmenys gavę sertifikatus

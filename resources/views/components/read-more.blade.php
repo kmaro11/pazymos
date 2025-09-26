@@ -3,7 +3,7 @@
     'height' => 280,
     'containerClass' => 'space-y-6',
     'toggleClass' => 'mt-8 inline-flex items-center gap-2 text-green text-base font-medium leading-6 underline underline-offset-4',
-    'buttonWrapperClass' => 'flex justify-end',
+    'buttonWrapperClass' => 'flex justify-start',
     'moreLabel' => 'Skaityti daugiau',
     'lessLabel' => 'Skaityti mažiau',
 ])

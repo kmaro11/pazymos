@@ -46,6 +46,7 @@ export default {
       },
       fontFamily: {
         sans: ['Helvetica Neue', ...defaultTheme.fontFamily.sans],
+        reddit: ['RedditMono', ...defaultTheme.fontFamily.mono],
       },
     },
   },

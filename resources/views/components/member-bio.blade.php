@@ -4,7 +4,7 @@
     'title' => null,
 ])
 
-<div class="text-gray-100 text-base font-light leading-6">
+<div class="text-[#F1F1D8] text-sm leading-6">
     @if($title)
         <p>{{ $title }}</p>
     @endif

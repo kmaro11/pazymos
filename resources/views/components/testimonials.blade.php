@@ -3,7 +3,7 @@
     <!-- <x-testimonials-section /> -->
     <div class="px-4">
         <div
-            class="h-[636px] lg:h-[316px] w-[343px] lg:w-auto bg-green-100 justify-between rounded-[30px] lg:pl-14 pr-2.5 max-w-[1095px] w-full mx-auto flex lg:flex-row flex-col overflow-hidden gap-x-10">
+            class="h-[636px] lg:h-[316px] max-w-[474px] lg:w-auto bg-green-100 justify-between rounded-[30px] lg:pl-14 pr-2.5 lg:max-w-[1095px] w-full mx-auto flex lg:flex-row flex-col overflow-hidden gap-x-10">
             <div class="max-w-[474px] w-full lg:py-20 pb-10 pt-12 px-4 lg:px-0">
                 <h3 class="text-black-100 text-[36px] font-medium leading-[46px] mb-7 text-center lg:text-left">
                     Pavadinimas, skatinantis įsigyti mokymus
@@ -21,37 +21,37 @@
 
                 </a>
             </div>
-            <div class="h-full relative w-[343px] lg:w-[507px]">
+            <div class="h-full relative lg:w-[507px]">
                 <div
                     class="absolute lg:relative w-[507px] h-full grid grid-cols-3 gap-4 -translate-x-1/2 left-1/2 lg:translate-x-0 lg:left-0">
                     <div class="flex flex-col gap-4 lg:-translate-y-[50px]">
                         <div class="w-[160px] h-[186px] rounded-[20px] overflow-hidden">
-                            <img src="https://images.pexels.com/photos/4065624/pexels-photo-4065624.jpeg"
-                                alt="Straipsnio paveikslėlis" />
+                            <img src="images/image-1.png"
+                                alt="Straipsnio paveikslėlis" class="object-cover w-full h-full"/>
                         </div>
                         <div class="w-[160px] h-[186px] rounded-[20px] overflow-hidden">
-                            <img src="https://images.pexels.com/photos/4065624/pexels-photo-4065624.jpeg"
-                                alt="Straipsnio paveikslėlis" />
+                            <img src="images/image-4.png"
+                                alt="Straipsnio paveikslėlis" class="object-cover w-full h-full"/>
                         </div>
                     </div>
                     <div class="flex flex-col gap-4 translate-y-12 lg:-translate-y-2">
                         <div class="w-[160px] h-[186px] rounded-[20px] overflow-hidden">
-                            <img src="https://images.pexels.com/photos/4065624/pexels-photo-4065624.jpeg"
-                                alt="Straipsnio paveikslėlis" />
+                            <img src="images/image-2.png"
+                                alt="Straipsnio paveikslėlis" class="object-cover w-full h-full"/>
                         </div>
                         <div class="w-[160px] h-[186px] rounded-[20px] overflow-hidden">
-                            <img src="https://images.pexels.com/photos/4065624/pexels-photo-4065624.jpeg"
-                                alt="Straipsnio paveikslėlis" />
+                            <img src="images/image-5.png"
+                                alt="Straipsnio paveikslėlis" class="object-cover w-full h-full"/>
                         </div>
                     </div>
                     <div class="flex flex-col gap-4 lg:-translate-y-[50px]">
                         <div class="w-[160px] h-[186px] rounded-[20px] overflow-hidden">
-                            <img src="https://images.pexels.com/photos/4065624/pexels-photo-4065624.jpeg"
-                                alt="Straipsnio paveikslėlis" />
+                            <img src="images/image-3.png"
+                                alt="Straipsnio paveikslėlis" class="object-cover w-full h-full object-center" />
                         </div>
                         <div class="w-[160px] h-[186px] rounded-[20px] overflow-hidden">
-                            <img src="https://images.pexels.com/photos/4065624/pexels-photo-4065624.jpeg"
-                                alt="Straipsnio paveikslėlis" />
+                            <img src="images/image-6.png"
+                                alt="Straipsnio paveikslėlis" class="object-cover w-full h-full object-center"/>
                         </div>
                     </div>
                 </div>

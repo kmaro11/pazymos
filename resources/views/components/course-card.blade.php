@@ -21,7 +21,7 @@ $alt = $course['alt'] ?? $title ?? 'Kurso paveikslėlis';
             @endforeach
         </div>
         <div class="absolute bottom-2 md:bottom-2.5 right-2 md:right-2.5 bg-green-100 rounded-[100px] px-3 py-1 h-[38px] flex items-center justify-center">
-            <p class="text-center text-sm font-2xl leading-6 text-primary font-medium">{{ $price }}</p>
+            <p class="text-center text-sm md:text-2xl leading-6 text-primary font-medium">{{ $price }}</p>
         </div>
     </div>
 

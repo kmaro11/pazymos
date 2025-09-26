@@ -32,7 +32,7 @@ $alt = $training['alt'] ?? $title ?? 'Mokymo paveikslėlis';
 
         @if($type === 'text')
         <div class="mb-[30px] md:mb-5">
-            <div class="text-black-100 text-base font-normal leading-6">Privalomojo higienos įgūdžių specialioji mokymo programa darbuotojams, kurių veikla susijusi su medicininių atliekų tvarkymu sveikatos priežiūros įstaigose</div>
+            <div class="text-black-100 text-lg font-medium leading-6">Privalomojo higienos įgūdžių specialioji mokymo programa darbuotojams, kurių veikla susijusi su medicininių atliekų tvarkymu sveikatos priežiūros įstaigose</div>
         </div>
         @else
         <div class="text-black-100 text-base font-medium leading-6 mb-5">Į komplektą įeinantys mokymai:</div>

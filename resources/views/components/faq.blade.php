@@ -25,7 +25,7 @@ $faqs = [
 
 <section class="bg-gray-100 md:pb-[100px]">
     <div class="max-w-[645px] mx-auto px-4 md:px-14">
-        <h2 class="text-black-100 text-center  text-[48px] font-normal font-medium leading-[58px] md:mb-20">
+        <h2 class="text-black-100 text-center text-[48px] font-normal font-medium leading-[58px] md:mb-20">
             Dažniausiai užduodami klausimai
         </h2>
         <div class="space-y-4 md:space-y-6" id="faq-accordion">

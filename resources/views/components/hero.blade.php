@@ -1,6 +1,6 @@
 <div>
     <section class="pt-4 lg:pt-14">
-        <div class="px-4 lg:px-5">
+        <div class="px-4 lg:px-14">
             <div class="max-w-[1440px] mx-auto flex flex-col lg:flex-row lg:items-start mb-[60px] md:mb-[100px] justify-between">
                 <h1 class="max-w-[645px] text-[40px] lg:text-[74px] font-medium text-black-100 leading-[50px] lg:leading-[84px]  mb-6 lg:mb-0">
                     Pagrindinis pavadinimas apie mokymus
@@ -28,12 +28,12 @@
 
     {{-- Training Categories Section --}}
     <section class="lg:px-14 px-4 py-10 lg:pb-[100px] lg:pt-[110px]">
-        <div class="max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-12">
-            <h2 class="text-[32px] lg:text-[48px] font-medium text-black-100 leading-[42px] lg:leading-[58px]  text-center lg:text-left">
+        <div class="max-w-[1440px] mx-auto flex flex-col lg:flex-row justify-between gap-10 lg:gap-12">
+            <h2 class="text-[32px] lg:text-[48px] font-medium text-black-100 leading-[42px] lg:leading-[58px] text-center lg:text-left">
                 Mokymų kategorijos
             </h2>
             <div class="flex flex-col gap-6">
-                <div class="flex items-center bg-white shadow-soft rounded-[100px] pl-2.5 lg:pl-4 pr-4 lg:pr-5 py-2 lg:py-4 gap-4 lg:w-max">
+                <a href="{{ route('trainings') }}" class="flex items-center bg-white hover:bg-green-100 transition-all duration-300 shadow-soft rounded-[100px] pl-2.5 lg:pl-4 pr-4 lg:pr-5 py-2 lg:py-4 gap-4 lg:w-max">
                     <div class="flex-shrink-0 rounded-full w-10 lg:w-[58px] h-10 lg:h-[58px] flex items-center justify-center bg-green-200">
                         <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0069 4.08212C11.3312 3.92575 12.6693 3.92575 13.9936 4.08212C15.131 4.21641 16.249 4.49419 17.3613 4.77059C17.5958 4.82885 17.8301 4.88706 18.0642 4.94384C18.6714 5.0906 19.202 5.21885 19.6353 5.50056C20.1907 5.8616 20.611 6.39632 20.8306 7.02129C20.8846 7.17504 20.9215 7.33459 20.9467 7.50056C21.1817 7.50481 21.3955 7.51798 21.5934 7.55791C22.7771 7.79668 23.7022 8.72182 23.941 9.90548C24.0009 10.2022 24.0006 10.5346 24.0003 10.9205C24.0002 11.2698 24.0115 11.6222 23.9654 11.9692C23.8269 13.0113 23.2837 13.957 22.4533 14.6017C22.2432 14.7649 22.0059 14.9032 21.6902 15.0873L20.8986 15.549C20.7273 16.2945 20.3456 16.9762 19.7977 17.5123C19.4852 17.8181 19.1137 18.0563 18.7455 18.2923C18.6728 18.339 18.6001 18.3856 18.5281 18.4326C16.977 19.445 16.0544 20.0472 15.0823 20.4016C13.0916 21.1271 10.9088 21.1271 8.91817 20.4016C7.94602 20.0472 7.02349 19.445 5.4724 18.4326C5.40035 18.3856 5.32769 18.339 5.2549 18.2923C4.88676 18.0563 4.5153 17.8181 4.20278 17.5123C3.65485 16.9762 3.27311 16.2945 3.10182 15.549L2.31034 15.0873C1.99454 14.9032 1.75726 14.7649 1.54712 14.6017C0.716766 13.957 0.173595 13.0113 0.0350962 11.9692C-0.0110222 11.6222 0.000268903 11.2698 0.000184945 10.9205C-0.000126311 10.5346 -0.000394411 10.2022 0.059463 9.90548C0.298226 8.72182 1.22337 7.79668 2.40703 7.55791C2.60481 7.51802 2.81841 7.50483 3.05314 7.50057C3.07802 7.33729 3.11493 7.17765 3.16988 7.02129C3.38948 6.39632 3.80976 5.8616 4.36515 5.50056C4.79851 5.21885 5.32909 5.0906 5.93627 4.94384C6.1704 4.88706 6.40465 4.82885 6.63915 4.77058C7.75151 4.49419 8.86945 4.21641 10.0069 4.08212ZM3.00023 9.50264C2.88915 9.5057 2.8406 9.51074 2.8025 9.51842C2.40794 9.59801 2.09956 9.90639 2.01997 10.3009C2.00521 10.3742 2.00023 10.4859 2.00023 11.0055C2.00023 11.4567 2.0023 11.5901 2.01766 11.7057C2.08691 12.2268 2.3585 12.6996 2.77367 13.022C2.82627 13.0628 2.88606 13.1028 3.00023 13.172V9.50264ZM21.0002 9.50264V13.172C21.5288 12.8518 21.9003 12.3267 21.9828 11.7057C21.9982 11.5901 22.0002 11.4567 22.0002 11.0055C22.0002 10.4859 21.9953 10.3742 21.9805 10.3009C21.9009 9.90639 21.5925 9.59801 21.198 9.51842C21.1599 9.51074 21.1113 9.5057 21.0002 9.50264ZM7.7998 9.5C7.24752 9.5 6.7998 9.94772 6.7998 10.5C6.7998 11.0523 7.24752 11.5 7.7998 11.5H16.1998C16.7521 11.5 17.1998 11.0523 17.1998 10.5C17.1998 9.94772 16.7521 9.5 16.1998 9.5H7.7998ZM9.18822 13.5C8.63593 13.5 8.18822 13.9477 8.18822 14.5C8.18822 15.0523 8.63593 15.5 9.18822 15.5H14.7882C15.3405 15.5 15.7882 15.0523 15.7882 14.5C15.7882 13.9477 15.3405 13.5 14.7882 13.5H9.18822Z" fill="#204D51" />
@@ -42,8 +42,8 @@
                     <span class="text-black-100 font-medium text-base lg:text-2xl leading-6 lg:leading-normal ">
                         Higienos privatieji mokymai
                     </span>
-                </div>
-                <div class="relative flex items-center bg-white lg:bg-green-100 shadow-soft rounded-[100px] pl-2.5 lg:pl-4 pr-4 lg:pr-5 py-2 lg:py-4 gap-4 lg:w-max">
+                </a>
+                <a href="{{ route('trainings') }}" class="relative flex items-center bg-white hover:bg-green-100 transition-all duration-300 shadow-soft rounded-[100px] pl-2.5 lg:pl-4 pr-4 lg:pr-5 py-2 lg:py-4 gap-4 lg:w-max">
                     <div class="flex-shrink-0 rounded-full w-10 lg:w-[58px] h-10 lg:h-[58px] flex items-center justify-center bg-green-200">
                         <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M2.22836 10.352C2.09336 10.6779 2.04386 11.0078 2.02135 11.3376C1.99998 11.6509 1.99999 12.0293 2 12.468V12.532C1.99999 12.9706 1.99998 13.3491 2.02135 13.6624C2.04386 13.9922 2.09336 14.3221 2.22836 14.6481C2.53284 15.3831 3.11687 15.9672 3.85195 16.2716C4.17788 16.4066 4.50779 16.4561 4.83762 16.4787C5.15087 16.5 5.52934 16.5 5.96797 16.5H8L8 18.532C7.99999 18.9706 7.99998 19.3491 8.02135 19.6624C8.04386 19.9922 8.09336 20.3221 8.22836 20.6481C8.53285 21.3831 9.11687 21.9672 9.85195 22.2716C10.1779 22.4066 10.5078 22.4561 10.8376 22.4787C11.1509 22.5 11.5294 22.5 11.968 22.5H12.032C12.4706 22.5 12.8491 22.5 13.1624 22.4787C13.4922 22.4561 13.8221 22.4066 14.1481 22.2716C14.8831 21.9672 15.4672 21.3831 15.7716 20.6481C15.9066 20.3221 15.9561 19.9922 15.9787 19.6624C16 19.3491 16 18.9707 16 18.532V16.5H18.032C18.4706 16.5 18.8491 16.5 19.1624 16.4787C19.4922 16.4561 19.8221 16.4066 20.1481 16.2716C20.8831 15.9672 21.4672 15.3831 21.7716 14.6481C21.9066 14.3221 21.9561 13.9922 21.9787 13.6624C22 13.3491 22 12.9706 22 12.532V12.468C22 12.0294 22 11.6509 21.9787 11.3376C21.9561 11.0078 21.9066 10.6779 21.7716 10.352C21.4672 9.61687 20.8831 9.03285 20.1481 8.72836C19.8221 8.59336 19.4922 8.54386 19.1624 8.52135C18.8491 8.49998 18.4706 8.49999 18.032 8.5L16 8.5V6.46801C16 6.02938 16 5.65087 15.9787 5.33762C15.9561 5.00779 15.9066 4.67788 15.7716 4.35195C15.4672 3.61687 14.8831 3.03284 14.1481 2.72836C13.8221 2.59336 13.4922 2.54386 13.1624 2.52135C12.8491 2.49998 12.4707 2.49999 12.032 2.5H11.968C11.5294 2.49999 11.1509 2.49998 10.8376 2.52135C10.5078 2.54386 10.1779 2.59336 9.85195 2.72836C9.11687 3.03285 8.53285 3.61687 8.22836 4.35195C8.09336 4.67788 8.04386 5.00779 8.02135 5.33762C7.99998 5.65088 7.99999 6.02936 8 6.46801L8 8.5L5.96801 8.5C5.52937 8.49999 5.15088 8.49998 4.83762 8.52135C4.50779 8.54385 4.17788 8.59336 3.85195 8.72836C3.11687 9.03284 2.53285 9.61687 2.22836 10.352Z" fill="#204D51" />
@@ -52,9 +52,8 @@
                     <span class="text-black-100 font-medium text-base lg:text-2xl leading-6 lg:leading-normal ">
                         Pirmosios pagalbos privatieji mokymai
                     </span>
-                    <img class="absolute bottom-0 right-0" src="{{ asset('svg/pointer.svg') }}" alt="pointer">
-                </div>
-                <div class="flex items-center bg-white shadow-soft rounded-[100px] pl-2.5 lg:pl-4 pr-4 lg:pr-5 py-2 lg:py-4 gap-4 lg:w-max">
+                </a>
+                <a href="{{ route('trainings') }}" class="flex items-center bg-white hover:bg-green-100 transition-all duration-300 shadow-soft rounded-[100px] pl-2.5 lg:pl-4 pr-4 lg:pr-5 py-2 lg:py-4 gap-4 lg:w-max">
                     <div class="flex-shrink-0 rounded-full w-10 lg:w-[58px] h-10 lg:h-[58px] flex items-center justify-center bg-green-200">
                         <svg width="59" height="58" viewBox="0 0 59 58" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="29.5" cy="29" r="29" fill="#F5FA9B" />
@@ -65,8 +64,8 @@
                     <span class="text-black-100 font-medium text-base lg:text-2xl leading-6 lg:leading-normal ">
                         Gaisrinės ir civilinės saugos privalomieji mokymai
                     </span>
-                </div>
-                <div class="flex items-center bg-white shadow-soft rounded-[100px] pl-2.5 lg:pl-4 pr-4 lg:pr-5 py-2 lg:py-4 gap-4 lg:w-max">
+                </a>
+                <a href="{{ route('trainings') }}" class="flex items-center bg-white hover:bg-green-100 transition-all duration-300 shadow-soft rounded-[100px] pl-2.5 lg:pl-4 pr-4 lg:pr-5 py-2 lg:py-4 gap-4 lg:w-max">
                     <div class="flex-shrink-0 rounded-full w-10 lg:w-[58px] h-10 lg:h-[58px] flex items-center justify-center bg-green-200">
                         <svg width="59" height="58" viewBox="0 0 59 58" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="29.5" cy="29" r="29" fill="#F5FA9B" />
@@ -77,7 +76,7 @@
                     <span class="text-black-100 font-medium text-base lg:text-2xl leading-6 lg:leading-normal ">
                         Smurto prevenciniai mokymai
                     </span>
-                </div>
+                </a>
             </div>
         </div>
     </section>

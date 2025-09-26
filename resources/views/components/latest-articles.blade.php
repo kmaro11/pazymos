@@ -5,7 +5,7 @@
 ])
 
 <section
-    class="mx-auto bg-gradient-custom lg:px-14 px-4 pt-14 md:pt-[110px] pb-[86px] md:pb-[263px] -mt-5 md:-mt-10 translate-y-5 md:translate-y-10 rounded-t-[30px]">
+    class="mx-auto bg-gradient-custom lg:px-14 px-4 pt-14 md:pt-[110px] pb-[86px] md:pb-[130px] -mt-5 md:-mt-10 translate-y-5 md:translate-y-10 rounded-t-[30px]">
     <div class="max-w-[1440px] w-full mx-auto md:px-0">
         @if ($label)
         <div

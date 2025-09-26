@@ -12,7 +12,7 @@
     <div class="max-w-[1200px] w-full mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             @foreach($items as $index => $item)
-            <div class="p-6 pb-8 {{ $index === 1 ? 'bg-green-100 -rotate-[3deg]' : 'bg-gray-300' }} rounded-3xl">
+            <div class="p-6 pb-8 hover:bg-green-100 hover:-rotate-[3deg] transition-all duration-300 bg-gray-300 rounded-3xl">
                 <div class="text-black-100 text-[20px] md:text-2xl font-medium leading-[30px] md:leading-[34px] mb-5 md:mb-10 flex justify-between items-start">
                     {{ $item['title'] }}
                     <img src="{{ asset('svg/' . $item['icon']) }}" alt="{{ $item['title'] }} icon" width="24" height="24" class="ml-7">
