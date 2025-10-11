@@ -51,7 +51,7 @@ $testimonials = [
 ];
 @endphp
 
-<div class="w-full mx-auto">
+<div {{ $attributes->merge(['class' => 'w-full mx-auto']) }}>
     <div class="md:px-14 px-4">
         <h2
             class="text-black-100 text-center text-[32px] md:text-[48px] font-medium leading-[42px] md:leading-[58px] md:mb-6 mb-4">

@@ -6,7 +6,7 @@
 
 <div class="mb-4 md:mb-6">
     <div class="bg-blue-100 rounded-3xl py-5 pl-[18px] pr-2.5 md:pt-5 md:pl-[30px] md:pr-5 md:pb-6">
-        <h2 class="text-black-100 text-3xl font-medium leading-[34px] mb-[14px] md:mb-3">{{ $title }}</h2>
+        <h2 class="text-black-100 text-2xl md:text-3xl font-medium leading-[34px] mb-[14px] md:mb-3">{{ $title }}</h2>
         @if($description)
             <p class="text-black-100 text-sm md:text-base leading-[22px]">{{ $description }}</p>
         @endif

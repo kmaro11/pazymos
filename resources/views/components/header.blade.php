@@ -1,6 +1,6 @@
 <header class="w-full bg-gray-100 py-[22px] lg:py-[30px] px-4 lg:px-14 z-50 sticky top-0">
     <div class="max-w-[1440px] 2xl:max-w-none mx-auto w-full flex items-center justify-between">
-        <a href="/">
+        <a href="/" class="w-full max-w-[100px] md:max-w-max">
             <img src="{{ asset('svg/pazymos-logo.svg') }}" alt="pazymos-logo">
         </a>
         <nav class="flex-1 lg:flex justify-center hidden">
@@ -32,7 +32,7 @@
                 </li>
             </ul>
         </nav>
-        <div class="flex items-center gap-x-10">
+        <div class="flex items-center md:gap-x-10 gap-x-6">
             <a href="{{ route('basket') }}" class=" cursor-pointer flex items-center bg-green-100 rounded-[100px] py-[7px] px-2 lg:pr-3 gap-2">
 
                 <div class="relative flex items-center justify-center w-6 h-6">

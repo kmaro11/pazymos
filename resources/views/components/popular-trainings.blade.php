@@ -53,7 +53,7 @@
                 @endforeach
             </div>
         </div>
-        <x-button variant="light" url="#" class="md:hidden mx-auto mt-[60px]">Peržiūrėti visus</x-button>
+        <x-button variant="dark" url="#" class="md:hidden mx-auto mt-[60px]">Peržiūrėti visus</x-button>
     </div>
     </div>
 </section>

@@ -12,12 +12,19 @@
                 <p class="text-black-100  text-base font-normal leading-6">{{ $description }}</p>
                 @endforeach
             </div>
+            <div class="md:hidden lg:pt-6 max-w-[420px] w-full pt-[60px] md:pt-0">
+                @isset($trainingInfo)
+                    <x-training-info :title="$trainingInfo['title'] ?? 'Kam skirta'" :description="$trainingInfo['description'] ?? null" :items="$trainingInfo['items'] ?? []" />
+                @endisset
+                <x-basket />
+            </div>
+
             @if(!empty($sections))
                 <x-training-description :sections="$sections" />
             @endif
         </div>
 
-        <div class="lg:pt-6 max-w-[420px] w-full">
+        <div class="hidden md:block lg:pt-6 max-w-[420px] w-full">
             @isset($trainingInfo)
                 <x-training-info :title="$trainingInfo['title'] ?? 'Kam skirta'" :description="$trainingInfo['description'] ?? null" :items="$trainingInfo['items'] ?? []" />
             @endisset

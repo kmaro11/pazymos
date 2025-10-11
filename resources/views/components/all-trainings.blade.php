@@ -1,8 +1,8 @@
 @props(['trainings' => []])
 
 <section class="pb-[60px] md:pb-[108px] pt-12 md:pt-[88px] px-4 md:px-14 bg-gradient-custom rounded-t-[30px]">
-    <h2 class="text-black-100 text-center text-[48px] font-medium leading-[58px] md:mb-24">Visi mokymai</h2>
-    <div class="max-w-[1440px] mx-auto pb-20">
+    <h2 class="text-black-100 text-center text-[32px] md:text-[48px] font-medium leading-[42px] md:leading-[58px] mb-10 md:mb-24">Visi mokymai</h2>
+    <div class="max-w-[1440px] mx-auto">
         <div class="flex flex-wrap justify-between items-center mb-10 md:mb-20 gap-6">
             <div class="flex flex-wrap gap-4">
                 <x-pill-button dataTab="all">Visi mokymai</x-pill-button>

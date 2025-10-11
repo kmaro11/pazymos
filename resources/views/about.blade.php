@@ -125,9 +125,11 @@ $members = [
             <div class="px-4 md:px-0">
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10 md:gap-y-12">
                     @foreach ($members as $member)
-                    <div>
-                        <img src="{{ $member['image'] }}" alt="{{ $member['name'] }}"
-                            class="w-full h-auto object-cover rounded-2xl mb-5">
+                    <div class="w-full max-w-[312px] mx-auto">
+                        <div class="w-full h-[330px] relative mb-5">
+                            <img src="{{ $member['image'] }}" alt="{{ $member['name'] }}"
+                                class="absolute top-0 left-0 w-full h-full object-cover rounded-3xl">
+                        </div>
                         <div class="flex justify-between items-start px-2">
                             <div>
                                 <div class="flex justify-between items-start">
@@ -139,7 +141,7 @@ $members = [
                                     </a>
                                 </div>
                                 <x-member-bio id="member-{{ $loop->index }}-bio" title="Priešgaisrinės ir civilinės saugos mokymo lektorė">
-                                    <p class="text-sm leading-[22px] mt-3">20 metų darbo patirtis valstybinėje priešgaisrinėje gelbėjimo tarnyboje: valstybinės priešgaisrinės priežiūros ir priešgaisrinės saugos mokymo srityse; civilinės saugos mokymo srityje; VDU įgyta pedagogo kvalifikacija. Nuo 2018 metų vykdo individualią veiklą priešgaisrinės bei civilinės saugos mokymo srityje.</p>
+                                    <p class="text-sm leading-[22px] mt-3 text-gray-100">20 metų darbo patirtis valstybinėje priešgaisrinėje gelbėjimo tarnyboje: valstybinės priešgaisrinės priežiūros ir priešgaisrinės saugos mokymo srityse; civilinės saugos mokymo srityje; VDU įgyta pedagogo kvalifikacija. Nuo 2018 metų vykdo individualią veiklą priešgaisrinės bei civilinės saugos mokymo srityje.</p>
                                 </x-member-bio>
                             </div>
                         </div>

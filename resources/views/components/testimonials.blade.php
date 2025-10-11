@@ -1,12 +1,10 @@
-<section class="pb-14 pt-[60px] md:pb-[116px] md:pt-[110px]">
-    <!-- For now we hide this section -->
-    <!-- <x-testimonials-section /> -->
+<section {{ $attributes->merge(['class' => 'pb-14 pt-[60px] md:pb-[116px] md:pt-[110px]']) }}>
     <div class="px-4">
         <div
             class="h-[636px] lg:h-[316px] max-w-[474px] lg:w-auto bg-green-100 justify-between rounded-[30px] lg:pl-14 pr-2.5 lg:max-w-[1095px] w-full mx-auto flex lg:flex-row flex-col overflow-hidden gap-x-10">
             <div class="max-w-[474px] w-full lg:py-20 pb-10 pt-12 px-4 lg:px-0">
-                <h3 class="text-black-100 text-[36px] font-medium leading-[46px] mb-7 text-center lg:text-left">
-                    Pavadinimas, skatinantis įsigyti mokymus
+                <h3 class="text-black-100 text-[28px] md:text-[36px] font-medium leading-[38px] md:leading-[46px] mb-7 text-center lg:text-left">
+                    Saugumas prasideda nuo kokybiškų žinių.
                 </h3>
                 <a href="#"
                     class="text-gray-100 bg-green text-base w-max font-medium leading-6 flex items-center gap-x-2.5 pl-3 pr-2 py-[7px] rounded-[100px] mx-auto lg:mx-0">

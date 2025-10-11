@@ -33,7 +33,7 @@
                 <img src="{{ asset('images/yellow-background.png') }}" alt="Background" class="w-full h-full object-cover">
             </div>
             <div class="relative z-10 mb-8 max-w-[560px] mx-auto">
-                <h2 class="text-center text-[36px] font-medium leading-[46px] text-black-100 mb-4">Prenumeruokite mūsų naujienlaiškį</h2>
+                <h2 class="text-center text-[28px] md:text-[36px] font-medium leading-[38px] md:leading-[46px] text-black-100 mb-4">Prenumeruokite mūsų naujienlaiškį</h2>
                 <p class="text-center text-base font-normal leading-6 text-black-100">Leiskite mums priminti jums apie reikalingus mokymus bei dalintis naudingomis žiniomis.</p>
             </div>
             <div class="relative max-w-[400px] w-full mx-auto">

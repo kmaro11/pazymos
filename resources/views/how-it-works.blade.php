@@ -22,8 +22,8 @@
         </div>
         <div class="relative z-10 flex flex-col md:flex-row justify-between items-center gap-6">
             <div class="max-w-[605px] w-full">
-                <h2 class="text-black-100  text-[28px] md:text-[36px] font-medium leading-[38px] md:leading-[46px] mb-6 md:mb-4 text-center md:text-left">Pavadinimas, skatinantis įsigyti mokymus</h2>
-                <p class="text-[#002B3F]  text-base font-normal leading-6 text-center md:text-left">Viverra in sit leo sed nibh. Vel molestie bibendum porta penatibus eu odio magnis.</p>
+                <h2 class="text-black-100 text-[28px] md:text-[36px] font-medium leading-[38px] md:leading-[46px] mb-6 md:mb-4 text-center md:text-left">Saugumas prasideda nuo kokybiškų žinių.</h2>
+                <p class="text-[#002B3F] text-base font-normal leading-6 text-center md:text-left">Viverra in sit leo sed nibh. Vel molestie bibendum porta penatibus eu odio magnis.</p>
             </div>
             <x-button variant="dark">
                 Rinktis mokymus

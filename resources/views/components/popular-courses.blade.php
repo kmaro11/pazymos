@@ -1,4 +1,4 @@
-<section class="mx-auto bg-green rounded-[30px] pt-[60px] md:pt-[110px] pb-14 md:pb-[120px] -mt-5 md:-mt-10 translate-y-5 md:translate-y-10">
+<section class="mx-auto bg-green rounded-[30px] pt-[60px] md:pt-[110px] pb-14 md:pb-[120px] -mt-5 md:-mt-10 hide-translate ? '' : translate-y-5 md:translate-y-10">
     <div class="w-full mx-auto">
         <div class="lg:px-14 px-4">
             <div class="lg:pl-2.5">
