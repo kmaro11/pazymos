@@ -123,8 +123,9 @@ $members = [
             </div>
 
             <div class="px-4 md:px-0">
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10 md:gap-y-12">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-10 md:gap-y-12">
                     @foreach ($members as $member)
+                    <!-- TODO: Gediminai, atrodo kad pamirsote perkelti. Cia kur turetu buti paveikslelio dydis. -->
                     <div class="w-full max-w-[312px] mx-auto">
                         <div class="w-full h-[330px] relative mb-5">
                             <img src="{{ $member['image'] }}" alt="{{ $member['name'] }}"
