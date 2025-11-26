@@ -10,6 +10,7 @@
 
 <body class="antialiased h-full">
     @yield('content')
+    <x-modal />
 </body>
 
 </html>

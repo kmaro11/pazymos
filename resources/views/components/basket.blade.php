@@ -54,6 +54,4 @@
     <x-button id="basket-contact-btn" size="w-full" variant="dark" class="mt-3 hidden open-modal">
         Susisiekite su mumis
     </x-button>
-
-    <x-modal />
 </div>
