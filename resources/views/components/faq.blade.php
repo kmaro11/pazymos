@@ -39,7 +39,7 @@ $faqs = [
                         </svg>
                     </span>
                 </button>
-                <div class="faq-answer-container overflow-hidden transition-all duration-300 ease-in-out opacity-0 transform -translate-y-2 mt-4" style="max-height: 0;">
+                <div class="faq-answer-container overflow-hidden transition-all duration-300 ease-in-out opacity-0 transform -translate-y-2" style="max-height: 0;">
                     <div class="md:pl-9">
                         <p class="text-black-100 text-base font-normal leading-6">{{ $faq['answer'] }}</p>
                     </div>
