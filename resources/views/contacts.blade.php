@@ -28,6 +28,7 @@
                 </a>
             </div>
             <div class="w-full rounded-[30px] overflow-hidden mt-9">
+                <!-- TODO: Pridejau paprasta iframe, kad galetumet tikrinti kaip atrodo. Jei noresit API, tai galesiu pakeisti. Bet kiek maciau, mokama. -->
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2304.157813754172!2d25.33918447690661!3d54.724438870726004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd96e64575d09f%3A0xdb07929194bcaab3!2sSaul%C4%97tekio%20al.%2017%2C%20Vilnius%2C%2010221%20Vilniaus%20m.%20sav.!5e0!3m2!1sen!2slt!4v1764191534637!5m2!1sen!2slt" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
