@@ -28,7 +28,7 @@
             <x-search-input placeholder="Ieškoti mokymų..." />
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 gap-8 md:gap-y-[50px]">
             @foreach ($trainings as $training)
             <x-training-card :training="$training" />
             @endforeach
