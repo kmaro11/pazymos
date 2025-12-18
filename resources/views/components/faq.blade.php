@@ -23,6 +23,7 @@ $faqs = [
 ];
 @endphp
 
+<!-- Gediminai, visuose puslapiuose, kur yra basket, pb-[160px] -->
 <section {{ $attributes->merge(['class' => 'bg-gray-100 pb-[60px] md:pb-[100px]']) }}>
     <div class="max-w-[645px] mx-auto px-4 md:px-14">
         <h2 class="text-black-100 text-center text-[32px] md:text-[48px] font-medium leading-[42px] md:leading-[58px] mb-[60px] md:mb-20">

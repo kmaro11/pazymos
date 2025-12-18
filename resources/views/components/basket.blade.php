@@ -1,20 +1,20 @@
-<div class="max-w-[420px] w-full bg-gray-400 rounded-[30px] pt-5 px-[14px] md:px-[30px] pb-7 md:pb-[30px] sticky top-[120px]" data-component="basket">
+<div class="max-w-[420px] w-full bg-gray-400 rounded-[30px] pt-5 px-[14px] md:px-[30px] md:pb-[30px] md:sticky md:top-[120px]">
     <h2 class="text-black-100  text-2xl font-medium leading-8 mb-5">Mokymų tipas</h2>
 
-    <div class="flex items-center bg-white rounded-[100px] p-2 max-w-[200px] mb-6">
+    <div class="flex items-center bg-white rounded-[100px] p-2 max-w-[200px] my-6 md:mb-6">
         <button id="btn-individual" class="w-full rounded-full px-2 text-center  text-xs font-medium leading-6 tracking-[0.6px] uppercase transition-colors">INDIVIDUALIAI</button>
         <button id="btn-company" class="w-full rounded-full text-center  text-xs font-medium leading-6 tracking-[0.6px] uppercase transition-colors">ĮMONĖMS</button>
     </div>
 
 
     @if ($description)
-    <p class="text-black-100  text-sm font-normal leading-[22px] mb-[30px] md:mb-6">
+    <p class="text-black-100  text-sm font-normal leading-[22px] mb-[30px] md:mt-6">
         {{ $description }}
     </p>
     @endif
 
     @if ($dates)
-    <div class="space-y-2.5 mb-6">
+    <div class="space-y-2.5 my-6">
         @foreach ($dates as $item)
         <div class="flex items-center bg-white gap-x-2 pl-[15px] pr-2.5 py-[7px] rounded-[100px]">
             <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -38,20 +38,23 @@
     </div>
     @endif
 
-    <div class="flex justify-between items-center mb-3">
-        <div class="text-black-100  text-base font-medium leading-6">Kaina:</div>
-        <div class="flex items-center gap-x-1 text-black-100  text-2xl font-medium leading-8">
-            <div>€</div>
-            <div data-price-individual="{{ $individualPrice }}" data-price-company="{{ $companyPrice }}">
-                {{ number_format($individualPrice, 2) }}
+    <div data-component="basket">
+        <div class="bg-gray-400 rounded-[30px] pb-7 md:pb-0 pt-6 md:pt-0" data-component="basket-wrapper">
+            <div class="flex justify-between items-center mb-3">
+                <div class="text-black-100  text-base font-medium leading-6">Kaina:</div>
+                <div class="flex items-center gap-x-1 text-black-100  text-2xl font-medium leading-8">
+                    <div>€</div>
+                    <div data-price-individual="{{ $individualPrice }}" data-price-company="{{ $companyPrice }}">
+                        {{ number_format($individualPrice, 2) }}
+                    </div>
+                </div>
             </div>
+            <x-button id="basket-add-btn" size="w-full" variant="dark" class="mt-3">
+                Dėti į krepšelį
+            </x-button>
+            <x-button id="basket-contact-btn" size="w-full" variant="dark" class="mt-3 hidden open-modal">
+                Susisiekite su mumis
+            </x-button>
         </div>
     </div>
-
-    <x-button id="basket-add-btn" size="w-full" variant="dark" class="mt-3">
-        Dėti į krepšelį
-    </x-button>
-    <x-button id="basket-contact-btn" size="w-full" variant="dark" class="mt-3 hidden open-modal">
-        Susisiekite su mumis
-    </x-button>
 </div>
