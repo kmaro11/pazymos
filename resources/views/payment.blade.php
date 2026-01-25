@@ -65,6 +65,7 @@
                                     <x-input name="last_name" label="Pavardė" placeholder="Įveskite savo pavardę" />
                                 </div>
                             </div>
+                            <!-- Gediminai, cia yra checkboxai -->
                             <div class="grid grid-cols-1 mt-5 gap-y-5">
                                 <x-checkbox id="privacy-policy" name="save_card">Perskaičiau ir sutinku su <a href="{{ route('privacy') }}" class="underline">Privatumo politika ir naudojimosi sąlygomis</a>.</x-checkbox>
                                 <x-checkbox id="terms-of-service" name="save_card">Perskaičiau ir sutinku su <a href="{{ route('privacy') }}" class="underline">Paslaugų pirkimo taisyklėmis</a>.</x-checkbox>
