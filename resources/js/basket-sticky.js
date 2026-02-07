@@ -19,7 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
     function createPlaceholder() {
         if (placeholder) return;
         placeholder = document.createElement('div');
-        placeholder.style.height = `${basket.offsetHeight}px`;
+        const h = basket.offsetHeight;
+        placeholder.style.height = `${h}px`;
+        placeholder.style.marginBottom = `-${h}px`;
         placeholder.style.display = 'none';
         basket.parentNode.insertBefore(placeholder, basket.nextSibling);
     }

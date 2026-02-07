@@ -1,6 +1,6 @@
 @props(['items' => null, 'sections' => null, 'title' => null])
 
-<div class="pt-10 pb-[60px] md:pt-24 border-t border-black/10 md:border-t-0 mt-[60px] md:mt-0">
+<div class="pt-10 md:pb-[60px] md:pt-24 border-t border-black/10 md:border-t-0 mt-[60px] md:mt-0">
      <h2 class="text-[32px] font-medium text-black-100  leading-[42px] mb-10 md:mb-[60px]">
         {{ $title ?? 'Mokymų aprašymas' }}
     </h2>
