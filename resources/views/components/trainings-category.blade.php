@@ -2,6 +2,7 @@
 
 <section class="pb-[60px] md:pb-[108px] pt-12 md:pt-[88px] px-4 md:px-14 bg-gradient-custom rounded-t-[30px]">
     <div class="max-w-[1440px] mx-auto pb-20">
+        <!-- Gediminai - title spacing blogas sukeltas -->
         <h2 class="text-black-100 font-medium text-[36px] leading-[46px] mb-6 md:mb-12 text-center md:text-left">Rinktis pagal specializaciją</h2>
 
         <div class="hidden md:flex flex-wrap gap-4 mb-16">
@@ -34,6 +35,7 @@
             @endforeach
         </div>
 
+        <!-- Gediminai - cia yra padarytas button, su kuriuo turetumet padaryti rodyti visus mokymus. Is fronto as nepadarysiu sito.-->
         <x-button variant="dark" class="mt-[88px] mx-auto" showIcon="false">
             <span class="block">Išskleisti daugiau</span>
             <span class="block">

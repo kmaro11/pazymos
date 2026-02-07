@@ -15,6 +15,7 @@
             Cras a morbi id duis volutpat porta hendrerit ultrices.
         </p>
     </div>
+    <!-- Gediminai - cia yra nesukelta stiliu pakeitimai is anksciau-->
     <div class="bg-white/20 rounded-[16px] p-6 gap-y-4 gap-x-8 grid grid-cols-1 md:grid-cols-3 relative z-10">
         <div class="bg-white p-6 rounded-[16px] md:pt-[38px] md:pb-[50px]">
             <div

@@ -3,6 +3,7 @@
 @section('content')
 <x-header />
 
+<!-- Gediminai - 404 -->
 <section class="relative py-10 md:py-[200px] flex items-center justify-center px-4 md:px-14">
     <div class="absolute inset-0 z-0">
         <img src="{{ asset('images/404-background.png') }}" alt="Background" class="w-full h-full object-cover">
