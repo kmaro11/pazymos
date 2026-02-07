@@ -49,7 +49,7 @@
                     </div>
                 </div>
             </div>
-            <x-button id="basket-add-btn" size="w-full" variant="dark" class="mt-3">
+            <x-button id="basket-add-btn" size="w-full" variant="light" class="mt-3">
                 Dėti į krepšelį
             </x-button>
             <x-button id="basket-contact-btn" size="w-full" variant="dark" class="mt-3 hidden open-modal">
