@@ -20,12 +20,16 @@
             </div>
         </div>
         <div class="relative w-full h-[536px] md:h-[548px] px-4 lg:px-5">
-            <picture>
-                <source media="(min-width: 768px)" srcset="{{ asset('images/home-hero.jpg') }}">
-                <img class="w-full h-full max-w-[1440px] mx-auto rounded-[30px] object-cover object-center"
-                    src="{{ asset('images/home-hero-mobile.jpg') }}"
-                    alt="Moteris prie kompiuterio" />
-            </picture>
+            <div class="w-full h-full max-w-[1440px] mx-auto rounded-[30px] overflow-hidden">
+                <iframe class="w-full h-full"
+                    src="https://www.youtube.com/embed/Rbm6GXllBiw?si=-Q3-GYLCldQJjJVw&amp;controls=0&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=Rbm6GXllBiw"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+            </div>
         </div>
     </section>
 
