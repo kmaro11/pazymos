@@ -46,8 +46,9 @@
             </div>
         </div>
         <!-- Stacked cards for mobile -->
+         <!-- Gediminai, cia mes rodysim tik 3 korteles, nes button yra perziureti visus, o ne rodyti daugiau. -->
         <div class="block md:hidden space-y-4 px-4">
-            @foreach($courses as $course)
+            @foreach(array_slice($courses, 0, 3) as $course)
             <x-course-card :course="$course" />
             @endforeach
         </div>

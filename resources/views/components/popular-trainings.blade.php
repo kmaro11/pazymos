@@ -47,8 +47,9 @@
                 </div>
             </div>
             <!-- Stacked cards for mobile -->
+              <!-- Gediminai, cia mes rodysim tik 3 korteles, nes button yra perziureti visus, o ne rodyti daugiau. -->
             <div class="block md:hidden space-y-4 px-4">
-                @foreach($trainings as $training)
+                @foreach(array_slice($trainings, 0, 3) as $training)
                 <x-training-card :training="$training" type='text' />
                 @endforeach
             </div>
