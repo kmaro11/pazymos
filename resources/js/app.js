@@ -8,3 +8,4 @@ import './modal.js';
 import './trainings-filter.js';
 import './header.js';
 import './read-more.js';
+import './training-description-accordion.js';

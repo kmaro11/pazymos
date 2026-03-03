@@ -23,7 +23,7 @@
         <div class="flex flex-col-reverse md:flex-col lg:pt-6 max-w-[420px] w-full gap-4 md:gap-6">
             @if(!empty($sections))
                 <div class="md:hidden">
-                    <x-training-description :sections="$sections" />
+                    <x-training-description-accordion :sections="$sections" />
                 </div>
             @endif
             @isset($trainingInfo)
